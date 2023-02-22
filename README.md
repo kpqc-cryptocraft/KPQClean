@@ -1,2 +1,2 @@
 # KPQClean
-Benchmark on KPQClean
+Benchmark on KPQC
