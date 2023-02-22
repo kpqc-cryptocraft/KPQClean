@@ -1,2 +1,2 @@
 # KPQClean
-Benchmark on KPQC
+Benchmark on Korean Post Quantum Cryptography!
