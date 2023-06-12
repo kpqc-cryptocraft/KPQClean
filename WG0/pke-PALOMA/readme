@@ -1,0 +1,40 @@
+PALOMA 
+
+PALOMA Parameter sets
+PALOMA1 (128-bit security), PALOMA2(192-bit security), PALOMA3(256-bit security)
+
+Two main functions
+-Time measurement: benchmark.c 
+-KAT check: KAT.c
+
+1. KAT
+- KAT check main function operation command
+ulimit -s 51200
+gcc -O2 gf_table_gen.c gf.c gfpoly.c goppa_instance.c keygen.c mat_mul.c common.c lsh.c lsh512.c encap.c decap.c PALOMA.c rng.c KAT.c -lcrypto
+./a.out
+
+- flag
+In KAT.c, check KAT of PALOMA1, PALOMA2, and PALOMA3 by setting the flag of line32.
+
+flag: 1  -> PALOMA1 (Generate PALOMA_128.rsp,req) 
+flag: 2  -> PALOMA2 (Generate PALOMA_192.rsp,req) 
+flag: 3  -> PALOMA3 (Generate PALOMA_256.rsp,req) 
+
+
+2. benchmark
+- Time measurement main function operation command
+ulimit -s 51200
+gcc -O2 gf_table_gen.c gf.c gfpoly.c goppa_instance.c keygen.c mat_mul.c common.c lsh.c lsh512.c encap.c decap.c PALOMA.c rng.c benchmark.c -lcrypto
+./a.out
+
+- flag
+In benchmark.c, check operation time of PALOMA1, PALOMA2, and PALOMA3 by setting the flag of line20.
+
+flag: 0  -> PALOMA1
+flag: 1  -> PALOMA2
+flag: 2  -> PALOMA3
+
+
+3. Etc
+- When operating PALOMA, GF_init must be performed.
+- Random number Generator: CTR-drbg
