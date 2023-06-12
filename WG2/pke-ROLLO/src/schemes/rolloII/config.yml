@@ -1,0 +1,8 @@
+#******************************#
+#*** ROLLO-II configuration ***#
+#******************************#
+
+lowercase_scheme_name: rolloII
+uppercase_scheme_name: ROLLOII
+source_files: [kem.c, kem.h, parsing.c, parsing.h, types.h]
+lrpc: True

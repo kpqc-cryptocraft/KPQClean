@@ -1,0 +1,31 @@
+
+#*************************#
+#*** RBC configuration ***#
+#*************************#
+
+rbc_core_layer_implem: c64
+
+rbc_build_parameters: [
+  {"name":"rqc",       "sec_lvl":128,   "m":127,   "n":113},
+  {"name":"rqc",       "sec_lvl":192,   "m":151,   "n":149},
+  {"name":"rqc",       "sec_lvl":256,   "m":181,   "n":179},
+
+  {"name":"rolloI",    "sec_lvl":128,   "m":67,    "n":83},
+  {"name":"rolloI",    "sec_lvl":192,   "m":79,    "n":97},
+  {"name":"rolloI",    "sec_lvl":256,   "m":97,    "n":113},
+
+  {"name":"rolloII",   "sec_lvl":128,   "m":83,    "n":189},
+  {"name":"rolloII",   "sec_lvl":192,   "m":97,    "n":193},
+  {"name":"rolloII",   "sec_lvl":256,   "m":97,    "n":211},
+
+  {"name":"dummy",     "sec_lvl":128,   "m":107,   "n":149},
+]
+
+rbc_compile_example: True
+rbc_compile_unit_test: True
+rbc_compile_constant_time_test: True
+rbc_compile_kat: True
+
+rbc_compile_benchmark: False
+rbc_package_nist: False
+

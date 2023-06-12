@@ -1,0 +1,8 @@
+#*****************************#
+#*** ROLLO-I configuration ***#
+#*****************************#
+
+lowercase_scheme_name: biiy
+uppercase_scheme_name: BIIY
+source_files: [kem.c, kem.h, parsing.c, parsing.h, types.h]
+lrpc: True

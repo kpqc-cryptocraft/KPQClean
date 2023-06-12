@@ -1,0 +1,104 @@
+/*! \mainpage RQC: a Public-Key Encryption scheme
+ *
+ *  1. SUBMISSION OVERVIEW
+ *  ----------------------
+ *
+ *  One should note that RQC is a public-key encryption scheme submitted as a KEM for which NIST standard conversion techniques should be applied (see NIST FAQ#13). In addition, the aforementionned KEM is obtained by applying a conversion technique to a PKE. In order to avoid any confusion, we may refer to:
+ *
+ * - <b>RQC_PKE IND-CPA</b>: RQC PKE IND-CPA scheme due to \cite cryptoeprint:2016:1194.
+ * - <b>RQC_KEM IND-CCA2</b>: RQC KEM IND-CCA2 scheme obtained by applying the transformation from \cite cryptoeprint:2017:604 to the RQC PKE IND-CPA scheme. It is the implementation provided.
+ * - <b>RQC_PKE IND-CCA2</b>: RQC PKE IND-CCA2 scheme obtained by applying NIST "standard conversion techniques" to the RQC KEM IND-CCA2 scheme. It is the scheme submitted.<br />
+ *
+ * 
+ * Both reference implementation and optimized implementation provided for this submission are the same. Three parameters sets denoted respectively RQC-128, RQC-192 and RQC-256 are provided as explained in the supporting documentation. Each parameter set folder is organized as follows:
+ * 
+ *  - <b>bin/</b>: Files generated during compilation
+ *  - <b>doc/</b>: Technical documentation of the scheme
+ *  - <b>lib/</b>: Third party libraries used 
+ *  - <b>src/</b>: Source code of the scheme  
+ *  - <b>doxygen.conf</b>: Documentation configuration file
+ *  - <b>Makefile</b>: Makefile
+ *  
+ *  <br />
+ *  
+ *  2. INSTALLATION INSTRUCTIONS
+ *  ----------------------------
+ *  
+ *  <h3>2.1 Requirements</h3>
+ *
+ *  The following softwares and librairies are required: <b>gcc</b> and <b>openssl</b>.
+ *
+ *  <h3>2.2 Compilation Step</h3>
+ *
+ *  Let <b>X</b> denotes <b>128</b>, <b>192</b> or <b>256</b> depending on the parameter set considered. RQC can be compiled in three differents ways:
+ *  - Execute <b>make rqcX</b> to compile a working example of the scheme. Run <b>bin/rqcX</b> to execute the scheme and display its performances.
+ *  - Execute <b>make rqcX-kat</b> to compile the NIST KAT generator. Run <b>bin/rqcX-kat</b> to generate KAT files.
+ *  - Execute <b>make rqcX-verbose</b> to compile a working example of the scheme in verbose mode. Run <b>bin/rqcX-verbose</b> to generate intermediate values.
+ *
+ *  During compilation, the following files are created inside the <b>bin/build</b> folder:
+ *  - <b>sha2.o</b>: SHA2 implementation (from openssl)
+ *  - <b>fips202.o</b>: SHA3 implementation (from PQClean project)
+ *  - <b>randombytes.o</b>: NIST randombytes implementation
+ *  - <b>seedexpander.o</b>: NIST seedexpander implementation
+ *  - <b>rbc_elt.o</b>: Functions to manipulate finite fields elements.
+ *  - <b>rbc_vec.o</b>: Functions to manipulate vectors.
+ *  - <b>rbc_poly.o</b>: Functions to manipulate polynomials.
+ *  - <b>rbc_qre.o</b>: Functions to manipulate quotient ring elements.
+ *  - <b>rbc_vspace.o</b>: Functions to manipulate vector spaces.
+ *  - <b>parsing.o</b>: Functions to parse public key, secret key and ciphertext of the scheme.
+ *  - <b>q_poly.o</b>: Functions to manipulate q_polynomials.
+ *  - <b>gabidulin.o</b>: Functions to encode and decode messages using Gabidulin codes (either in normal mode or verbose mode).
+ *  - <b>rqc.o</b>: The RQC PKE IND-CPA scheme (either in normal mode or verbose mode).
+ *  - <b>kem.o</b>: The RQC KEM IND-CCA2 scheme (either in normal mode or verbose mode).
+ *
+ * <br />
+ *
+ *  3. DOCUMENTATION GENERATION
+ *  ---------------------------
+ *
+ *  <h3>3.1 Requirements</h3>
+ *
+ *  The following softwares are required: <b>doxygen</b> and <b>bibtex</b>.
+ *
+ *  <h3>3.2 Generation Step</h3>
+ * 
+ *  - Run <b>doxygen doxygen.conf</b> to generate the code documentation
+ *  - Browse <b>doc/html/index.html</b> to read the documentation
+ *
+ * <br />
+ *
+ *  4. ADDITIONAL INFORMATIONS
+ *  --------------------------
+ *
+ *  <h3>4.1 Implementation overview</h3>
+ *
+ *  The <b>RQC_KEM IND-CCA2</b> scheme is defined in the api.h and parameters.h files and implemented in kem.c.
+ *  The latter is based on the <b>RQC_PKE IND-CPA</b> scheme that is defined in rqc.h and implemented in rqc.c.
+ *  The <b>RQC_PKE IND-CPA</b> scheme uses Gabidulin codes (see gabidulin.h and gabidulin.c) which relies on q-polynomials (see q_poly.h and q_poly.c).
+ *  The files rbc.h, rbc_elt.h, rbc_vec.h, rbc_poly.h, rbc_qre.h, rbc_vspace.h, rbc_elt.c, rbc_vec.c, rbc_poly.c, rbc_qre.c and rbc_vspace.c provide the functions performing the various operations over finite fields required by the scheme. 
+ *  As public key, secret key and ciphertext can manipulated either with theirs mathematical representations or as bit strings, the files parsing.h and parsing.c provide functions to switch between these two representations.
+ *  Finally, the files sha2.h, fips202.h, randombytes.h, seedexpander.h, sha2.c, fips202.c, randombytes.c and seedexpander.c (inside the lib/ folder) provides SHA2 and SHA3 implementations as well as the NIST random functions.  
+ *
+ *  <h3>4.2 Finite field interface</h3>
+ *
+ *  RQC is a rank-based scheme and as such heavily relies on finite field arithmetic. 
+ *  We have provided an interface for finite fields (through files rbc.h, rbc_elt.h, rbc_vec.h, rbc_poly.h, rbc_qre.h and rbc_vspace.h) describing the various operations required by the scheme. 
+ *  In the context of our ffi interface, a finite field always describes an extension of a binary field namely a finite field of the form GF(2^m).
+ *
+ *  - <b>rbc.h</b>: Constants that defines the considered finite field ;
+ *  - <b>rbc_elt.h</b>: Functions to manipulate elements of GF(2^m) ;
+ *  - <b>rbc_vec.h</b>: Functions to manipulate vectors over GF(2^m).
+ *  - <b>rbc_poly.h</b>: Functions to manipulate polynomials over GF(2^m) ;
+ *  - <b>rbc_qre.h</b>: Functions to manipulate quotient ring elements ;
+ *  - <b>rbc_vspace.h</b>: Functions to manipulate subspaces of GF(2^m) ;
+ *  
+ *  In our reference implementation, the considered fields are GF(2^127), GF(2^151) and GF(2^181) for RQC-128, RQC-192 and RQC-256.
+ *
+ *  <h3>4.3 Public key, secret key, ciphertext and shared secret</h3>
+ *
+ *  The public key, secret key and ciphertext are respectively composed of (<b>h</b>, <b>s</b>), (<b>x</b>, <b>y</b>) and (<b>u</b>, <b>v</b>, <b>d</b>).
+ *  The shared secret is the output of the hash of <b>m</b>, <b>u</b> and <b>v</b> using SHA512.
+ *  In order to shorten the keys, the public key is stored as (<b>seed1</b>, <b>s</b>) and the secret key is stored as (<b>seed2</b>).
+ *  To this end, the seed expander provided by the NIST was used along with 40 bytes long seeds. 
+ *
+ */

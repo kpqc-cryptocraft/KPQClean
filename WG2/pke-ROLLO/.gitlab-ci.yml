@@ -1,0 +1,127 @@
+stages:
+    - build
+    - test
+    - test-ct
+
+build-avx:
+    stage: build
+    script:
+        - cp .config_git_avx.yml config.yml
+        - python rbc-lib.py
+    artifacts:
+        name: avx_build
+        untracked: true
+        paths:
+            - bin/
+            - build/
+        expire_in: 1 day
+
+build-c64:
+    stage: build
+    script:
+        - cp .config_git_c64.yml config.yml
+        - python rbc-lib.py
+    artifacts:
+        name: c64_build
+        untracked: true
+        paths:
+            - bin/
+            - build/
+        expire_in: 1 day
+
+build-c32:
+    stage: build
+    script:
+        - cp .config_git_c32.yml config.yml
+        - python rbc-lib.py
+    artifacts:
+        name: c32_build
+        untracked: true
+        paths:
+            - bin/
+            - build/
+        expire_in: 1 day
+
+test-avx-kat:
+    stage: test
+    dependencies:
+        - build-avx
+    script:
+        - python script/testing/testing_kat.py .config_git_avx.yml
+
+test-avx-memory-leak:
+    stage: test
+    dependencies:
+        - build-avx
+    script:
+        - python script/testing/testing_memory_leak.py .config_git_avx.yml
+
+test-avx-constant-time:
+    stage: test-ct
+    dependencies:
+        - build-avx
+    script:
+        - python script/testing/testing_cst_time.py .config_git_avx.yml
+
+test-avx-unit-test:
+    stage: test
+    dependencies:
+        - build-avx
+    script:
+        - python script/testing/testing_unit_test.py .config_git_avx.yml
+
+test-c64-kat:
+    stage: test
+    dependencies:
+        - build-c64
+    script:
+        - python script/testing/testing_kat.py .config_git_c64.yml
+
+test-c64-memory-leak:
+    stage: test
+    dependencies:
+        - build-c64
+    script:
+        - python script/testing/testing_memory_leak.py .config_git_c64.yml
+
+test-c64-constant-time:
+    stage: test-ct
+    dependencies:
+        - build-c64
+    script:
+        - python script/testing/testing_cst_time.py .config_git_c64.yml
+
+test-c64-unit-test:
+    stage: test
+    dependencies:
+        - build-c64
+    script:
+        - python script/testing/testing_unit_test.py .config_git_c64.yml
+
+test-c32-kat:
+    stage: test
+    dependencies:
+        - build-c32
+    script:
+        - python script/testing/testing_kat.py .config_git_c32.yml
+
+test-c32-memory-leak:
+    stage: test
+    dependencies:
+        - build-c32
+    script:
+        - python script/testing/testing_memory_leak.py .config_git_c32.yml
+
+test-c32-constant-time:
+    stage: test-ct
+    dependencies:
+        - build-c32
+    script:
+        - python script/testing/testing_cst_time.py .config_git_c32.yml
+
+test-c32-unit-test:
+    stage: test
+    dependencies:
+        - build-c32
+    script:
+        - python script/testing/testing_unit_test.py .config_git_c32.yml

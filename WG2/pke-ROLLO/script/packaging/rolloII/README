@@ -1,0 +1,66 @@
+ 1. SUBMISSION OVERVIEW
+ ----------------------
+ 
+ <b>ROLLO</b> is a compilation of three candidates to NIST's competition for post-quantum cryptography standardization. They are based on rank metric codes and they share the same decryption algorithm for Low Rank Parity Check (LRPC) codes. Rank-Ouroboros and LAKE are IND-CPA KEM running in the category "post quantum key exchange". LOCKER is an IND-CCA2 PKE running in the category "post quantum public key encryption". Different sets of parameters for these three cryptosystems are proposed for security strength categories 1, 3 and 5.
+ 
+In this package :
+- LAKE is renamed ROLLO-I
+- LOCKER is renamed ROLLO-II
+- Rank Ouroboros is renamed ROLLO-III
+
+(ROLLO-III scheme was removed in the 15/04/2020 version)
+ 
+Each parameter set folder is organized as follows:
+
+ - <b>bin/</b>: Files generated during compilation
+ - <b>doc/</b>: Technical documentation of the scheme
+ - <b>lib/</b>: Third party libraries used 
+ - <b>src/</b>: Source code of the scheme
+ - <b>doxygen.conf</b>: Documentation configuration file
+ - <b>Makefile</b>: Makefile
+ 
+ <br />
+ 
+ 2. INSTALLATION INSTRUCTIONS
+ ----------------------------
+ 
+ <h3>2.1 Requirements</h3>
+ 
+ The following softwares and librairies are required: <b>make</b>, <b>gcc</b> and <b>openssl</b>.
+ 
+ <h3>2.2 Compilation Step</h3>
+ 
+ Let <b>X</b> denotes <b>128</b>, <b>192</b> or <b>256</b> depending on the parameter set considered. ROLLO can be compiled in three differents ways:
+ - Execute <b>make rolloI-X</b> to compile a working example of the scheme. Run <b>bin/rolloI-X</b> to execute the scheme and display its performances.
+ - Execute <b>make rolloI-X-kat</b> to compile the NIST KAT generator. Run <b>bin/rolloI-X-kat</b> to generate KAT files.
+ - Execute <b>make rolloI-X-verbose</b> to compile a working example of the scheme in verbose mode. Run <b>bin/rolloI-X-verbose</b> to generate intermediate values.
+
+ Replace <b>rollo-I</b> with <b>rollo-II</b> depending on the scheme you are compiling.
+ 
+ During compilation, the following files are created inside the <b>bin/build</b> folder:
+ - <b>sha2.o<, fips202.o/b>: Hash functions
+ - <b>seedexpander.o, randombytes.o</b>: NIST rng
+ - <b>rbc_elt.o</b>: Functions to manipulate finite fields elements.
+ - <b>rbc_vec.o</b>: Functions to manipulate vectors over finite fields.
+ - <b>rbc_vspace.o</b>: Functions to manipulate vector spaces.
+ - <b>rbc_poly.o</b>: Functions to manipulate polynomials over finite fields.
+ - <b>rbc_qre.o</b>: Functions to manipulate polynomials over finite fields modulo P.
+ - <b>parsing.o</b>: Functions to parse public key, secret key and ciphertext of the scheme.
+ - <b>lrpc.o</b>: Implementation of the rank support recover (either in normal mode or verbose mode).
+ - <b>rolloI.o</b>: The ROLLO scheme (either in normal mode or verbose mode) (respectively <b>rolloII.o</b>).
+ 
+<br />
+ 
+ 3. DOCUMENTATION GENERATION
+ ---------------------------
+ 
+ <h3>3.1 Requirements</h3>
+ 
+ The following softwares are required: <b>doxygen</b> and <b>bibtex</b>.
+ 
+ <h3>3.2 Generation Step</h3>
+
+ - Run <b>doxygen doxygen.conf</b> to generate the code documentation
+ - Browse <b>doc/html/index.html</b> to read the documentation
+ 
+<br />

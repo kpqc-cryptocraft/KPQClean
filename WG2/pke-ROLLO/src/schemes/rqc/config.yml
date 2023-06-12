@@ -1,0 +1,8 @@
+#*************************#
+#*** RQC configuration ***#
+#*************************#
+
+lowercase_scheme_name: rqc
+uppercase_scheme_name: RQC
+source_files: [kem.c, kem.h, parsing.c, parsing.h, pke.c, pke.h]
+gabidulin: True

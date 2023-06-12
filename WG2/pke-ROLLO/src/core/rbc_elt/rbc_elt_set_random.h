@@ -1,0 +1,1 @@
+void rbc_elt_set_random(random_source* ctx, rbc_elt o);

@@ -1,0 +1,91 @@
+
+------------------------------------- 
+RBC - Rank-Based Cryptography Library 
+-------------------------------------
+
+
+1. OVERVIEW 
+-----------
+
+The RBC library provides data structures and algorithms to perform code-based
+cryptography in the rank metric setting. It also provides implementations of
+various rank-based cryptosystems. The RBC library focuses on high performances
+without sacrificing usability. Some functionalities are implemented in a
+constant-time way whenever relevant for the security of the supported schemes.
+The RBC library currently only support finite fields of the form F(2^m).
+
+
+1.1 Architecture
+
+The RBC library is organized as follows:
+  - bin/            Files generated during compilation
+  - build/          Files generated during preprocessing
+  - doc/            Documentation of the library
+  - lib/            Third party implementations used
+  - script/         Scripts used for preprocessing and compilation
+  - src/core        Core layer of the library (arithmetic over F(2^m))
+  - src/code        Code layer of the library (LRPC codes and Gabidulin codes)
+  - src/params      Parameters for the schemes implemented in the library
+  - src/schemes     Scheme layer of the library (ROLLO and RQC)
+  - test/           Example files for the library
+  - config.yml      Configuration file of the library
+  - doxygen.conf    Documentation configuration file
+  - rbc-lib.py      Script to execute to compile the library
+
+
+1.2 Third-party implementations
+
+The RBC library relies on several cryptographic primitives that are outside the
+scope of rank-based cryptography such as a PRNG, a seedexpander, SHA2, FIPS202
+and AES. Implementations for theses primitives are provided in the lib folder
+for convenience but are not part of the RBC library. In particular, they are
+released under their respective licenses ; refer to each implementation for
+additional details. In addition, the Minuint framework and the NTL library are
+used to provide unit tests against the RBC library.
+
+
+2. How to use the RBC library 
+-----------------------------
+
+2.1 Requirements
+
+The following softwares and librairies are required: python3 (build),
+python3-yalm (build), cmake (build), make (build), gcc (build) and 
+openssl (runtime, optional). The 'python' command is required to be aliased to 
+'python3' in version 3.5 or superior.
+
+
+2.2 Configuration
+
+The RBC library can be parametrized by editing 'config.yml'. The main available
+options are the following:
+
+  - rbc_core_layer_implem: [c32, c64, avx] - Implementation to be used for the core
+    layer. The avx tag generates faster code but requires pclmul and avx support.
+
+  - rbc_build_parameters: [rolloI, rolloII, rqc] - Supported schemes along with
+    their security levels (128, 192, 256) to be included in the library.
+
+  - rbc_compile_example: [True, False] - Compilation of the core layer unit
+    tests for the parameters of the schemes included in the library.
+
+  - rbc_compile_unit_test: [True, False] - Compilation of the core layer unit
+    tests for the parameters of the schemes included in the library.
+
+  - rbc_compile_kat: [True, False] - Compilation of the Known Answer Tests for
+    the schemes included in the library.
+
+
+2.3 Preprocessing & Compilation
+
+Run 'python rbc-lib.py' to preprocess and compile the RBC library. This should
+generate a librbc.a archive and an include folder as well as several binaries
+with respect to the options specifield in the config.yml file.
+
+
+2.4 Documentation
+
+The following softwares are required: doxygen, a TeX environment and bibtex. Run 
+'doxygen doxygen.conf' in order to generate the documentation then browse
+doc/html/index.html to access it.
+

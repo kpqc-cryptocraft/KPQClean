@@ -1,0 +1,13 @@
+*.swp
+
+script/__pycache__
+script/preprocessing/__pycache__
+
+build/
+bin/
+doc/html
+poetry.lock
+tmp
+
+PQCkemKAT*
+

@@ -1,0 +1,25 @@
+
+#*************************#
+#*** RBC configuration ***#
+#*************************#
+
+rbc_core_layer_implem: avx
+
+rbc_build_parameters: [
+  {"name":"rolloI",    "sec_lvl":128,   "m":67,    "n":83,     "bn":83},
+  {"name":"rolloI",    "sec_lvl":192,   "m":79,    "n":97,     "bn":97},
+  {"name":"rolloI",    "sec_lvl":256,   "m":97,    "n":113,     "bn":113},
+
+  {"name":"biix",   "sec_lvl":128,   "m":67,    "n":37,     "bn":74},
+  {"name":"biix",   "sec_lvl":192,   "m":79,    "n":43,     "bn":86},
+  {"name":"biix",   "sec_lvl":256,   "m":97,    "n":53,     "bn":106},
+]
+
+rbc_compile_constant_time_test: True
+rbc_compile_example: True
+rbc_compile_unit_test: True
+rbc_compile_kat: True
+
+rbc_compile_benchmark: False
+rbc_package_nist: False
+

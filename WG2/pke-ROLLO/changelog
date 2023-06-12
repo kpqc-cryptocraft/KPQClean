@@ -1,0 +1,45 @@
+
+### RBC v1.2 (2022-04-07)
+
+Security & Bug Fixes
+- Fix constant time issues within rbc_elt
+- Fix constant-time issues within rbc_poly
+- Fix intersection with rbc_vspace of dim 0
+- Fix inconsistencies related to LRPC decoding
+- Fix rbc_elt_ur_sqr in c32
+
+Build System & Quality
+- Fix compilation issues and reduce compilation time
+- Refactor and improve preprocessing and templating system
+- Improve randomness source management
+- Improve modulus polynomials management
+- Rename several functions and remove unecessary code
+- Add automated constant time verification
+- Switch from MPFQ to NTL for unit tests
+- Add continuous integration tools
+- Improve library portability on macos
+- Add packaging script for the mupq project
+- Improve documentation and library website
+
+
+
+### RBC v1.1 (2021-05-15)
+
+Additional Features
+- Add support for 32 bits architectures
+- Add support for parameters m = 101 and m = 113
+
+Security & Bug Fixes
+- Fix constant time issue within ROLLO and RQC aborts
+- Fix several constant time issues within rbc_elt
+- Tag explicitly some functions as not running in constant time
+- Fix missing rbc_field_init calls
+- Throw exceptions for missing field or qre initialisation
+- Fix several compilation issues
+
+Build System & Quality
+- Add automated benchmark script
+- Add support for ‘dummy’ cryptosystems
+- Improve scheme naming
+- Improve rbc_vec documentation
+

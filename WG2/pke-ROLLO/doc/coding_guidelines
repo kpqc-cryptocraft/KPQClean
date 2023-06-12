@@ -1,0 +1,22 @@
+
+RBC Preprocessing Guidelines
+
+# Objectives
+  - RBC should support several architectures
+  - RBC should support concurrent use of several parameters sets (fields and quotient rings)
+  - RBC should support minimalist (subset of features) builds
+  - RBC should generate code that is easily readable
+
+# Design choices
+  - RBC final code should be tailored to both a specific architecture and specific parameters [readability and minimalism]
+  - RBC final code should not sacrifice performances or readability to genericity
+  - RBC should avoid code redundancy related to architecture and parameters using preprocessing
+
+# Code structure
+  - Source files (src/) along with preprocessing scripts (script/) are used to create final source files (build/)
+  - Source files can be either c files or python files depending on the following rules :
+    * If the code is both architecture and parameters independent, use a c file
+    * If the code is architecture independent and only depends on the value of m, use a c file
+    * If the code is architecture independent and its behavior differs depending on the value of m, use a python file
+    * If the code is architecture dependent, use a python file
+

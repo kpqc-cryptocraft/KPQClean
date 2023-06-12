@@ -1,0 +1,145 @@
+
+----------------------------------- 
+RQC: a Public-Key Encryption scheme
+-----------------------------------
+
+
+1. SUBMISSION OVERVIEW 
+----------------------
+
+One should note that RQC is a public-key encryption scheme submitted as a KEM for 
+which NIST standard conversion techniques should be applied (see NIST FAQ#13). 
+In addition, the aforementionned KEM is obtained by applying a conversion
+technique to a PKE. In order to avoid any confusion, we may refer to:
+
+- RQC_PKE IND-CPA: RQC PKE IND-CPA scheme due to [1].
+- RQC_KEM IND-CCA2: RQC KEM IND-CCA2 scheme obtained by applying the
+  transformation from [2] to the RQC PKE IND-CPA scheme. It is the
+  implementation provided.
+- RQC_PKE IND-CCA2: RQC PKE IND-CCA2 scheme obtained by applying NIST "standard
+  conversion techniques" to the RQC KEM IND-CCA2 scheme. It is the scheme
+  submitted.
+
+Three parameters sets denoted respectively RQC-128, RQC-192 and RQC-256 are 
+provided as explained in the supporting documentation. Each parameter set folder 
+is organized as follows:
+
+- bin/: Files generated during compilation
+- doc/: Technical documentation of the scheme
+- lib/: Third party libraries used 
+- src/: Source code of the scheme  
+- doxygen.conf: Documentation configuration file
+- Makefile: Makefile
+
+
+2. INSTALLATION INSTRUCTIONS 
+----------------------------
+
+2.1 Requirements
+
+The following softwares and librairies are required: gcc and openssl.
+
+2.2 Compilation Step
+
+Let X denotes 128, 192 or 256 depending on the parameter set considered. RQC
+can be compiled in three differents ways:
+- Execute make rqcX to compile a working example of the scheme. Run bin/rqcX to
+  execute the scheme.
+- Execute make rqcX-kat to compile the NIST KAT generator. Run bin/rqcX-kat to
+  generate KAT files.
+- Execute make rqcX-verbose to compile a working example of the scheme in
+  verbose mode. Run bin/rqcX-verbose to generate intermediate values.
+
+During compilation, the following files are created inside the bin/build
+folder:
+- sha2.o: SHA2 implementation (from openssl)
+- fips202.o: SHA3 implementation (from PQClean project)
+- randombytes.o: NIST randombytes implementation
+- seedexpander.o: NIST seedexpander implementation
+- rbc_elt.o: Functions to manipulate finite fields elements.
+- rbc_vec.o: Functions to manipulate vectors.
+- rbc_poly.o: Functions to manipulate polynomials.
+- rbc_qre.o: Functions to manipulate quotient ring elements.
+- rbc_vspace.o: Functions to manipulate vector spaces.
+- parsing.o: Functions to parse public key, secret key and ciphertext of the
+  scheme.
+- q_poly.o: Functions to manipulate q_polynomials.
+- gabidulin.o: Functions to encode and decode messages using Gabidulin codes
+  (either in normal mode or verbose mode).
+- rqc.o: The RQC PKE IND-CPA scheme (either in normal mode or verbose mode).
+- kem.o: The RQC KEM IND-CCA2 scheme (either in normal mode or verbose mode).
+
+
+3. DOCUMENTATION GENERATION 
+---------------------------
+
+3.1 Requirements
+
+The following softwares are required: doxygen and bibtex.
+
+3.2 Generation Step
+
+- Run doxygen doxygen.conf to generate the code documentation
+- Browse doc/html/index.html to read the documentation
+
+
+4. ADDITIONAL INFORMATIONS 
+--------------------------
+
+4.1 Implementation overview
+
+The RQC_KEM IND-CCA2 scheme is defined in the api.h and parameters.h files and
+implemented in kem.c. The latter is based on the RQC_PKE IND-CPA scheme that is
+defined in rqc.h and implemented in rqc.c. The RQC_PKE IND-CPA scheme uses
+Gabidulin codes (see gabidulin.h and gabidulin.c) which relies on q-polynomials
+(see q_poly.h and q_poly.c). The files rbc.h, rbc_elt.h, rbc_vec.h, 
+rbc_poly.h, rbc_qre.h, rbc_vspace.h, rbc_elt.c, rbc_vec.c, rbc_poly.c, 
+rbc_qre.c and rbc_vspace.c provide the functions performing the various 
+operations over finite fields required by the scheme. As public key, secret key 
+and ciphertext can manipulated either with theirs mathematical representations 
+or as bit strings, the files parsing.h and parsing.c provide functions to switch 
+between these two representations. Finally, the files sha2.h, fips202.h, 
+randombytes.h, seedexpander.h, sha2.c, fips202.c, randombytes.c and seedexpander.c 
+(inside the lib/ folder) provides SHA2 and SHA3 implementations as well as the NIST 
+random functions.  
+
+4.2 Finite field interface
+
+RQC is a rank-based scheme and as such heavily relies on finite field
+arithmetic. We have provided an interface for finite fields (through files
+rbc.h, rbc_elt.h, rbc_vec.h, rbc_poly.h, rbc_qre.h and rbc_vspace.h) describing 
+the various operations required by the scheme. In the context of our rbc
+interface, a finite field always describes an extension of a binary field
+namely a finite field of the form GF(2^m).
+
+The rbc interface works as follows:
+- rbc.h: Constants that defines the considered finite field ;
+- rbc_elt.h: Functions to manipulate elements of GF(2^m) ;
+- rbc_vec.h: Functions to manipulate vectors over GF(2^m).
+- rbc_poly.h: Functions to manipulate polynomials over GF(2^m) ;
+- rbc_qre.h: Functions to manipulate quotient ring elements ;
+- rbc_vspace.h: Functions to manipulate subspaces of GF(2^m) ;
+
+In our reference implementation, the considered fields are GF(2^127), GF(2^151)
+and GF(2^181) for RQC-128, RQC-192 and RQC-256.
+
+4.3 Public key, secret key, ciphertext and shared secret
+
+The public key, secret key and ciphertext are respectively composed of (h, s),
+(x, y) and (u, v, d).  The shared secret is the output of the hash of m, u and
+v using SHA512.  In order to shorten the keys, the public key is stored as
+(seed1, s) and the secret key is stored as (seed2).  To this end, the seed
+expander provided by the NIST was used along with 40 bytes long seeds.
+
+
+5. REFERENCES 
+-------------
+
+[1] Carlos Aguilar, Olivier Blazy, Jean-Christophe Deneuville, Philippe
+Gaborit, and Gilles Zémor. Efficient encryption from random quasi-cyclic codes.
+Cryptology ePrint Archive, Report 2016/1194, 2016.
+
+[2] Dennis Hofheinz, Kathrin Hövelmanns, and Eike Kiltz. A modular analysis of
+the fujisaki-okamoto transformation. Cryptology ePrint Archive, Report
+2017/604, 2017.
+
