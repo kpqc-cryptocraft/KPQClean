@@ -93,9 +93,9 @@ Compile with the following command.
 * HwaJeong Seo: <hwajeong84@gmail.com>
 
 ### Contributers
-* HyeokDong Kwon
-* MinJoo Sim
-* GyeongJu Song
-* MinWoo Lee
-* HwaJeong Seo
+* (Ph.D. student) HyeokDong Kwon
+* (Ph.D. student) MinJoo Sim
+* (Ph.D. student) GyeongJu Song
+* (Master student) MinWoo Lee
+* (Associate professor) HwaJeong Seo
 
