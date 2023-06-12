@@ -6,7 +6,7 @@ This project was inspired by PQClean (<https://github.com/PQClean/PQClean>).
 
 We removed the dependencies of KpqC algorithms and benchmarked them in the same environment (currently on Intel processors).
 
-There are still a lot of works to be done, but current version may provide basic performance comparisons between KpqC algorithms.
+There are still a lot of works to be done, but the current version may provide basic performance comparisons between KpqC algorithms.
 
 
 ## Source code version
