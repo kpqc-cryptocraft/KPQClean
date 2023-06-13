@@ -93,18 +93,58 @@ When updated source code was used, indicate the date the source code was updated
 | SOLMAE-1024			| 70,391,110	| 768,220		| 144,557		|
 
 ## Parameters
+* Unit: Bytes
+* All values come from each white paper.
+* Some values are different from the value written on the source code.
+
 ### PKE/KEM
+| Algorithm     | Pulbic Key     | Secret Key    | Ciphertext    | 
+| ------------- | -------------: | -------------:| -------------:|
+| IPCC-1  		| 3,600	     | 400	         | 322,000	 |
+| IPCC-3 		| 3,600	     | 400	    	 | 322,000	 |
+| IPCC-4		| 3,600	     | 400	         | 322,000	 |
+| NTRUplus-576	| 864		 | 1,728		 | 864		 |
+| NTRUplus-768	| 1,152		 | 2,304		 | 1,152	 |
+| NTRUplus-864	| 1,296		 | 2,592		 | 1,296	 |
+| NTRUplus-1152	| 1,728		 | 3,456		 | 1,728	 |
+| PALOMA-128	| 319,488	 | 93,008 		 | 136		 |
+| PALOMA-192	| 812,032	 | 355,400		 | 240		 |
+| PALOMA-256	| 1,025,024	 | 357,064		 | 240		 |
+| SMAUG-128		| 672 		 | 174		     | 768		 | 
+| SMAUG-192		| 992		 | 185 		     | 1,024	 | 
+| SMAUG-256		| 1,632 	 | 182		     | 1,536	 |
+| TiGER-128		| 544		 | 528		     | 1,024	 | 
+| TiGER-192		| 1,056		 | 1,056		 | 2,048	 | 
+| TiGER-256		| 1,056		 | 1,056 		 | 2,048	 | 
+
 ### Digital Signature
-
-Sign
-Cycle
-PK
-SK
-Signature
-
-WG0 algorithm + descprtion...
-WG1
-WG2
+| Algorithm     | Public Key    | Srcret Key    | Signature     | 
+| ------------- | -------------: | -------------:| -------------:|
+| AIMer-I  				| 33		| 49		| 5,904		|
+| AIMer-III				| 49 		| 73 	    | 13,080 	|
+| AIMer-V				| 65 		| 97	    | 25,152 	|
+| GCKSign-II			| 1,760 	| 288 		| 1,952 	|
+| GCKSign-III			| 1,952 	| 288 		| 2,080		|
+| GCKSign-V				| 3,040 	| 5,444 	| 3,104 	|
+| HAETAE-II				| 1,120 	| 1,536 	| 3,040 	|
+| HAETAE-III			| 1,664 	| 2,272 	| 4,544 	|
+| HAETAE-V				| 2,208 	| 2,944 	| 5,792 	|
+| MQSign-72/46			| 328,411 	| 15,561 	| 134 	    |
+| MQSign-112/72			| 1,238,761 | 37,729 	| 200 	    |
+| MQSign-148/96			| 2,892,961 | 66,421 	| 260 	    |
+| NCCSign-IIo			| 1,564 	| 2,266 	| 2,458 	|
+| NCCSign-IIIo			| 1,997 	| 3,312 	| 3,605 	|
+| NCCSign-Vo			| 2,663 	| 4,402	    | 5,055 	|
+| NCCSign-IIc			| 1,984 	| 2,800 	| 3,186 	|
+| NCCSign-IIIc			| 2,443 	| 3,914 	| 4,251 	|
+| NCCSign-Vc			| 3,091 	| 4,940 	| 5,383 	|
+| Peregrine-512 		| - 	    | - 		| - 		|
+| Peregrine-1024		| - 	    | - 		| -		    |
+| Enhanced pqsigRM-612	| 1,285,120 | 24,592 	| 528   	|
+| Enhanced pqsigRM-613	| 4,194,304 | 331,074 	| 1,040 	|
+| SOLMAE-512			| -     	| -		    | -		    |
+| SOLMAE-1024			| -	        | -		    | -		    |
+* Peregrine and SOLMAE do not specify parameters in the white paper
 
 ## How to use
 ### Compile command
