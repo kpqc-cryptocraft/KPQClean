@@ -144,7 +144,7 @@ When updated source code was used, indicate the date the source code was updated
 | Enhanced pqsigRM-613	| 4,194,304 | 331,074 	| 1,040 	|
 | SOLMAE-512			| -     	| -		    | -		    |
 | SOLMAE-1024			| -	        | -		    | -		    |
-* Peregrine and SOLMAE do not specify parameters in the white paper
+* Peregrine and SOLMAE did not specify parameters in the white paper
 
 ## How to use
 ### Compile command
