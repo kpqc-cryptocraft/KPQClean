@@ -132,12 +132,12 @@ When updated source code was used, indicate the date the source code was updated
 | MQSign-72/46			| 328,411 	| 15,561 	| 134 	    |
 | MQSign-112/72			| 1,238,761 | 37,729 	| 200 	    |
 | MQSign-148/96			| 2,892,961 | 66,421 	| 260 	    |
-| NCCSign-IIo			| 1,564 	| 2,266 	| 2,458 	|
-| NCCSign-IIIo			| 1,997 	| 3,312 	| 3,605 	|
-| NCCSign-Vo			| 2,663 	| 4,402	    | 5,055 	|
-| NCCSign-IIc			| 1,984 	| 2,800 	| 3,186 	|
-| NCCSign-IIIc			| 2,443 	| 3,914 	| 4,251 	|
-| NCCSign-Vc			| 3,091 	| 4,940 	| 5,383 	|
+| NCCSign-I(original)	| 1,564 	| 2,266 	| 2,458 	|
+| NCCSign-III(original)	| 1,997 	| 3,312 	| 3,605 	|
+| NCCSign-V(original)	| 2,663 	| 4,402	    | 5,055 	|
+| NCCSign-I(conserparam)| 1,984 	| 2,800 	| 3,186 	|
+| NCCSign-III(conserparam)| 2,443 	| 3,914 	| 4,251 	|
+| NCCSign-V(conserparam)| 3,091 	| 4,940 	| 5,383 	|
 | Peregrine-512 		| - 	    | - 		| - 		|
 | Peregrine-1024		| - 	    | - 		| -		    |
 | Enhanced pqsigRM-612	| 1,285,120 | 24,592 	| 528   	|
