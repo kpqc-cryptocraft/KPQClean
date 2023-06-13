@@ -22,6 +22,7 @@ When updated source code was used, indicate the date the source code was updated
 5. TiGER: Round 1 Submission.
 6. REDOG: Round 1 Submission.
 7. Layered-ROLLO: Round 1 Submission.
+
 ### Digital Signature
 1. AIMer: Round 1 Submission.
 2. GCKSign: Round 1 Submission.
@@ -35,20 +36,61 @@ When updated source code was used, indicate the date the source code was updated
 
 
 ## Benchmark result
+### Testing Environment
+* OS: Ubuntu 22.04 
+* CPU: Ryzen 7 4800H (2.90 GHz)
+* RAM: 16GB
+* Compiler: gcc 11.3.0
+* Optimization Level: -O2
+* Each algorithms 10,000 iterated, and **average** value of the operation cycle is used.
+
 ### PKE/KEM
+| Algorithm     | Keygen		 | Encapsulation | Decapsulation | 
+| ------------- | -------------: | -------------:| -------------:|
+| IPCC-1  		| 15,006,320	 | 236,123,169	 | 2,859,824	 |
+| IPCC-3 		| 15,411,372	 | 942,886		 | 2,829,830	 |
+| IPCC-4		| 15,265,594	 | 1,137,671	 | 3,248,358	 |
+| NTRUplus-576	| 286,684		 | 112,556		 | 128,076		 |
+| NTRUplus-768	| 283,117		 | 149,447		 | 182,447		 |
+| NTRUplus-864	| 314,850		 | 172,643		 | 216,461		 |
+| NTRUplus-1152	| 791,357		 | 224,529		 | 278,881		 |
+| PALOMA-128	| 124,028,368	 | 512,524 		 | 34,545		 |
+| PALOMA-192	| 123,919,087	 | 511,028		 | 34,376		 |
+| PALOMA-256	| 124,650,597	 | 511,443		 | 34,212		 |
+| SMAUG-128		| 147,834 		 | 158,827		 | 172,337		 | 
+| SMAUG-192		| 200,560		 | 225,867 		 | 245,631		 | 
+| SMAUG-256		| 340,791 		 | 348,204		 | 367,505 		 |
+| TiGER-128		| 174,181		 | 280,960		 | 375,857		 | 
+| TiGER-192		| 195,760		 | 307,019		 | 399,939 		 | 
+| TiGER-256		| 327,364		 | 646,894 		 | 879,634 		 | 
+
 ### Digital Signature
-
-KEM
-Cycle
-PK
-SK
-Ciphertext
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
+| Algorithm     | Keygen		 | Signature | Verification | 
+| ------------- | -------------: | -------------:| -------------:|
+| AIMer-I  				| 147,824		| 3,925,397		| 3,688,437		|
+| AIMer-III				| 309,485 		| 8,173,125 	| 7,712,166 	|
+| AIMer-V				| 712,579 		| 18,213,811 	| 17,515,554 	|
+| GCKSign-II			| 191,048 		| 812,492 		| 175,823 		|
+| GCKSign-III			| 198,099 		| 891,697 		| 180,034 		|
+| GCKSign-V				| 432,874 		| 1,841,754 	| 342,830 		|
+| HAETAE-II				| 1,986,112 	| 14,791,845 	| 2,427,387 	|
+| HAETAE-III			| 4,413,154 	| 41,798,697 	| 5,089,998 	|
+| HAETAE-V				| 6,810,562 	| 37,858,000 	| 7,803,629 	|
+| MQSign-72/46			| 95,242,213 	| 521,368 		| 1,470,313 	|
+| MQSign-112/72			| 490,303,519 	| 1,501,506 	| 5,203,085 	|
+| MQSign-148/96			| 1,492,894,919 | 3,172,366 	| 12,054,509 	|
+| NCCSign-IIo			| 1,891,678 	| 16,626,486 	| 3,723,436 	|
+| NCCSign-IIIo			| 3,689,017 	| 32,444,017 	| 7,265,226 	|
+| NCCSign-Vo			| 6,279,118 	| 43,207,193 	| 12,437,221 	|
+| NCCSign-IIc			| 2,669,077 	| 33,881,336 	| 5,233,430 	|
+| NCCSign-IIIc			| 4,482,423 	| 30,863,557 	| 8,851,645 	|
+| NCCSign-Vc			| 7,246,585 	| 86,158,604 	| 14,356,581 	|
+| Peregrine-512 		| 12,502,738 	| 330,561 		| 37,475 		|
+| Peregrine-1024		| 41,931,477 	| 709,773 		| 80,480 		|
+| Enhanced pqsigRM-612	| 6,175,797,126 | 14,737,341 	| 2,441,347 	|
+| Enhanced pqsigRM-613	| 58,885,289,264| 2,145,199 	| 1,061,605 	|
+| SOLMAE-512			| 29,080,153	| 387,621		| 43,589		|
+| SOLMAE-1024			| 70,391,110	| 768,220		| 144,557		|
 
 ## Parameters
 ### PKE/KEM
