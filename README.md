@@ -15,13 +15,13 @@ There are still a lot of works to be done, but the current version may provide b
 When updated source code was used, indicate the date the source code was updated.
 
 ### PKE/KEM
-1. IPCC: Round 1 Submission.
-2. NTRUplus: Round 1 Submission.
-3. PALOMA: Round 1 Submission.
-4. SMAUG: May. 23rd. (<https://groups.google.com/g/kpqc-bulletin/c/8S0qef2mPSU>)
-5. TiGER: Round 1 Submission.
-6. REDOG: Round 1 Submission.
-7. Layered-ROLLO: Round 1 Submission.
+1. NTRUplus: Round 1 Submission.
+2. PALOMA: Round 1 Submission.
+3. SMAUG: May. 23rd. (<https://groups.google.com/g/kpqc-bulletin/c/8S0qef2mPSU>)
+4. TiGER: Round 1 Submission.
+5. REDOG: Round 1 Submission.
+6. Layered-ROLLO: Round 1 Submission.
+7. IPCC: Round 1 Submission.
 
 ### Digital Signature
 1. AIMer: Round 1 Submission.
@@ -47,9 +47,6 @@ When updated source code was used, indicate the date the source code was updated
 ### PKE/KEM
 | Algorithm     | Keygen		 | Encapsulation | Decapsulation | 
 | ------------- | -------------: | -------------:| -------------:|
-| IPCC-1  		| 15,006,320	 | -         	 | 2,859,824	 |
-| IPCC-3 		| 15,411,372	 | 942,886		 | 2,829,830	 |
-| IPCC-4		| 15,265,594	 | 1,137,671	 | 3,248,358	 |
 | NTRUplus-576	| 286,684		 | 112,556		 | 128,076		 |
 | NTRUplus-768	| 283,117		 | 149,447		 | 182,447		 |
 | NTRUplus-864	| 314,850		 | 172,643		 | 216,461		 |
@@ -63,6 +60,9 @@ When updated source code was used, indicate the date the source code was updated
 | TiGER-128		| 174,181		 | 280,960		 | 375,857		 | 
 | TiGER-192		| 195,760		 | 307,019		 | 399,939 		 | 
 | TiGER-256		| 327,364		 | 646,894 		 | 879,634 		 | 
+| IPCC-1  		| 15,006,320	 | -         	 | 2,859,824	 |
+| IPCC-3 		| 15,411,372	 | 942,886		 | 2,829,830	 |
+| IPCC-4		| 15,265,594	 | 1,137,671	 | 3,248,358	 |
 
 ### Digital Signature
 | Algorithm     | Keygen		 | Signature | Verification | 
