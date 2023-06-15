@@ -47,7 +47,7 @@ When updated source code was used, indicate the date the source code was updated
 ### PKE/KEM
 | Algorithm     | Keygen		 | Encapsulation | Decapsulation | 
 | ------------- | -------------: | -------------:| -------------:|
-| IPCC-1  		| 15,006,320	 | 236,123,169	 | 2,859,824	 |
+| IPCC-1  		| 15,006,320	 | -         	 | 2,859,824	 |
 | IPCC-3 		| 15,411,372	 | 942,886		 | 2,829,830	 |
 | IPCC-4		| 15,265,594	 | 1,137,671	 | 3,248,358	 |
 | NTRUplus-576	| 286,684		 | 112,556		 | 128,076		 |
