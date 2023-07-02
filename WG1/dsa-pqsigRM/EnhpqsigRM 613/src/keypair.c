@@ -47,7 +47,7 @@ crypto_sign_keypair(unsigned char *pk, unsigned char *sk){
 	uint8_t is_odd = 0;
 	while(1){
 		randombytes((unsigned char*)(Grep->elem), Grep->alloc_size);
-		printf("asdf %d \n", Grep->alloc_size);
+		
 		dual(Grep, Hrep, 0, 0);
 		for (uint32_t i = 0; i < K_REP; i++)
 		{	

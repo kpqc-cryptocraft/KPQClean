@@ -56,8 +56,6 @@ int _aimer_sign(const aimer_instance_t*   instance,
   const size_t tau              = instance->num_repetitions;
   const size_t N                = instance->num_MPC_parties;
 
-printf("block: %d \n", block_size);
-printf("field %d \n", instance->field_size);
   int ret = 0;
   GF *sbox_pairs;
   GF input_GF = {0,};
