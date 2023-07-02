@@ -7,7 +7,7 @@
 #include "src/api.h"
 
 
-#define TEST_LOOP 10
+#define TEST_LOOP 20
 
 uint64_t t[TEST_LOOP];
 
