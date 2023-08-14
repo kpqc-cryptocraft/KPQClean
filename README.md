@@ -351,7 +351,7 @@ Compile with the following command.
 Compile with the following command.
 
     make
-    clean
+    make clean
 
 ## Contact
 * HyeokDong Kwon: <korlethean@gmail.com>
@@ -362,5 +362,6 @@ Compile with the following command.
 * (Ph.D. student) MinJoo Sim
 * (Ph.D. student) GyeongJu Song
 * (Master student) MinWoo Lee
+* (Master student) SangWong Kim
 * (Associate professor) HwaJeong Seo
 
