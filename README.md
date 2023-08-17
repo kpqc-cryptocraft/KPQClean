@@ -53,7 +53,7 @@ When updated source code was used, indicate the date the source code was updated
 ### Benchmark method
 * We used 'rdtsc' instruction to calculate time consumption.
 * Each algorithms 10,000 iterated, and **average**, **median** value of the operation cycle is used.
-* MQSign was 100 iterated, and Enhanced pqsigRM was 10 iterated.
+* Enhanced pqsigRM was 100 iterated.
 
 ### PKE/KEM (Environment1, -O2)
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
