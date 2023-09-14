@@ -264,6 +264,7 @@ When updated source code was used, indicate the date the source code was updated
 We checked for memory leaks using the [Valgrind](https://valgrind.org/) tool.
 The experiment method followed the [memory leak detection method](https://valgrind.org/docs/manual/quick-start.html) provided by Valgrind.
 The experiment was conducted in Environment 2, and the number of algorithm repetitions was fixed to 1 when testing for memory leaks.
+
 As a result of the inspection, memory leaks were found in **three** algorithms.
 More details can be found in the valgrind report.
 * Command used for testing: valgrind --leak-check=full --track-origins=yes --log-file=_valgrind_report.txt ./PQC_bench
@@ -344,11 +345,11 @@ Change stack limit before compile.
 To change SMAUG scheme, change -DSMAUG_MODE(=1, 3, 5) value at Makefile.
 #### HAETAE
 To change HAETAE scheme, modify #define HAETAE_MODE(=2, 3, 5) macro in config.h before compile.
-### MQ-Sign
+#### MQ-Sign
 To change MQ-Sign scheme, comment out any other define macros except for the desired MQSign at mqc_config.h file.
-### Peregrine
+#### Peregrine
 To change Peregrine scheme, change the logn(=9, 10) value at PQC_bench.c file.
-### NCCSign
+#### NCCSign
 Compile with the following command.
 
     make PQC_bench2
@@ -363,6 +364,12 @@ Compile with the following command.
 
     make
     make clean
+
+#### Layered-ROLLO
+Compile through python file. Before try to compile codes, you must first configure python3 to be executable with python.
+
+    (optional) alias python=python3
+    python rbc-lib.py
 
 ## Contact
 * HyeokDong Kwon: <korlethean@gmail.com>
