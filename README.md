@@ -74,9 +74,9 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1  				| 14,362,627	 		| ~~164,892,550~~		| 2,484,981				| 14,376,006			| ~~239,300,607~~		| 2,501,514				|
 | Code			| IPCC-3		 		| 14,170,647	 		| 898,710		 		| 2,619,570				| 14,178,752			| 941,012				| 2,633,907				|
 | Code			| IPCC-4				| 14,209,594	 		| 1,075,059	 			| 2,904,524				| 14,245,778			| 1,135,740				| 2,935,161				|
-| Code			| Layered ROLLO I-128	| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		|
-| Code			| Layered ROLLO I-192	| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		|
-| Code			| Layered ROLLO I-256	| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		| *Not yet tested*		|
+| Code			| Layered ROLLO I-128	| 277,340        		| 90,740        		| 717,328        		| 351,626          		| 114,449        		| 772,443        		|
+| Code			| Layered ROLLO I-192	| 289,590        		| 118,572        		| 743,008        		| 331,838        		| 133,605        		| 784,690        		|
+| Code			| Layered ROLLO I-256	| 434,745               | 161,885        		| 1,511,441        		| 471,471        		| 173,705        		| 1,635,876        		|
 
 ### PKE/KEM (Environment1, -O3)
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
@@ -120,9 +120,9 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1            	| 13,792,887          	| ~~159,126,951~~       | 1,196,157            	| 13,896,694         | ~~231,010,613~~      | 1,259,215             |
 | Code			| IPCC-3           		| 13,754,219          	| 870,059              	| 1,235,991            	| 13,864,988         | 922,755            	| 1,307,538             |
 | Code			| IPCC-4            	| 13,754,687          	| 1,050,451             | 1,318,173             | 13,851,205         | 1,151,306            | 1,380,740             |
-| Code			| Layered ROLLO I-128   | *Not yet tested*      | *Not yet tested*      | *Not yet tested*      | *Not yet tested*   | *Not yet tested*     | *Not yet tested*      |
-| Code			| Layered ROLLO I-192   | *Not yet tested*      | *Not yet tested*      | *Not yet tested*      | *Not yet tested*   | *Not yet tested*     | *Not yet tested*      |
-| Code			| Layered ROLLO I-256   | *Not yet tested*      | *Not yet tested*      | *Not yet tested*      | *Not yet tested*   | *Not yet tested*     | *Not yet tested*      |
+| Code			| Layered ROLLO I-128   | 202,758               | 62,030                | 558,840               | 215,760            | 64,559               | 576,960               |
+| Code			| Layered ROLLO I-192   | 228,886               | 91,873                | 671,123               | 249,008            | 111,432              | 729,217               |
+| Code			| Layered ROLLO I-256   | 366,457               | 147,787               | 1,250,353             | 380,951            | 169,633              | 1,319,272             |
 
 ### PKE/KEM (Environment2, -O3)
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
@@ -259,6 +259,17 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| SOLMAE-1024 				| 53,245,753 		| 668,103 			| 149,168 				| 67,369,725 		| 686,523		 	| 154,073			|
 | Code					| pqsigRM-613 				| 4,702,612,115 	| 4,732,706 		| 2,064,731 			| 4,703,836,987 	| 6,667,564 		| 2,458,625			|
 | Code					| pqsigRM-612 				| 71,111,088,778 	| 923,513 			| 417,658 				| 71,168,430,985 	| 1,166,665 		| 502,448			|
+
+## Memory leak detection
+We checked for memory leaks using the [Valgrind](https://valgrind.org/) tool.
+The experiment method followed the [memory leak detection method](https://valgrind.org/docs/manual/quick-start.html) provided by Valgrind.
+The experiment was conducted in Environment 2, and the number of algorithm repetitions was fixed to 1 when testing for memory leaks.
+As a result of the inspection, memory leaks were found in **three** algorithms.
+More details can be found in the valgrind report.
+* Command used for testing: valgrind --leak-check=full --track-origins=yes --log-file=_valgrind_report.txt ./PQC_bench
+* REDOG: Valgrind only targets programs written in C language. REDOG could not be tested because it is only provided in python.
+* FIBS: The algorithm calculation has not been completed. So we couldn't test.
+
 
 
 ## Parameters
