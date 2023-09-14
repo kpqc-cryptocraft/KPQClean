@@ -1,0 +1,17 @@
+==150429== Memcheck, a memory error detector
+==150429== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==150429== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==150429== Command: ./PQC_bench
+==150429== Parent PID: 68730
+==150429== 
+==150429== Warning: client switching stacks?  SP change: 0x1ffeb8ac00 --> 0x1ffed99968
+==150429==          to suppress, use: --max-stackframe=2157928 or greater
+==150429== 
+==150429== HEAP SUMMARY:
+==150429==     in use at exit: 0 bytes in 0 blocks
+==150429==   total heap usage: 2,415 allocs, 2,415 frees, 2,319,304 bytes allocated
+==150429== 
+==150429== All heap blocks were freed -- no leaks are possible
+==150429== 
+==150429== For lists of detected and suppressed errors, rerun with: -s
+==150429== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

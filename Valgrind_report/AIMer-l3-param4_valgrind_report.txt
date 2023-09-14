@@ -1,0 +1,15 @@
+==158427== Memcheck, a memory error detector
+==158427== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==158427== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==158427== Command: ./PQC_bench
+==158427== Parent PID: 68730
+==158427== 
+==158427== 
+==158427== HEAP SUMMARY:
+==158427==     in use at exit: 0 bytes in 0 blocks
+==158427==   total heap usage: 643 allocs, 643 frees, 30,485,060 bytes allocated
+==158427== 
+==158427== All heap blocks were freed -- no leaks are possible
+==158427== 
+==158427== For lists of detected and suppressed errors, rerun with: -s
+==158427== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

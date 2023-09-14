@@ -1,0 +1,23 @@
+==152518== Memcheck, a memory error detector
+==152518== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==152518== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==152518== Command: ./PQC_bench
+==152518== Parent PID: 68730
+==152518== 
+==152518== Conditional jump or move depends on uninitialised value(s)
+==152518==    at 0x10BBF6: CipherDigitValue (in /home/hd/kpqclean-Round_valgrind/pke-IPCC/IPCC_f1/PQC_bench)
+==152518==    by 0x109AAE: crypto_encrypt_open (in /home/hd/kpqclean-Round_valgrind/pke-IPCC/IPCC_f1/PQC_bench)
+==152518==    by 0x1095EB: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-IPCC/IPCC_f1/PQC_bench)
+==152518==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-IPCC/IPCC_f1/PQC_bench)
+==152518==  Uninitialised value was created by a stack allocation
+==152518==    at 0x109336: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-IPCC/IPCC_f1/PQC_bench)
+==152518== 
+==152518== 
+==152518== HEAP SUMMARY:
+==152518==     in use at exit: 0 bytes in 0 blocks
+==152518==   total heap usage: 7,195 allocs, 7,195 frees, 6,915,208 bytes allocated
+==152518== 
+==152518== All heap blocks were freed -- no leaks are possible
+==152518== 
+==152518== For lists of detected and suppressed errors, rerun with: -s
+==152518== ERROR SUMMARY: 1208 errors from 1 contexts (suppressed: 0 from 0)

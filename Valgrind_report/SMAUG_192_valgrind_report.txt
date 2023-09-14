@@ -1,0 +1,170 @@
+==156296== Memcheck, a memory error detector
+==156296== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==156296== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==156296== Command: ./PQC_bench
+==156296== Parent PID: 68730
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x4848842: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==156296==    by 0x10D006: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10ED69: cmov (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E200: bytes_to_Sx_vec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D024: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10ED8D: cmov (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E200: bytes_to_Sx_vec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D024: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Use of uninitialised value of size 8
+==156296==    at 0x10ED75: cmov (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E200: bytes_to_Sx_vec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D024: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10E2A1: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Use of uninitialised value of size 8
+==156296==    at 0x10E2BC: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a heap allocation
+==156296==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==156296==    by 0x10D006: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10E2D1: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10E2DE: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Use of uninitialised value of size 8
+==156296==    at 0x10E2E0: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Use of uninitialised value of size 8
+==156296==    at 0x10E2F4: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a heap allocation
+==156296==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==156296==    by 0x10D006: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10E309: poly_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10E64F: vec_vec_mult_add (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10CC7B: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10CCE7: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Use of uninitialised value of size 8
+==156296==    at 0x10CD42: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10CD56: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== Conditional jump or move depends on uninitialised value(s)
+==156296==    at 0x10CD68: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==    by 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296==  Uninitialised value was created by a stack allocation
+==156296==    at 0x10CB6E: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+==156296== 
+==156296== 
+==156296== HEAP SUMMARY:
+==156296==     in use at exit: 0 bytes in 0 blocks
+==156296==   total heap usage: 37 allocs, 37 frees, 32,706 bytes allocated
+==156296== 
+==156296== All heap blocks were freed -- no leaks are possible
+==156296== 
+==156296== For lists of detected and suppressed errors, rerun with: -s
+==156296== ERROR SUMMARY: 51357 errors from 15 contexts (suppressed: 0 from 0)

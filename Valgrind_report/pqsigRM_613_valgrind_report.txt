@@ -1,0 +1,59 @@
+==151672== Memcheck, a memory error detector
+==151672== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==151672== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==151672== Command: ./PQC_bench
+==151672== Parent PID: 68730
+==151672== 
+==151672== Warning: client switching stacks?  SP change: 0x1ffebf93c0 --> 0x1ffefffde8
+==151672==          to suppress, use: --max-stackframe=4221480 or greater
+==151672== 
+==151672== HEAP SUMMARY:
+==151672==     in use at exit: 35,832 bytes in 39 blocks
+==151672==   total heap usage: 49,697 allocs, 49,658 frees, 102,992,241 bytes allocated
+==151672== 
+==151672== 29 bytes in 1 blocks are definitely lost in loss record 2 of 9
+==151672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==151672==    by 0x10ADE3: hash_message (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10F87D: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10960E: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672== 
+==151672== 40 (24 direct, 16 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 9
+==151672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==151672==    by 0x10DDC5: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x11033C: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10957B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672== 
+==151672== 899 bytes in 31 blocks are definitely lost in loss record 4 of 9
+==151672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==151672==    by 0x10ADE3: hash_message (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x1103B0: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10957B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672== 
+==151672== 1,048 (24 direct, 1,024 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 9
+==151672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==151672==    by 0x10DDC5: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10D9A9: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672== 
+==151672== 1,048 (24 direct, 1,024 indirect) bytes in 1 blocks are definitely lost in loss record 8 of 9
+==151672==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==151672==    by 0x10DDC5: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x110427: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10957B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+==151672== 
+==151672== LEAK SUMMARY:
+==151672==    definitely lost: 1,000 bytes in 35 blocks
+==151672==    indirectly lost: 2,064 bytes in 3 blocks
+==151672==      possibly lost: 0 bytes in 0 blocks
+==151672==    still reachable: 32,768 bytes in 1 blocks
+==151672==         suppressed: 0 bytes in 0 blocks
+==151672== Reachable blocks (those to which a pointer was found) are not shown.
+==151672== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==151672== 
+==151672== For lists of detected and suppressed errors, rerun with: -s
+==151672== ERROR SUMMARY: 5 errors from 5 contexts (suppressed: 0 from 0)
