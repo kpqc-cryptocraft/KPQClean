@@ -56,6 +56,9 @@ When updated source code was used, indicate the date the source code was updated
 * Enhanced pqsigRM was 100 iterated.
 
 ### PKE/KEM (Environment1, -O2)
+<details>
+<summary>PKE/KEM-Env1-O2 Table</summary>
+    
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
 | -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
 | Lattice		| NTRUplus-576			| 208,742		 		| 111,998				| 128,093		 		| 286,443				| 112,614				| 128,670				|
@@ -77,8 +80,12 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| Layered ROLLO I-128	| 277,340        		| 90,740        		| 717,328        		| 351,626          		| 114,449        		| 772,443        		|
 | Code			| Layered ROLLO I-192	| 289,590        		| 118,572        		| 743,008        		| 331,838        		| 133,605        		| 784,690        		|
 | Code			| Layered ROLLO I-256	| 434,745               | 161,885        		| 1,511,441        		| 471,471        		| 173,705        		| 1,635,876        		|
+</details>
 
 ### PKE/KEM (Environment1, -O3)
+<details>
+<summary>PKE/KEM-Env1-O3 Table</summary>
+    
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
 | -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
 | Lattice		| NTRUplus-576			| 202,652		 		| 110,026				| 121,742		 		| 287,810				| 110,910				| 123,929				|
@@ -100,8 +107,12 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| Layered ROLLO I-128	| 285,940				| 83,346				| 788,104				| 296,880				| 84,198				| 805,790				|
 | Code			| Layered ROLLO I-192	| 320,958				| 136,503				| 1,014,203				| 345,689				| 149,843				| 1,110,378				|
 | Code			| Layered ROLLO I-256	| 687,721				| 201,913				| 1,945,871				| 700,284				| 207,030				| 1,948,662				|
+</details>
 
 ### PKE/KEM (Environment2, -O2)
+<details>
+<summary>PKE/KEM-Env2-O2 Table</summary>
+    
 | Type			| Algorithm          	| Keygen(Med.)         	| Encapsulation(Med.)   | Decapsulation(Med.)   |  Keygen(Avr.)      | Encapsulation(Avr.)	| Decapsulation(Avr.)	|
 | -------------:| -------------:      	| -------------:       	| -------------:      	| -------------:      	| -------------:     | -------------:      	| -------------:      	|
 | Lattice		| NTRUplus-576       	| 186,944             	| 105,686             	| 120,194             	| 271,460            | 121,722             	| 132,428             	|
@@ -123,8 +134,12 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| Layered ROLLO I-128   | 202,758               | 62,030                | 558,840               | 215,760            | 64,559               | 576,960               |
 | Code			| Layered ROLLO I-192   | 228,886               | 91,873                | 671,123               | 249,008            | 111,432              | 729,217               |
 | Code			| Layered ROLLO I-256   | 366,457               | 147,787               | 1,250,353             | 380,951            | 169,633              | 1,319,272             |
+</details>
 
 ### PKE/KEM (Environment2, -O3)
+<details>
+<summary>PKE/KEM-Env2-O3 Table</summary>
+    
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
 | -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
 | Lattice		| NTRUplus-576			| 177,748 		 		| 102,296				| 111,820		 		| 258,761				| 117,949				| 124,783				|
@@ -146,8 +161,12 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| Layered ROLLO I-128	| 203,181				| 66,529				| 558,503				| 231,523				| 77,774				| 602,966				|
 | Code			| Layered ROLLO I-192	| 227,813				| 102,758				| 671,605				| 255,243				| 125,567				| 761,739				|
 | Code			| Layered ROLLO I-256	| 375,056				| 136,052 				| 1,245,346				| 455,911				| 146,919				| 1,337,504				|
+</details>
 
 ### Digital Signature (Environment1, -O2)
+<details>
+<summary>Digital Signature-Env1-O2 Table</summary>
+    
 | Type					| Algorithm     		| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 		| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
 | Zero-knowledge		| AIMer-I-param1    	| 64,844  			| 3,214,955  		| 2,592,455 			| 68,995 			| 3,257,540  		| 2,683,305  		|
@@ -183,8 +202,12 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| SOLMAE-1024			| 55,350,546		| 760,380			| 141,375				| 70,141,847 		| 764,304			| 142,357			|
 | Code					| Enhanced pqsigRM-612	| 6,013,112,315 	| 7,210,560 		| 2,223,401 			| 5,970,970,554		| 9,823,994			| 2,303,399			|
 | Code					| Enhanced pqsigRM-613	| 58,238,108,879	| 1,864,512 		| 1,053,034 			| 58,669,322,672	| 2,650,133			| 1,064,763			|
+</details>
 
 ### Digital Signature (Environment1, -O3)
+<details>
+<summary>Digital Signature-Env1-O3 Table</summary>
+    
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
 | Zero-knowledge		| AIMer-I-param1    	| 147,059  			| 3,213,041  		| 2,648,860 			| 163,284 			| 3,935,749  		| 2,786,447  		|
@@ -220,8 +243,12 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| SOLMAE-1024 				| 53,966,332 		| 698,581 			| 135,256 				| 68,603,714 		| 702,006 			| 136,193			|
 | Code					| pqsigRM-613 				| 6,139,551,981 	| 4,610,319 		| 2,278,806 			| 6,144,274,759 	| 6,276,554 		| 2,376,095			|
 | Code					| pqsigRM-612 				| 54,994,439,928 	| 714,647 			| 225,577 				| 55,073,661,751 	| 967,439 			| 234,553			|
+</details>
 
 ### Digital Signature (Environment2, -O2)
+<details>
+<summary>Digital Signature-Env2-O2 Table</summary>
+    
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
 | Zero-knowledge		| AIMer-I-param1    	| 63,933   			| 3,600,037  		| 2,793,252  			| 72,446  			| 3,888,113  		| 3,056,785  		|
@@ -257,9 +284,12 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| SOLMAE-1024 				| 52,388,360 		| 706,028 			| 152,984 				| 65,688,581 		| 729,400 			| 158,540			|
 | Code					| pqsigRM-613 				| 4,961,556,899 	| 7,505,040 		| 2,125,125 			| 4,973,260,518 	| 10,823,438 		| 2,645,728			|
 | Code					| pqsigRM-612 				| 74,021,054,015 	| 2,113,913 		| 1,126,131 			| 73,941,690,821 	| 2,765,068 		| 1,295,161			|
-
+</details>
 
 ### Digital Signature (Environment2, -O3)
+<details>
+<summary>Digital Signature-Env2-O3 Table</summary>
+    
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
 | Zero-knowledge		| AIMer-I-param1    	| 78,212   			| 3,799,913 		| 3,125,105  			| 94,251  			| 4,000,548 		| 3,318,324   		|
@@ -295,6 +325,7 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| SOLMAE-1024 				| 53,245,753 		| 668,103 			| 149,168 				| 67,369,725 		| 686,523		 	| 154,073			|
 | Code					| pqsigRM-613 				| 4,702,612,115 	| 4,732,706 		| 2,064,731 			| 4,703,836,987 	| 6,667,564 		| 2,458,625			|
 | Code					| pqsigRM-612 				| 71,111,088,778 	| 923,513 			| 417,658 				| 71,168,430,985 	| 1,166,665 		| 502,448			|
+</details>
 
 ## Memory leak detection
 We checked for memory leaks using the [Valgrind](https://valgrind.org/) tool.
