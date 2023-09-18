@@ -24,7 +24,7 @@ When updated source code was used, indicate the date the source code was updated
 7. IPCC: Round 1 Submission.
 
 ### Digital Signature
-1. AIMer: Round 1 Submission.
+1. AIMer: June. 23rd. (<https://groups.google.com/g/kpqc-bulletin/c/mIjGH2fKMeE>)
 2. GCKSign: Round 1 Submission.
 3. HAETAE: May. 2nd. (<https://groups.google.com/g/kpqc-bulletin/c/Xtnsjrai83s>)
 4. MQSign: Round 1 Submission.
@@ -150,9 +150,18 @@ When updated source code was used, indicate the date the source code was updated
 ### Digital Signature (Environment1, -O2)
 | Type					| Algorithm     		| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 		| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
-| Zero-knowledge		| AIMer-I  				| 145,058			| 3,912,361			| 3,669,834				| 156,204			| 3,966,517			| 3,701,498			|
-| Zero-knowledge		| AIMer-III				| 296,496 			| 8,001,274 		| 7,550,063 			| 315,810			| 8,033,590			| 7,548,322			|
-| Zero-knowledge		| AIMer-V				| 710,442 			| 18,068,276 		| 17,415,022 			| 730,960			| 18,077,211		| 17,421,527		|
+| Zero-knowledge		| AIMer-I-param1    	| 64,844  			| 3,214,955  		| 2,592,455 			| 68,995 			| 3,257,540  		| 2,683,305  		|
+| Zero-knowledge		| AIMer-I-param2    	| 64,206   			| 6,844,783   		| 6,397,821  			| 64,845 			| 6,852,149 		| 6,402,617 		|
+| Zero-knowledge		| AIMer-I-param3    	| 196,968  			| 21,907,209   		| 21,271,413 			| 180,191 			| 22,746,073  		| 21,333,772 		|
+| Zero-knowledge		| AIMer-I-param4    	| 197,084  			| 112,105,141  		| 110,507,502  			| 209,231 			| 112,773,321 		| 110,496,781 		|
+| Zero-knowledge		| AIMer-III-param1    	| 327,990  			| 7,423,203 		| 6,260,694  			| 313,110 			| 7,994,873 		| 6,270,172 		|
+| Zero-knowledge		| AIMer-III-param2    	| 261,638  			| 17,831,955   		| 17,154,936 			| 266,723 			| 18,682,928 		| 17,595,524 		|
+| Zero-knowledge		| AIMer-III-param3    	| 261,754  			| 53,637,298  		| 52,191,257  			| 297,101 			| 54,790,721 		| 52,882,465 		|
+| Zero-knowledge		| AIMer-III-param4    	| 356,860  			| 258,710,378   	| 253,439,135  			| 340,142 			| 262,793,446 		| 253,809,391 		|
+| Zero-knowledge		| AIMer-V-param1    	| 738,355 			| 14,246,874 		| 12,776,516 			| 811,474 			| 14,722,314  		| 12,826,943  		|
+| Zero-knowledge		| AIMer-V-param2    	| 737,572  			| 34,973,565 		| 33,936,612 			| 691,135 			| 36,019,115 		| 33,942,184 		|
+| Zero-knowledge		| AIMer-V-param3    	| 240,251  			| 104,590,385 		| 101,833,457   		| 256,019  			| 105,383,550  		| 102,296,025 		|
+| Zero-knowledge		| AIMer-V-param4    	| 240,352 			| 501,582,289 		| 491,070,862 			| 245,309 			| 504,155,885 		| 492,179,959 		|
 | Multivariate Quadratic| MQSign-72/46			| 94,788,559 		| 516,954 			| 1,461,281 			| 94,829,257		| 518,651			| 1,465,923			|
 | Multivariate Quadratic| MQSign-112/72			| 488,913,828 		| 1,493,703 		| 5,211,909 			| 490,448,324		| 1,513,132			| 5,258,218			|
 | Multivariate Quadratic| MQSign-148/96			| 1,488,480,956 	| 3,162,943 		| 12,036,827 			| 1,488,377,972		| 3,164,654			| 12,041,118		|
@@ -178,9 +187,18 @@ When updated source code was used, indicate the date the source code was updated
 ### Digital Signature (Environment1, -O3)
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
-| Zero-knowledge		| AIMER-I 					| 145,986 			| 3,878,272 		| 3,672,923 			| 156,213 			| 4,077,840 		| 4,384,331			|
-| Zero-knowledge		| AIMER-III 				| 296,032 			| 8,087,462 		| 7,678,098 			| 307,498 			| 8,364,809 		| 7,740,701			|
-| Zero-knowledge		| AIMER-V 					| 713,922 			| 17,983,857 		| 17,361,691 			| 817,056 			| 18,096,797 		| 17,472,521		|
+| Zero-knowledge		| AIMer-I-param1    	| 147,059  			| 3,213,041  		| 2,648,860 			| 163,284 			| 3,935,749  		| 2,786,447  		|
+| Zero-knowledge		| AIMer-I-param2    	| 115,870  			| 6,846,958   		| 6,512,008  			| 115,683 			| 7,396,703 		| 6,687,261 		|
+| Zero-knowledge		| AIMer-I-param3    	| 74,284   			| 22,706,812   		| 21,993,890 			| 76,777 			| 23,169,641 		| 22,295,683 		|
+| Zero-knowledge		| AIMer-I-param4    	| 64,453  			| 110,355,455  		| 107,146,199  			| 65,526 			| 110,667,942  		| 107,713,292 		|
+| Zero-knowledge		| AIMer-III-param1    	| 116,116  			| 7,694,773 		| 6,410,653  			| 120,704 			| 7,780,833 		| 6,488,682 		|
+| Zero-knowledge		| AIMer-III-param2    	| 116,145 			| 18,202,285    	| 17,165,796  			| 119,301  			| 18,388,655 		| 17,252,906 		|
+| Zero-knowledge		| AIMer-III-param3    	| 116,551  			| 53,836,586  		| 52,181,817  			| 122,702 			| 54,514,121  		| 53,041,857 		|
+| Zero-knowledge		| AIMer-III-param4    	| 356,860   		| 258,266,315    	| 253,500,513  			| 359,030  			| 261,570,537 		| 253,557,101 		|
+| Zero-knowledge		| AIMer-V-param1    	| 610,871  			| 13,023,538 		| 11,387,575 			| 639,510 			| 13,639,884  		| 11,622,084  		|
+| Zero-knowledge		| AIMer-V-param2    	| 238,728 			| 31,846,684 		| 30,674,402 			| 241,070 			| 32,085,621 		| 30,810,554 		|
+| Zero-knowledge		| AIMer-V-param3    	| 655,096   		| 95,848,132		| 92,529,097   			| 650,057  			| 96,079,292  		| 92,629,544 		|
+| Zero-knowledge		| AIMer-V-param4    	| 733,294 			| 460,721,275 		| 450,173,931 			| 689,891 			| 461,929,400 		| 450,233,261 		|
 | Multivariate Quadratic| MQSign-72/46 				| 39,040,917 		| 311,112 			| 512,227 				| 39,057,616 		| 312,293 			| 514,042			|
 | Multivariate Quadratic| MQSign-112/72 			| 115,942,827 		| 669,465 			| 1,143,296 			| 116,040,569 		| 672,499 			| 1,147,066			|
 | Multivariate Quadratic| MQSign-148/96 			| 235,289,035 		| 1,186,622 		| 1,943,667 			| 235,425,321 		| 1,190,984 		| 1,952,355			|
@@ -206,9 +224,18 @@ When updated source code was used, indicate the date the source code was updated
 ### Digital Signature (Environment2, -O2)
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
-| Zero-knowledge		| AIMER-I					| 145,566 			| 3,691,256 		| 3,713,173 			| 159,391 			| 3,845,843 		| 4,018,047			|
-| Zero-knowledge		| AIMER-III					| 274,358 			| 7,771,108 		| 7,366,672 			| 304,919 			| 7,863,536 		| 7,438,953			|
-| Zero-knowledge		| AIMER-V 					| 790,456 			| 18,394,069 		| 17,662,359 			| 899,383 			| 18,802,192 		| 18,080,181		|
+| Zero-knowledge		| AIMer-I-param1    	| 63,933   			| 3,600,037  		| 2,793,252  			| 72,446  			| 3,888,113  		| 3,056,785  		|
+| Zero-knowledge		| AIMer-I-param2    	| 63,375  			| 6,728,396   		| 6,558,491   			| 74,279 			| 7,104,050 		| 6,950,607 		|
+| Zero-knowledge		| AIMer-I-param3    	| 120,915  			| 22,519,566   		| 25,863,759 			| 119,094  			| 24,752,954 		| 26,935,070 		|
+| Zero-knowledge		| AIMer-I-param4    	| 84,224   			| 123,016,593   	| 108,085,442  			| 86,537 			| 126,913,831  		| 108,341,338 		|
+| Zero-knowledge		| AIMer-III-param1    	| 114,714  			| 7,621,547 		| 6,673,509 			| 140,583 			| 7,988,598 		| 7,168,685 		|
+| Zero-knowledge		| AIMer-III-param2    	| 128,547  			| 22,253,030    	| 21,664,782   			| 148,248  			| 22,709,547  		| 23,870,182 		|
+| Zero-knowledge		| AIMer-III-param3    	| 113,296 			| 66,283,625  		| 61,548,453  			| 139,246			| 69,010,295 		| 63,563,735  		|
+| Zero-knowledge		| AIMer-III-param4    	| 149,336   		| 266,763,260    	| 258,358,771 			| 168,673  			| 286,982,536  		| 257,978,901  		|
+| Zero-knowledge		| AIMer-V-param1    	| 238,347   		| 15,905,602 		| 16,312,363 			| 274,861 			| 17,713,665  		| 17,977,624 		|
+| Zero-knowledge		| AIMer-V-param2    	| 241,737 			| 44,685,871 		| 44,863,206  			| 275,707  			| 43,701,933 		| 45,656,757 		|
+| Zero-knowledge		| AIMer-V-param3    	| 299,868    		| 108,834,414 		| 106,217,782   		| 331,971 			| 113,095,802  		| 118,492,622 		|
+| Zero-knowledge		| AIMer-V-param4    	| 283,645  			| 543,695,192 		| 513,685,715 			| 299,150 			| 556,632,059 		| 514,419,680 		|
 | Multivariate Quadratic| MQSign-72/46 				| 87,038,447 		| 509,630 			| 1,377,392 			| 87,156,508 		| 527,234 			| 1,411,202			|
 | Multivariate Quadratic| MQSign-112/72 			| 448,271,119 		| 1,472,032 		| 4,808,216 			| 448,141,266 		| 1,500,297 		| 4,875,532			|
 | Multivariate Quadratic| MQSign-148/96 			| 1,326,638,494 	| 3,128,536 		| 11,091,036 			| 1,328,649,536 	| 3,150,219 		| 11,143,601		|
@@ -235,9 +262,18 @@ When updated source code was used, indicate the date the source code was updated
 ### Digital Signature (Environment2, -O3)
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
-| Zero-knowledge		| AIMER-I 					| 133,130 			| 3,960,345 		| 3,747,101 			| 143,746 			| 4,070,924 		| 3,834,717			|
-| Zero-knowledge		| AIMER-III 				| 272,484 			| 8,440,184 		| 7,968,982 			| 282,896 			| 8,530,553 		| 8,041,509			|
-| Zero-knowledge		| AIMER-V 					| 643,253 			| 17,998,305 		| 17,373,174 			| 662,744 			| 18,202,241 		| 17,455,874		|	
+| Zero-knowledge		| AIMer-I-param1    	| 78,212   			| 3,799,913 		| 3,125,105  			| 94,251  			| 4,000,548 		| 3,318,324   		|
+| Zero-knowledge		| AIMer-I-param2    	| 62,013   			| 8,202,991   		| 7,719,642 			| 67,545 			| 8,623,032  		| 8,299,636 		|
+| Zero-knowledge		| AIMer-I-param3    	| 59,949   			| 28,891,133   		| 26,007,825  			| 73,077  			| 29,338,289 		| 25,865,036  		|
+| Zero-knowledge		| AIMer-I-param4    	| 59,132   			| 125,595,827   	| 111,966,098  			| 73,953  			| 127,933,918 		| 118,860,248 		|
+| Zero-knowledge		| AIMer-III-param1    	| 150,830 			| 9,550,533 		| 8,247,989  			| 167,334 			| 9,563,875			| 8,456,415  		|
+| Zero-knowledge		| AIMer-III-param2    	| 111,755   		| 22,535,406    	| 22,149,494    		| 131,077  			| 22,879,148   		| 22,107,888 		|
+| Zero-knowledge		| AIMer-III-param3    	| 109,995  			| 67,033,442 		| 54,668,451  			| 136,612 			| 66,512,279 		| 57,154,915  		|
+| Zero-knowledge		| AIMer-III-param4    	| 141,443   		| 271,749,297     	| 266,189,006 			| 165,637  			| 284,501,178 		| 267,296,086  		|
+| Zero-knowledge		| AIMer-V-param1    	| 255,129    		| 14,687,409 		| 13,724,601 			| 295,481 			| 16,357,037 		| 15,402,041  		|
+| Zero-knowledge		| AIMer-V-param2    	| 285,212  			| 43,671,802 		| 34,428,290 			| 294,113  			| 43,211,961		| 35,975,358  		|
+| Zero-knowledge		| AIMer-V-param3    	| 290,019    		| 115,523,707 		| 109,326,832   		| 292,918 			| 122,646,177  		| 109,994,189  		|
+| Zero-knowledge		| AIMer-V-param4    	| 243,628   		| 557,052,072  		| 521,735,231 			| 313,602  			| 581,221,074 		| 526,630,666  		|	
 | Multivariate Quadratic| MQSign-72/46 				| 38,474,591 		| 298,952 			| 533,676 				| 38,612,360 		| 308,203 			| 547,680			|
 | Multivariate Quadratic| MQSign-112/72 			| 117,049,542 		| 650,928 			| 1,120,124 			| 117,234,338 		| 667,681 			| 1,147,333			|
 | Multivariate Quadratic| MQSign-148/96 			| 236,124,011 		| 1,165,706 		| 1,897,664 			| 236,332,422 		| 1,173,558 		| 1,908,458			|
