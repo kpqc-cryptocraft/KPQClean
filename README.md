@@ -327,9 +327,91 @@ When updated source code was used, indicate the date the source code was updated
 | Code					| pqsigRM-612 				| 71,111,088,778 	| 923,513 			| 417,658 				| 71,168,430,985 	| 1,166,665 		| 502,448			|
 </details>
 
+## Memory consumption
+We checked for memory consumption using the [Valgrind](https://valgrind.org/) tool.
+
+The experiment used Valgrind's [massif](https://valgrind.org/docs/manual/ms-manual.html) tool.
+
+* Command used for testing: valgrind --tool=massif --stacks=yes ./PQC_bench
+* Our records were based on the largest stack usage in the Valgrind logs.
+<details>
+<summary>Show memory consumption tables </summary>
+
+
+ 
+### PKE/KEM
+| Algorithm     | Stack+Heap     | Stack    | Heap   | 
+| ------------- | -------------: | -------------:| -------------:|
+| IPCC-f1			| 733200 | 	733160 |	40 |
+| IPCC-f3			| 789200 | 	789160 |	40 |
+| IPCC-f4			| 803240 | 	803200 |	40 |
+| NTRUplus-576	| 16656 | 	16632 |	24 |
+| NTRUplus-768	| 21776 | 	21752 |	24 |
+| NTRUplus-864	| 24336 | 	24312 |	24 |
+| NTRUplus-1152	| 31984 | 	31960 |	24 |		
+| PALOMA-128		| 16641656 | 	16641600 |	56 |
+| PALOMA-192		| 16641656 | 	16641600 |	56 |
+| PALOMA-256		| 16641656 | 	16641600 |	56 |		
+| Layered ROLLO-128 |	8012 | 	7720 |	292 |
+| Layered ROLLO-192 | 9780 | 	9536 |	244 |
+| Layered ROLLO-256 | 13452 | 13192 |	260 |		
+| SMAUG-128		| 10632 | 	10608 |	24 |
+| SMAUG-192		| 17688 | 	17664 |	24 |
+| SMAUG-256		| 36272 | 	36248 |	24 |	
+| TiGER-128		| 10992 | 	10968 |	24 |
+| TiGER-192		| 19280 | 	19256 |	24 |
+| TiGER-256		| 19936 | 	19912 |	24 |
+
+### Digital Signature
+| Algorithm     | Stack+Heap     | Stack    | Heap   | 
+| ------------- | -------------: | -------------:| -------------:|
+|AIMer-l1-param1|	9418	|9176	|242|
+|AIMer-l1-param2|	9912	|9320	|592|
+|AIMer-l1-param3|	9470	|9160	|310|
+|AIMer-l1-param4|	10004	|9328	|676|
+|AIMer-l3-param1|	17584	|16664	|920|
+|AIMer-l3-param2|	17072	|16488	|584|
+|AIMer-l3-param3|	17072	|16488	|584|
+|AIMer-l3-param4|	16856	|16488	|368|
+|AIMer-l5-param1|	31016	|28632	|2384|
+|AIMer-l5-param2|	29038	|28648	|390|
+|AIMer-l5-param3|	29554	|28632	|922|
+|AIMer-l5-param4|	29508	|28808	|700|	
+|GCKSign-II	|44840	|44800	|40|
+|GCKSign-III|45464	|45424	|40|
+|GCKSign-V	|69272	|69232	|40|		
+|HAETAE-II	|88600	|88560	|40|
+|HAETAE-III	|134936	|134896	|40|
+|HAETAE-V	|170424	|170384	|40|
+|MQSign-72_46	|1245952	|1245896	|56|
+|MQSign-112_72	|4674624	|4674568	|56|
+|MQSign-148_96	|10906344	|10906320	|24|
+|NCCSign-II (conserparam)	|222384	|222344	|40|
+|NCCSign-III (conserparam)	|294848	|294808	|40|
+|NCCSign-V (conserparam)	|373024	|372984	|40|
+|NCCSign-II (original)	|187200	|187160	|40|
+|NCCSign-III (original)	|262416	|262376	|40|
+|NCCSign-V (original)	|349392	|349352	|40|
+|Peregrine-512	|3172	|3008	|164|
+|Peregrine-1024	|3162	|3008	|154|
+|Enhanced pqsigRM-612	|1619112	|1618816	|296|
+|Enhanced pqsigRM-613	|4288922	|4288616	|306|
+|SOLMAE-512		|	126896	|126840	|56|
+|SOLMAE-1024	|	252800	|252744	|56|
+
+
+* REDOG: Valgrind only targets programs written in C language. REDOG could not be tested because it is only provided in python.
+* FIBS: The algorithm calculation has not been completed. So we couldn't test.
+</details>
+  
+
+
+
 ## Memory leak detection
-We checked for memory leaks using the [Valgrind](https://valgrind.org/) tool.
+We checked for memory leaks using the Valgrind tool.
+
 The experiment method followed the [memory leak detection method](https://valgrind.org/docs/manual/quick-start.html) provided by Valgrind.
+
 The experiment was conducted in Environment 2, and the number of algorithm repetitions was fixed to 1 when testing for memory leaks.
 
 As a result of the inspection, memory leaks were found in **three** algorithms.
@@ -341,11 +423,15 @@ More details can be found in the valgrind report.
 
 
 ## Parameters
+<details>
+<summary>Learn more </summary>
+    
 * Unit: Bytes
-* All values come from each white paper.
-* Some values are different from the value written on the source code.
+* All values come from each white paper or source code.
+* Some values are different from the value written on the source code. In this case, we wrote values of source code.
 
 ### PKE/KEM
+    
 | Algorithm     | Pulbic Key     | Secret Key    | Ciphertext    | 
 | ------------- | -------------: | -------------:| -------------:|
 | IPCC-1  		| 3,600	     | 400	         | 322,000	 |
@@ -368,9 +454,9 @@ More details can be found in the valgrind report.
 ### Digital Signature
 | Algorithm     | Public Key    | Srcret Key    | Signature     | 
 | ------------- | -------------: | -------------:| -------------:|
-| AIMer-I  				| 33		| 49		| 5,904		|
-| AIMer-III				| 49 		| 73 	    | 13,080 	|
-| AIMer-V				| 65 		| 97	    | 25,152 	|
+| AIMer-I (all parameters)  				| 33		| 49		| 5,904		|
+| AIMer-III (all parameters)				| 49 		| 73 	    | 13,080 	|
+| AIMer-V (all parameters)				| 65 		| 97	    | 25,152 	|
 | GCKSign-II			| 1,760 	| 288 		| 1,952 	|
 | GCKSign-III			| 1,952 	| 288 		| 2,080		|
 | GCKSign-V				| 3,040 	| 5,444 	| 3,104 	|
@@ -393,6 +479,7 @@ More details can be found in the valgrind report.
 | SOLMAE-512			| -     	| -		    | -		    |
 | SOLMAE-1024			| -	        | -		    | -		    |
 * Peregrine and SOLMAE did not specify parameters in the white paper
+</details>
 
 ## How to use
 ### Compile command
