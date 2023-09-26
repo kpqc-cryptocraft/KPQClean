@@ -13,6 +13,11 @@ rbc_build_parameters: [
   {"name":"biix",   "sec_lvl":128,   "m":67,    "n":37,     "bn":74},
   {"name":"biix",   "sec_lvl":192,   "m":79,    "n":43,     "bn":86},
   {"name":"biix",   "sec_lvl":256,   "m":97,    "n":53,     "bn":106},
+
+  
+  {"name":"biiy",   "sec_lvl":128,   "m":67,    "n":61,     "bn":74},
+  {"name":"biiy",   "sec_lvl":192,   "m":79,    "n":71,     "bn":86},
+  {"name":"biiy",   "sec_lvl":256,   "m":97,    "n":103,     "bn":106},
 ]
 
 rbc_compile_constant_time_test: True

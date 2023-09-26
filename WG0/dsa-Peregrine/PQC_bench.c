@@ -3133,4 +3133,6 @@ int PQC_bench(void)
 int main(int argc, char const *argv[])
 {
 	PQC_bench();
+	
+	return 0;
 }

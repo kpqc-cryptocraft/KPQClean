@@ -15,18 +15,18 @@ with open(config_file, 'r') as yaml_file:
 
 
 ### Removing previous build and creating folders
-print("\n\n### Removing previous build")
-subprocess.run("rm -rf " + dir_path + "/build", shell=True)
-subprocess.run("rm -rf " + dir_path + "/bin", shell=True)
+#print("\n\n### Removing previous build")
+#subprocess.run("rm -rf " + dir_path + "/build", shell=True)
+#subprocess.run("rm -rf " + dir_path + "/bin", shell=True)
 
-subprocess.run("mkdir -p " + dir_path + "/build", shell=True)
-subprocess.run("mkdir -p " + dir_path + "/bin/include", shell=True)
+#subprocess.run("mkdir -p " + dir_path + "/build", shell=True)
+#subprocess.run("mkdir -p " + dir_path + "/bin/include", shell=True)
 
 
 ### Preprocessing rbc lib
 print("\n\n### Preprocessing library")
-subprocess.run("python -B script/preprocessing/templating_src.py" + " " + config_file, shell=True)
-subprocess.run("python -B script/preprocessing/preprocessing_src.py" + " " + config_file, shell=True)
+subprocess.run("python3 -B script/preprocessing/templating_src.py" + " " + config_file, shell=True)
+subprocess.run("python3 -B script/preprocessing/preprocessing_src.py" + " " + config_file, shell=True)
 
 
 ### Compiling rbc lib
@@ -37,7 +37,7 @@ subprocess.run("cd " + dir_path + "/build && cmake . && make install", shell=Tru
 ### Preprocessing examples
 if(config['rbc_compile_example'] == True):
     print("\n\n### Preprocessing examples")
-    subprocess.run("python -B script/preprocessing/preprocessing_example.py " + config_file, shell=True)
+    subprocess.run("python3 -B script/preprocessing/preprocessing_example.py " + config_file, shell=True)
 
 
 ### Compiling examples
@@ -49,7 +49,7 @@ if(config['rbc_compile_example'] == True):
 ### Preprocessing unit tests
 if(config['rbc_compile_unit_test'] == True):
     print("\n\n### Preprocessing unit tests")
-    subprocess.run("python -B script/preprocessing/preprocessing_unit_test.py " + config_file, shell=True)
+    subprocess.run("python3 -B script/preprocessing/preprocessing_unit_test.py " + config_file, shell=True)
 
 
 ### Compiling unit tests
@@ -61,7 +61,7 @@ if(config['rbc_compile_unit_test'] == True):
 ### Preprocessing constant-time tests
 if(config['rbc_compile_constant_time_test'] == True):
     print("\n\n### Preprocessing constant time tests")
-    subprocess.run("python -B script/preprocessing/preprocessing_constant_time_test.py " + config_file, shell=True)
+    subprocess.run("python3 -B script/preprocessing/preprocessing_constant_time_test.py " + config_file, shell=True)
 
 
 ### Compiling constant-time tests
@@ -72,7 +72,7 @@ if(config['rbc_compile_constant_time_test'] == True):
 ### Preprocessing KAT
 if(config['rbc_compile_kat'] == True):
     print("\n\n### Preprocessing KAT")
-    subprocess.run("python -B script/preprocessing/preprocessing_kat.py " + config_file, shell=True)
+    subprocess.run("python3 -B script/preprocessing/preprocessing_kat.py " + config_file, shell=True)
 
 
 ### Compiling KAT
@@ -86,7 +86,7 @@ if(config['rbc_compile_kat'] == True):
 ### Preprocessing benchmark
 if(config['rbc_compile_benchmark'] == True):
     print("\n\n### Preprocessing benchmark")
-    subprocess.run("python -B script/preprocessing/preprocessing_benchmark.py " + config_file, shell=True)
+    subprocess.run("python3 -B script/preprocessing/preprocessing_benchmark.py " + config_file, shell=True)
 
 
 ### Compiling benchmark
@@ -99,11 +99,11 @@ if(config['rbc_compile_benchmark'] == True):
 ### Packaging NIST
 if(config['rbc_package_nist'] == True):
     print("\n\n### Packaging NIST RQC\n")
-    subprocess.run("python -B script/packaging/packaging_nist_rqc.py", shell=True)
+    subprocess.run("python3 -B script/packaging/packaging_nist_rqc.py", shell=True)
 
     print("\n\n### Packaging NIST ROLLOI\n")
-    subprocess.run("python -B script/packaging/packaging_nist_rolloI.py", shell=True)
+    subprocess.run("python3 -B script/packaging/packaging_nist_rolloI.py", shell=True)
 
     print("\n\n### Packaging NIST ROLLOII\n")
-    subprocess.run("python -B script/packaging/packaging_nist_rolloII.py", shell=True)
+    subprocess.run("python3 -B script/packaging/packaging_nist_rolloII.py", shell=True)
 

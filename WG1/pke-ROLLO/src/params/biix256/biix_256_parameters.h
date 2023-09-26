@@ -8,8 +8,11 @@
 
 #define BIIX_256_PARAM_M 97 /**< Parameter m of the scheme (finite field GF(2^m)) */
 #define BIIX_256_PARAM_N 53 /**< Parameter n of the scheme (code length) */
+#define BIIX_256_PARAM_ON 103 /**< Parameter outer n of the scheme (code length) */
+#define BIIX_256_PARAM_PI_DEG 4 /**<Parameter of polynomial degree on PO*/
+
 #define BIIX_256_PARAM_D 3 /**< Parameter d of the scheme (weight of vectors) */
-#define BIIX_256_PARAM_R 5 /**< Parameter r of the scheme (weight of vectors) */
+#define BIIX_256_PARAM_R 7 /**< Parameter r of the scheme (weight of vectors) */
 #define BIIX_256_PARAM_DFR 32 /**< Decryption Failure Rate (2^-30) */
 #define BIIX_256_PARAM_SECURITY 256 /**< Expected security level */
 

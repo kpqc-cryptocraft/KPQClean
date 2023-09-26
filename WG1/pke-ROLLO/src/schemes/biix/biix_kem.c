@@ -13,7 +13,6 @@
 #include "biix_types.h"
 #include "biix_parsing.h"
 
-
 int biix_keygen(uint8_t* pk, uint8_t* sk) {
 
 
@@ -42,14 +41,13 @@ int biix_keygen(uint8_t* pk, uint8_t* sk) {
   rbc_qre P;
   rbc_qre PO;
   rbc_qre PN;
-  
   rbc_qre pk_unit_qre1;
   rbc_qre pk_POPI;
   
   biix_publicKey pkTmp;
   
   rbc_field_init();
-  rbc_qre_init_modulus(2*BIIX_PARAM_N);
+  rbc_qre_init_modulus(BIIX_PARAM_ON);
 
   uint32_t E_Byte = BIIX_PARAM_M / 8;
   uint32_t E_Byte2 = BIIX_PARAM_M % 8;
@@ -60,9 +58,10 @@ int biix_keygen(uint8_t* pk, uint8_t* sk) {
   if(BIIX_PARAM_N == 43){ p_st[E_Byte*43] = 1; p_st[E_Byte*27] = 1; p_st[E_Byte*22] = 1; p_st[E_Byte*5] = 1; p_st[E_Byte*0] = 1;}
   if(BIIX_PARAM_N == 53){ p_st[E_Byte*53] = 1; p_st[E_Byte*50] = 1;p_st[E_Byte*41] = 1; p_st[E_Byte*20] = 1; p_st[E_Byte*0] = 1;}
 
-  rbc_qre_init(&PN);
   rbc_qre_init(&pk_unit_qre1);
   rbc_qre_init(&PO);
+  rbc_qre_init(&PN);
+  
   rbc_qre_init(&P);
 
   rbc_qre_from_string(P, p_st); 
@@ -70,19 +69,18 @@ int biix_keygen(uint8_t* pk, uint8_t* sk) {
   rbc_qre_init(&(pkTmp.h));  
  
   rbc_qre_from_string(pk_unit_qre1, pkinv_st); 	
-  rbc_qre_set_arb_random(PO, 2*BIIX_PARAM_N, sk_PO_seed);
-  rbc_qre_set_arb_random(PN, 2*BIIX_PARAM_N, sk_PO_seed+32);
- 
- 
+  rbc_qre_set_arb_random(PO, BIIX_PARAM_ON, sk_PO_seed);
+  //rbc_qre_set_arb_random(PN, BIIX_PARAM_ON-BIIX_PARAM_N-BIIX_PARAM_PI_DEG-1, sk_PO_seed+16);
  
   rbc_qre_from_string(pk_POPI,pk_POPI_st);
+  //rbc_qre_mul(PN, PN, P);
+  //rbc_qre_add(pk_POPI, pk_POPI, PN);
   rbc_qre_mul(pk_POPI, pk_POPI, PO);
   rbc_qre_to_string(pk_POPI_st, pk_POPI);
-  
-  rbc_qre_mul(pkTmp.h, pk_unit_qre1, PO);
-  rbc_qre_mul(PN, P, PN);
-  rbc_qre_add(pkTmp.h, pkTmp.h, PN);
-  
+
+  rbc_qre_add(pkTmp.h, pk_unit_qre1, pkTmp.h);
+  rbc_qre_mul(pkTmp.h, pkTmp.h, PO);
+
   biix_public_key_to_string(pk_st, &pkTmp);
 
 for(size_t i = 0 ; i < BIIX_PUBLIC_KEY_BYTES/2 ; ++i) 
@@ -109,9 +107,9 @@ for(size_t i = 0 ; i < BIIX_PUBLIC_KEY_BYTES/2 ; ++i)
   
 
   rbc_qre_clear(pkTmp.h);
-  rbc_qre_clear(PN);
   rbc_qre_clear(P);
   rbc_qre_clear(PO);
+  rbc_qre_clear(PN);
   rbc_qre_clear(pk_POPI);
   rbc_qre_clear(pk_unit_qre1);
 
@@ -146,8 +144,8 @@ int biix_sk_generate(uint8_t* sk_m, uint8_t* pk_xyinv1,  uint8_t* sk_PI_seed, ui
   rbc_qre_init(&PI);
   rbc_qre_init(&(pkTmp1.h));
   
-  rbc_qre_set_arb_random(PI, 2, sk_PI_seed);
-
+  rbc_qre_set_arb_random(PI, BIIX_PARAM_PI_DEG, sk_PI_seed);
+ 
   for(size_t i = 0 ; i <  SEEDEXPANDER_SEED_BYTES ; ++i) 
   {
     sk_seed1[i]=sk_m[i];
@@ -168,7 +166,7 @@ int biix_sk_generate(uint8_t* sk_m, uint8_t* pk_xyinv1,  uint8_t* sk_PI_seed, ui
 
   rbc_qre_to_string(PI_st, PI);
 
-
+  
   for(size_t i = 0 ; i < (E_Byte)*(BIIX_PARAM_N) ; ++i) 
   {
     pk_xyinv1[i]=pk_st1[i];
@@ -177,17 +175,15 @@ int biix_sk_generate(uint8_t* sk_m, uint8_t* pk_xyinv1,  uint8_t* sk_PI_seed, ui
   //edge processing in KEM
   for(size_t i = (E_Byte)*(BIIX_PARAM_N); i < (E_Byte)*(BIIX_PARAM_N+E_Byte2) ; ++i) 
   {
-    pk_xyinv1[i+(E_Byte)*(BIIX_PARAM_N)]=pk_st1[i];
-    sk_2PI[i+(E_Byte)*(BIIX_PARAM_N)]=PI_st[i];
+    pk_xyinv1[i+(E_Byte)*(BIIX_PARAM_ON-BIIX_PARAM_N)]=pk_st1[i];
+    sk_2PI[i+(E_Byte)*(BIIX_PARAM_ON-BIIX_PARAM_N)]=PI_st[i];
   }
 
   rbc_vspace_clear(skTmp1.F);
   
   rbc_qre_clear(skTmp1.x);
   rbc_qre_clear(PI);
-  
   rbc_qre_clear(skTmp1.y);
-
   rbc_qre_clear(pkTmp1.h);
 
   rbc_qre_clear_modulus();
@@ -229,16 +225,29 @@ int biix_encaps_errgen(uint8_t* pk1_st, uint8_t* pk_POPI_st, uint8_t* ct1_st, ui
 
   rbc_qre pk1Tmp;
   rbc_qre pk_POPI;
+  rbc_qre P;
+
+  rbc_qre_init(&P);
+  uint8_t p_st[BIIX_PUBLIC_KEY_BYTES/2] = {0};
+    //P Input SL: 128,192, 256
+  if(BIIX_PARAM_N == 37){ p_st[E_Byte*37] = 1; p_st[E_Byte*22] = 1;p_st[E_Byte*14] = 1; p_st[E_Byte*2] = 1; p_st[E_Byte*0] = 1;}
+  if(BIIX_PARAM_N == 43){ p_st[E_Byte*43] = 1; p_st[E_Byte*27] = 1; p_st[E_Byte*22] = 1; p_st[E_Byte*5] = 1; p_st[E_Byte*0] = 1;}
+  if(BIIX_PARAM_N == 53){ p_st[E_Byte*53] = 1; p_st[E_Byte*50] = 1;p_st[E_Byte*41] = 1; p_st[E_Byte*20] = 1; p_st[E_Byte*0] = 1;}
+
+  rbc_qre_init(&P);
+  rbc_qre_from_string(P, p_st); 
+
+  uint8_t PN_seed[SEEDEXPANDER_SEED_BYTES] = {0}; 
   
   biix_ciphertext ct1Tmp;
 
   rbc_field_init();
-  rbc_qre_init_modulus(2*BIIX_PARAM_N);
-  
+  rbc_qre_init_modulus(BIIX_PARAM_ON);
   rbc_vspace_init(&E1, BIIX_PARAM_R);
 
   random_source prng;
   random_init(&prng,  RANDOM_SOURCE_PRNG);
+  random_get_bytes(&prng, PN_seed, SEEDEXPANDER_SEED_BYTES);
 
   //Generate the support
   rbc_vspace_set_random_full_rank(&prng, E1, BIIX_PARAM_R);
@@ -249,21 +258,25 @@ int biix_encaps_errgen(uint8_t* pk1_st, uint8_t* pk_POPI_st, uint8_t* ct1_st, ui
   rbc_qre_init(&pk_POPI);
   rbc_qre_init(&pk1Tmp);
 
+  
   rbc_qre_from_string(pk_POPI, pk_POPI_st);
   rbc_qre_from_string(pk1Tmp, pk1_st);
    
   //Generate random error vectors  
   rbc_qre_set_arb_random_pair_from_support(&prng, E11, E12, E1, 1);
 
+  //rbc_qre_clear_modulus();
+
+  //rbc_field_init();
+  //rbc_qre_init_modulus(BIIX_PARAM_N+16);
 
   rbc_qre_init(&(ct1Tmp.syndrom));
 
   rbc_qre_mul(ct1Tmp.syndrom, E11, pk1Tmp);
-  
 
   rbc_qre_mul(pk_POPI, E12, pk_POPI);
-
   rbc_qre_add(ct1Tmp.syndrom, ct1Tmp.syndrom, pk_POPI);
+  
 
   //rbc_qre_print(ct1Tmp.syndrom);
   biix_biix_ciphertext_to_string(ct1_st, &ct1Tmp);
@@ -283,6 +296,9 @@ int biix_encaps_errgen(uint8_t* pk1_st, uint8_t* pk_POPI_st, uint8_t* ct1_st, ui
 
   rbc_qre_clear(E11);
   rbc_qre_clear(E12);
+
+  rbc_qre_clear(P);
+
 
   rbc_qre_clear_modulus();
   
@@ -334,6 +350,7 @@ int biix_decaps(uint8_t* ss, const uint8_t* ct, uint8_t* sk) {
    
   rbc_qre_init(&ctRed);
   rbc_qre_mod_sparse_from_string(ctRed, ctRes);
+  
  
   biix_secret_key_from_string(&skTmp1, skseed_st);
   
@@ -341,22 +358,21 @@ int biix_decaps(uint8_t* ss, const uint8_t* ct, uint8_t* sk) {
   rbc_qre_init(&PI);
   rbc_qre_init(&PIinv);
   
-  rbc_qre_set_arb_random(PI, 2, sk_PI_seed_st);
+  rbc_qre_set_arb_random(PI, BIIX_PARAM_PI_DEG, sk_PI_seed_st);//BIIX_PARAM_ON-BIIX_PARAM_N, sk_PI_seed_st);
 
   rbc_qre_inv(PIinv, PI);
-
- 
   rbc_qre_mul(ctRed, ctRed, PIinv);
+  //rbc_qre_print(ctRed);
+  
   rbc_qre_mul(xc1, skTmp1.x, ctRed);
   //for(int i = 0 ; i < 40 ; i++){ printf("%02x",xc2->v[i]);}
   uint32_t dimE1 = 0;
-  //Problem: This region below
-
   
   rbc_vspace_init(&E1, BIIX_PARAM_N);
   
   dimE1 = rbc_lrpc_RSR(E1, BIIX_PARAM_R, skTmp1.F, BIIX_PARAM_D, xc1->v, BIIX_PARAM_N);
-  
+
+
   uint8_t support_st1[BIIX_RBC_VEC_R_BYTES]={0};
   rbc_vec_to_string(support_st1, E1, BIIX_PARAM_R);
   sha512(ss, support_st1, BIIX_RBC_VEC_R_BYTES);
@@ -388,28 +404,29 @@ int biix_decaps_multisym(uint8_t* ct, uint8_t* ctRes, uint8_t* PO_seed, random_s
 //TODO: Carisis, 220805
    rbc_qre PO;
    rbc_qre POinv;
-   
+
    biix_ciphertext ctTmp;
    
   
   rbc_field_init();
-  rbc_qre_init_modulus(2*BIIX_PARAM_N);
+  rbc_qre_init_modulus(BIIX_PARAM_ON);
 
   rbc_qre_init(&PO);
   rbc_qre_init(&POinv);
-  rbc_qre_set_arb_random(PO, 2*BIIX_PARAM_N, PO_seed);
-
+  rbc_qre_set_arb_random(PO, BIIX_PARAM_ON, PO_seed);
   rbc_qre_inv(POinv, PO);
   rbc_qre_init(&(ctTmp.syndrom));
   biix_biix_ciphertext_from_string(&ctTmp, ct);
-
+  //rbc_qre_add(ctTmp.syndrom, ctTmp.syndrom, PS);
   rbc_qre_mul(ctTmp.syndrom, ctTmp.syndrom, POinv);
 
+  //rbc_qre_add(ctTmp.syndrom, ctTmp.syndrom, PO);//applied only for q=2
   biix_biix_ciphertext_to_string(ctRes, &ctTmp);
   
   rbc_qre_clear(ctTmp.syndrom);
   rbc_qre_clear(PO);
   rbc_qre_clear(POinv);
+  //rbc_qre_clear(PS);
   
   rbc_qre_clear_modulus();
    
@@ -426,9 +443,23 @@ void rbc_qre_mod_sparse_from_string(rbc_qre o, const uint8_t* str) {
   rbc_poly unreduced;
   rbc_poly_init(&unreduced, 2 * modulus_degree - 1);
   rbc_poly_set_zero(unreduced, 2 * modulus_degree - 1);
+  
+  
+  uint32_t E_Byte = BIIX_PARAM_M / 8;
+  uint32_t E_Byte2 = BIIX_PARAM_M % 8;
+  
+   uint8_t str_new[BIIX_PUBLIC_KEY_BYTES/2] = {0};
+    for(size_t i = 0; i < (E_Byte)*(BIIX_PARAM_ON) ; ++i) 
+    {
+      str_new[i]=str[i];
+    }
 
-  rbc_poly_from_string(unreduced, str);
+    for(size_t i = (E_Byte)*(BIIX_PARAM_ON); i < (E_Byte)*(BIIX_PARAM_ON+E_Byte2) ; ++i) 
+    {
+      str_new[i+(E_Byte)*(BIIX_PARAM_N-(BIIX_PARAM_ON-BIIX_PARAM_N))]=str[i];
+    }
 
+  rbc_poly_from_string(unreduced, str_new);
   // Modular reduction
   for(int32_t i = unreduced->max_degree - modulus_degree ; i >= 0 ; i--) {
     for(size_t j = 0 ; j < 1 * modulus->coeffs_nb - 1 ; j++) {
@@ -469,7 +500,7 @@ void rbc_qre_set_arb_random(rbc_qre o, int32_t deg, const uint8_t* skString) {
 
 void rbc_qre_set_arb_random_pair_from_support(random_source* ctx, rbc_qre o1, rbc_qre o2, const rbc_vec support, uint8_t copy_flag) {
   //Predefined from
-   uint32_t size =  BIIX_PARAM_N-1;
+   uint32_t size =  BIIX_PARAM_ON-BIIX_PARAM_N-BIIX_PARAM_PI_DEG-2;
    uint32_t support_size = BIIX_PARAM_R;
    
   if (copy_flag) {

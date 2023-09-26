@@ -8,9 +8,12 @@
 
 #define BIIX_192_PARAM_M 79 /**< Parameter m of the scheme (finite field GF(2^m)) */
 #define BIIX_192_PARAM_N 43 /**< Parameter n of the scheme (code length) */
+#define BIIX_192_PARAM_ON 71 /**< Parameter outer n of the scheme (code length) */
+#define BIIX_192_PARAM_PI_DEG 4 /**<Parameter of polynomial degree on PO*/
+
 #define BIIX_192_PARAM_D 3 /**< Parameter d of the scheme (weight of vectors) */
-#define BIIX_192_PARAM_R 4 /**< Parameter r of the scheme (weight of vectors) */
-#define BIIX_192_PARAM_DFR 35 /**< Decryption Failure Rate (2^-30) */
+#define BIIX_192_PARAM_R 7 /**< Parameter r of the scheme (weight of vectors) */
+#define BIIX_192_PARAM_DFR 25 /**< Decryption Failure Rate (2^-30) */
 #define BIIX_192_PARAM_SECURITY 192 /**< Expected security level */
 
 #define BIIX_192_PUBLIC_KEY_BYTES 1800
