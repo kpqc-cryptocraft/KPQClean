@@ -15,10 +15,10 @@ There are still a lot of works to be done, but the current version may provide b
 When updated source code was used, indicate the date the source code was updated.
 
 ### PKE/KEM
-1. NTRUplus: Round 1 Submission.
+1. NTRUplus: Sep. 16th. (<https://groups.google.com/g/kpqc-bulletin/c/mQ3FGgxtu4c>)
 2. PALOMA: Round 1 Submission.
 3. SMAUG: May. 23rd. (<https://groups.google.com/g/kpqc-bulletin/c/8S0qef2mPSU>)
-4. TiGER: Round 1 Submission.
+4. TiGER: Sep. 17th. (<https://groups.google.com/g/kpqc-bulletin/c/f_p6WCN7kdw>)
 5. REDOG: Round 1 Submission.
 6. Layered-ROLLO: Round 1 Submission.
 7. IPCC: Round 1 Submission.
