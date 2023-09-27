@@ -530,7 +530,6 @@ None
 * _aimer_verify:	This function is used for signature verification. It contains conditional statements for comparing some tree values, but it only deals with hash values. There are no direct branches that handle the secret key.  
 </details>
 
-
 ### GCKSign
 <details>
 <summary>Learn more</summary>
@@ -575,6 +574,18 @@ None
 * cryptolab_haetae5_verify:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
 </details>
 
+### NTRUplus
+<details>
+<summary>Learn more</summary>
+
+#### L1
+None
+#### L2
+None
+#### L3
+None
+</details>
+
 ### IPCC
 <details>
 <summary>Learn more</summary>
@@ -597,7 +608,6 @@ None
 None
 #### L2
 * biix_secret_key_from_string:	In rbc_vspace_set_random_full_rank -> rbc_vec_set_random_full_rank, it seems that the size of the rank generated due to the secret key influences the number of times the while loop is executed.
-
 #### L3
 * biix_decaps	Through the for loop, the secret key is stored at the same index position in the skseed_st array up to size SEEDEXPANDER_SEED_BYTES(40). The skseed_st array is then used in biix_secret_key_from_string.
 </details>
