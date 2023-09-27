@@ -1,4 +1,4 @@
-![image](https://github.com/kpqc-cryptocraft/KPQClean/assets/19582380/d4e98b66-777c-4538-be5a-1f9906e2306e)# KPQClean
+# KPQClean
 Benchmark on Korean Post Quantum Cryptography!
 
 ## What is KPQClean?
