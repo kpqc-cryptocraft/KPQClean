@@ -1,0 +1,453 @@
+==80906== Memcheck, a memory error detector
+==80906== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==80906== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==80906== Command: ./biix_192
+==80906== Parent PID: 68730
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x1118E1: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111675: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1116B1: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x111871: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111897: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x1116EB: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1116D5: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x11189D: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1116DE: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x111702: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x11172D: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111800: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111818: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x111821: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x111964: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x111945: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1119EF: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111A0A: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111A25: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1119E3: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111A69: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111A84: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111A9F: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x111A5D: biix_192_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114048: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x1141D6: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x114249: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x11424F: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x114263: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x114269: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1142A3: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x1142BB: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EA26: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10EA52: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EA6C: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EAE6: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EAFC: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10EB20: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EB26: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EB55: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10EB1B: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EBA5: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E8DE: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E908: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E910: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E916: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E933: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E949: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E949: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E955: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E967: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E971: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114412: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EA26: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10EA52: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EA6C: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EAE6: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EAFC: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10EB20: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EB26: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EB55: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10EB1B: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10EBA5: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E8DE: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E908: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E910: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E916: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E933: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E949: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E949: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x10E955: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E967: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x10E971: rbc_79_vspace_intersection.part.0.isra.0 (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x114439: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x114473: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x1144E9: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x1144EF: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x114503: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x114509: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x114543: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x11455B: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Use of uninitialised value of size 8
+==80906==    at 0x48C42DA: _itoa_word (_itoa.c:178)
+==80906==    by 0x48DFB3D: __vfprintf_internal (vfprintf-internal.c:1516)
+==80906==    by 0x48CA81E: printf (printf.c:33)
+==80906==    by 0x109C71: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x48C42EC: _itoa_word (_itoa.c:178)
+==80906==    by 0x48DFB3D: __vfprintf_internal (vfprintf-internal.c:1516)
+==80906==    by 0x48CA81E: printf (printf.c:33)
+==80906==    by 0x109C71: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x48E0643: __vfprintf_internal (vfprintf-internal.c:1516)
+==80906==    by 0x48CA81E: printf (printf.c:33)
+==80906==    by 0x109C71: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== Conditional jump or move depends on uninitialised value(s)
+==80906==    at 0x48DFC85: __vfprintf_internal (vfprintf-internal.c:1516)
+==80906==    by 0x48CA81E: printf (printf.c:33)
+==80906==    by 0x109C71: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 
+==80906== HEAP SUMMARY:
+==80906==     in use at exit: 6,052 bytes in 14 blocks
+==80906==   total heap usage: 173 allocs, 159 frees, 120,024 bytes allocated
+==80906== 
+==80906== 36 (16 direct, 20 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x113E75: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 704 (16 direct, 688 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x11211C: biix_192_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x1098CE: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 704 (16 direct, 688 indirect) bytes in 1 blocks are definitely lost in loss record 6 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x112198: biix_192_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x1098CE: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 1,152 (16 direct, 1,136 indirect) bytes in 1 blocks are definitely lost in loss record 11 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x112D75: biix_192_encaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x1099BE: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 1,152 (16 direct, 1,136 indirect) bytes in 1 blocks are definitely lost in loss record 12 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x11301B: biix_192_encaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x1099BE: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 1,152 (16 direct, 1,136 indirect) bytes in 1 blocks are definitely lost in loss record 13 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x1133C1: biix_192_encaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x1099BE: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== 1,152 (16 direct, 1,136 indirect) bytes in 1 blocks are definitely lost in loss record 14 of 14
+==80906==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==80906==    by 0x113D11: biix_192_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906==    by 0x109B25: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_192)
+==80906== 
+==80906== LEAK SUMMARY:
+==80906==    definitely lost: 112 bytes in 7 blocks
+==80906==    indirectly lost: 5,940 bytes in 7 blocks
+==80906==      possibly lost: 0 bytes in 0 blocks
+==80906==    still reachable: 0 bytes in 0 blocks
+==80906==         suppressed: 0 bytes in 0 blocks
+==80906== 
+==80906== For lists of detected and suppressed errors, rerun with: -s
+==80906== ERROR SUMMARY: 53095 errors from 89 contexts (suppressed: 0 from 0)

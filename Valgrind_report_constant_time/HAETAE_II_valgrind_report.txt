@@ -1,0 +1,641 @@
+==71378== Memcheck, a memory error detector
+==71378== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==71378== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==71378== Command: ./PQC_bench
+==71378== Parent PID: 68730
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F56D: cryptolab_haetae2_polymatkl_expand (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DDEE: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F581: cryptolab_haetae2_polymatkl_expand (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DDEE: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F595: cryptolab_haetae2_polymatkl_expand (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DDEE: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F5A9: cryptolab_haetae2_polymatkl_expand (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DDEE: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F5BD: cryptolab_haetae2_polymatkl_expand (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DDEE: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DDEE: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F879: cryptolab_haetae2_polyveck_expand (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DE09: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110D44: cryptolab_haetae2_rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10E3C3: cryptolab_haetae2_poly_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DE09: cryptolab_haetae2_unpack_sk (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111453: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C4B: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x1108D8: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x11091C: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x110B41: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C64: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x111016: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110BDC: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C64: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x1108D8: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x11091C: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x110B41: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C4B: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x1110A3: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F291: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C4B: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x1108D8: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x11091C: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x110B41: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C64: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x111016: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110BDC: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C64: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x1108D8: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x11091C: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x110B41: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C4B: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x1110A3: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F2C0: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C4B: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x1108D8: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x11091C: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x110B41: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11100F: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x111016: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110BDC: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x1108D8: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x11091C: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x110B41: sample_gauss_sigma76 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x110C20: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x110C4B: sample_gauss (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11109A: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x1110A3: cryptolab_haetae2_sample_gauss_N (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10F308: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x10F50C: cryptolab_haetae2_polyfixveclk_sample_hyperball (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111663: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x10E5D0: cryptolab_haetae2_poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111767: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x10E601: cryptolab_haetae2_poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111767: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x1118CD: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x10BFE2: cryptolab_haetae2_encode_hb_z1 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DEFE: cryptolab_haetae2_pack_sig (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11197A: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x10BF9F: cryptolab_haetae2_encode_hb_z1 (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DEFE: cryptolab_haetae2_pack_sig (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11197A: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x10BEAB: cryptolab_haetae2_encode_h (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DF1F: cryptolab_haetae2_pack_sig (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11197A: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x10BE6F: cryptolab_haetae2_encode_h (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10DF1F: cryptolab_haetae2_pack_sig (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x11197A: cryptolab_haetae2_signature (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x1095B3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x10E5D0: cryptolab_haetae2_poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111C02: cryptolab_haetae2_verify (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111E38: cryptolab_haetae2_open (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x109639: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Use of uninitialised value of size 8
+==71378==    at 0x10E601: cryptolab_haetae2_poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111C02: cryptolab_haetae2_verify (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111E38: cryptolab_haetae2_open (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x109639: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x111CE2: cryptolab_haetae2_verify (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111E38: cryptolab_haetae2_open (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x109639: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== Conditional jump or move depends on uninitialised value(s)
+==71378==    at 0x111D81: cryptolab_haetae2_verify (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x111E38: cryptolab_haetae2_open (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x109639: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==  Uninitialised value was created by a client request
+==71378==    at 0x10958B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378==    by 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+==71378== 
+==71378== 
+==71378== HEAP SUMMARY:
+==71378==     in use at exit: 0 bytes in 0 blocks
+==71378==   total heap usage: 24 allocs, 24 frees, 31,048 bytes allocated
+==71378== 
+==71378== All heap blocks were freed -- no leaks are possible
+==71378== 
+==71378== For lists of detected and suppressed errors, rerun with: -s
+==71378== ERROR SUMMARY: 26080 errors from 57 contexts (suppressed: 0 from 0)

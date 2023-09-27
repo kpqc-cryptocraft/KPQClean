@@ -1,0 +1,14 @@
+valgrind --leak-check=full --track-origins=yes --log-file=_valgrind_report.txt ./PQC_bench
+
+
+https://valgrind.org/docs/manual/mc-manual.html
+https://bytes.usc.edu/cs104/wiki/valgrind/
+
+FIBS: 무한루프
+REDOG: 파이썬
+Peregrine: SK 확인 불가
+SOLMAE: SK가 구조체임
+
+
+
+valgrind --tool=massif --stacks=yes ./PQC_bench

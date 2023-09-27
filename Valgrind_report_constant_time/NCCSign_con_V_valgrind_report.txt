@@ -1,0 +1,173 @@
+==72610== Memcheck, a memory error detector
+==72610== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==72610== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==72610== Command: ./PQC_bench5
+==72610== Parent PID: 68730
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D563: decompose (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CE0C: poly_decompose (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109B5D: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D574: decompose (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CE0C: poly_decompose (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109B5D: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D2A3: poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109BB7: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Use of uninitialised value of size 8
+==72610==    at 0x10D2D0: poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109BB7: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10CF09: poly_chknorm (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109BFE: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10CF09: poly_chknorm (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109C45: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10CF09: poly_chknorm (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109C7E: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D5B2: make_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CE5D: poly_make_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109CAE: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x109CB2: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109D53: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10958F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10CF09: poly_chknorm (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109E30: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D2A3: poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109EC2: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Use of uninitialised value of size 8
+==72610==    at 0x10D2D0: poly_challenge (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109EC2: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D632: use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CEAC: poly_use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109F9D: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D64A: use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CEAC: poly_use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109F9D: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D64E: use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CEAC: poly_use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109F9D: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10D675: use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10CEAC: poly_use_hint (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109F9D: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== Conditional jump or move depends on uninitialised value(s)
+==72610==    at 0x10A011: crypto_sign_verify (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x10A0C8: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x109623: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==    by 0x1091EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610==  Uninitialised value was created by a stack allocation
+==72610==    at 0x109916: crypto_sign_signature (in /home/hd/kpqclean-Round_valgrind/dsa-NCCSign/221023_fixsomething_conserparam/PQC_bench5)
+==72610== 
+==72610== 
+==72610== HEAP SUMMARY:
+==72610==     in use at exit: 0 bytes in 0 blocks
+==72610==   total heap usage: 7 allocs, 7 frees, 14,728 bytes allocated
+==72610== 
+==72610== All heap blocks were freed -- no leaks are possible
+==72610== 
+==72610== For lists of detected and suppressed errors, rerun with: -s
+==72610== ERROR SUMMARY: 21766 errors from 17 contexts (suppressed: 0 from 0)

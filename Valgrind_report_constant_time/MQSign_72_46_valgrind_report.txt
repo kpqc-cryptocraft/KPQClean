@@ -1,0 +1,24 @@
+==72278== Memcheck, a memory error detector
+==72278== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==72278== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==72278== Command: ./PQC_bench
+==72278== Parent PID: 68730
+==72278== 
+==72278== Conditional jump or move depends on uninitialised value(s)
+==72278==    at 0x10E2A3: mqss_sign (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==72278==    by 0x118B7A: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==72278==    by 0x1096B8: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==72278==    by 0x1092EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==72278==  Uninitialised value was created by a client request
+==72278==    at 0x109682: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==72278==    by 0x1092EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==72278== 
+==72278== 
+==72278== HEAP SUMMARY:
+==72278==     in use at exit: 0 bytes in 0 blocks
+==72278==   total heap usage: 1,026 allocs, 1,026 frees, 987,640 bytes allocated
+==72278== 
+==72278== All heap blocks were freed -- no leaks are possible
+==72278== 
+==72278== For lists of detected and suppressed errors, rerun with: -s
+==72278== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

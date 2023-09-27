@@ -1,0 +1,105 @@
+==71167== Memcheck, a memory error detector
+==71167== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==71167== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==71167== Command: ./PQC_bench
+==71167== Parent PID: 68730
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10D976: rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10DAD3: sample_a (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E0B7: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x109573: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10D976: rej_uniform (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10DB0F: sample_a (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E0B7: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x109573: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Use of uninitialised value of size 8
+==71167==    at 0x10DE58: sample_c (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E23D: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x109573: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10D500: poly_reject_z (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E2D3: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x109573: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10DCA5: sample_y (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E1BD: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x109573: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10DD3D: sample_y (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E1BD: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x109573: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10D500: poly_reject_z (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E41D: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x1095F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Use of uninitialised value of size 8
+==71167==    at 0x10DE58: sample_c (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10E47E: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x1095F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10E566: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x1095F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== Conditional jump or move depends on uninitialised value(s)
+==71167==    at 0x10E583: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x1095F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==  Uninitialised value was created by a client request
+==71167==    at 0x10954B: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167==    by 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/dsa-GCKSign/GCKS_V/PQC_bench)
+==71167== 
+==71167== 
+==71167== HEAP SUMMARY:
+==71167==     in use at exit: 0 bytes in 0 blocks
+==71167==   total heap usage: 25 allocs, 25 frees, 29,248 bytes allocated
+==71167== 
+==71167== All heap blocks were freed -- no leaks are possible
+==71167== 
+==71167== For lists of detected and suppressed errors, rerun with: -s
+==71167== ERROR SUMMARY: 6481 errors from 10 contexts (suppressed: 0 from 0)

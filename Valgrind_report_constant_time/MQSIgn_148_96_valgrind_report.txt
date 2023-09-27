@@ -1,0 +1,31 @@
+==71950== Memcheck, a memory error detector
+==71950== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==71950== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==71950== Command: ./PQC_bench
+==71950== Parent PID: 68730
+==71950== 
+==71950== Warning: client switching stacks?  SP change: 0x1ffe599670 --> 0x1ffea6ad68
+==71950==          to suppress, use: --max-stackframe=5052152 or greater
+==71950== Warning: client switching stacks?  SP change: 0x1ffea6ada0 --> 0x1ffed2d250
+==71950==          to suppress, use: --max-stackframe=2892976 or greater
+==71950== Conditional jump or move depends on uninitialised value(s)
+==71950==    at 0x10E36F: mqss_sign (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==71950==    by 0x118D1A: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==71950==    by 0x1096B8: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==71950==    by 0x1092EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==71950==  Uninitialised value was created by a client request
+==71950==    at 0x109682: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==71950==    by 0x1092EC: main (in /home/hd/kpqclean-Round_valgrind/dsa-MQSign/PQC_bench)
+==71950== 
+==71950== Warning: client switching stacks?  SP change: 0x1ffed2d270 --> 0x1ffefffde8
+==71950==          to suppress, use: --max-stackframe=2960248 or greater
+==71950==          further instances of this message will not be shown.
+==71950== 
+==71950== HEAP SUMMARY:
+==71950==     in use at exit: 0 bytes in 0 blocks
+==71950==   total heap usage: 4,211 allocs, 4,211 frees, 4,043,464 bytes allocated
+==71950== 
+==71950== All heap blocks were freed -- no leaks are possible
+==71950== 
+==71950== For lists of detected and suppressed errors, rerun with: -s
+==71950== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
