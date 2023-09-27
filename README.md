@@ -674,9 +674,9 @@ None
 | SMAUG-128		| 672 		 | 174		     | 768		 | 
 | SMAUG-192		| 992		 | 185 		     | 1,024	 | 
 | SMAUG-256		| 1,632 	 | 182		     | 1,536	 |
-| TiGER-128		| 544		 | 528		     | 1,024	 | 
-| TiGER-192		| 1,056		 | 1,056		 | 2,048	 | 
-| TiGER-256		| 1,056		 | 1,056 		 | 2,048	 | 
+| TiGER-128		| 480		 | 134		     | 640    	 | 
+| TiGER-192		| 928    	 | 178        	 | 1,280	 | 
+| TiGER-256		| 928    	 | 263    		 | 1,408	 | 
 
 ### Digital Signature
 | Algorithm     | Public Key    | Srcret Key    | Signature     | 
