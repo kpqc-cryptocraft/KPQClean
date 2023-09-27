@@ -50,14 +50,22 @@ When updated source code was used, indicate the date the source code was updated
 * Compiler: gcc 11.3.0
 * Optimization Level: -O2, -O3
 
+### Testing Environment3
+* OS: macOS Ventura 13.5.2
+* CPU: Apple M1 Pro
+* RAM: 16GB
+* Compiler: Apple clang 14.0.3
+* Optimization Level: -O3
+
 ### Benchmark method
 * We used 'rdtsc' instruction to calculate time consumption.
 * Each algorithms 10,000 iterated, and **average**, **median** value of the operation cycle is used.
 * Enhanced pqsigRM was 100 iterated.
+* On the ARM processor, each algorithms are 100 iterated, and the unit is nano second.
 
 ### PKE/KEM (Environment1, -O2)
 <details>
-<summary>PKE/KEM-Env1-O2 Table</summary>
+<summary>PKE/KEM-Env1-O2 Table (Unit: clock cycles)</summary>
     
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
 | -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
@@ -84,7 +92,7 @@ When updated source code was used, indicate the date the source code was updated
 
 ### PKE/KEM (Environment1, -O3)
 <details>
-<summary>PKE/KEM-Env1-O3 Table</summary>
+<summary>PKE/KEM-Env1-O3 Table (Unit: clock cycles)</summary>
     
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
 | -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
@@ -111,7 +119,7 @@ When updated source code was used, indicate the date the source code was updated
 
 ### PKE/KEM (Environment2, -O2)
 <details>
-<summary>PKE/KEM-Env2-O2 Table</summary>
+<summary>PKE/KEM-Env2-O2 Table (Unit: clock cycles)</summary>
     
 | Type			| Algorithm          	| Keygen(Med.)         	| Encapsulation(Med.)   | Decapsulation(Med.)   |  Keygen(Avr.)      | Encapsulation(Avr.)	| Decapsulation(Avr.)	|
 | -------------:| -------------:      	| -------------:       	| -------------:      	| -------------:      	| -------------:     | -------------:      	| -------------:      	|
@@ -138,7 +146,7 @@ When updated source code was used, indicate the date the source code was updated
 
 ### PKE/KEM (Environment2, -O3)
 <details>
-<summary>PKE/KEM-Env2-O3 Table</summary>
+<summary>PKE/KEM-Env2-O3 Table (Unit: clock cycles)</summary>
     
 | Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
 | -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
@@ -163,9 +171,33 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| Layered ROLLO I-256	| 375,056				| 136,052 				| 1,245,346				| 455,911				| 146,919				| 1,337,504				|
 </details>
 
+### PKE/KEM (Environment3, -O3)
+<details>
+<summary>PKE/KEM-Env3-O3 Table (Unit: nsec)</summary>
+    
+| Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
+| -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
+| Lattice		| NTRUplus-576			| 119,040  		 		| 46,848				| 36,864 		 		| 124,979 				| 47,508				| 36,682 				|
+| Lattice		| NTRUplus-768			| 87,040  		 		| 46,080				| 38,912  		 		| 76,460 				| 46,359  				| 38,684 				|
+| Lattice		| NTRUplus-864			| 59,136 		 		| 37,888 				| 33,024  		 		| 59,668  				| 38,484 				| 32,640 				|
+| Lattice		| NTRUplus-1152			| 273,024 		 		| 73,984 				| 61,952 		 		| 297,897  				| 71,583				| 61,501  				|
+| Lattice		| SMAUG-128				| 51,200 		 		| 46,080				| 38,912 		 		| 61,448				| 49,454				| 38,013 				|
+| Lattice		| SMAUG-192				| 82,944 		 		| 72,960 				| 46,848		 		| 91,505 				| 73,039 				| 47,158 				|
+| Lattice		| SMAUG-256				| 64,000 		 		| 70,912 		 		| 79,104 		 		| 76,370 				| 69,309 				| 77,965 				|
+| Lattice		| TiGER-128				| 54,016  		 		| 56,064  				| 44,032  		 		| 54,369  				| 56,271 				| 44,413				|
+| Lattice		| TiGER-192				| 64,000		 		| 88,960 		 		| 75,008 				| 62,359 				| 94,866 				| 94,733				|
+| Lattice		| TiGER-256				| 70,912 		 		| 125,952 		 		| 99,968   		 		| 68,004  				| 128,740 				| 103,688  				|
+| Code			| PALOMA-128			| 34,776,064 	 		| 155,008  				| 8,960 		 		| 34,915,917 			| 153,480 				| 9,236					|
+| Code			| PALOMA-192			| 34,742,912 	 		| 146,176 				| 8,960 		 		| 35,071,649 			| 147,387				| 9,359 				|
+| Code			| PALOMA-256			| 34,691,968 	 		| 155,008				| 8,960			 		| 34,935,721 			| 154,355 				| 9,062					|
+| Code			| IPCC-1  				| 4,171,904 	 		| 7,326,464 			| 230,144 				| 4,445,222 			| 11,629,652 			| 243,666 				|
+| Code			| IPCC-3		 		| 4,205,952 	 		| 191,207,040 	 		| 246,400 				| 4,293,573				| 277,514,522 			| 277,967 				|
+| Code			| IPCC-4				| 4,153,984 	 		| 233,392,384 			| 234,624 				| 4,281,823 			| 317,245,691 			| 255,708 				|
+</details>
+
 ### Digital Signature (Environment1, -O2)
 <details>
-<summary>Digital Signature-Env1-O2 Table</summary>
+<summary>Digital Signature-Env1-O2 Table (Unit: clock cycles)</summary>
     
 | Type					| Algorithm     		| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 		| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
@@ -206,7 +238,7 @@ When updated source code was used, indicate the date the source code was updated
 
 ### Digital Signature (Environment1, -O3)
 <details>
-<summary>Digital Signature-Env1-O3 Table</summary>
+<summary>Digital Signature-Env1-O3 Table (Unit: clock cycles)</summary>
     
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
@@ -247,7 +279,7 @@ When updated source code was used, indicate the date the source code was updated
 
 ### Digital Signature (Environment2, -O2)
 <details>
-<summary>Digital Signature-Env2-O2 Table</summary>
+<summary>Digital Signature-Env2-O2 Table (Unit: clock cycles)</summary>
     
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
@@ -288,7 +320,7 @@ When updated source code was used, indicate the date the source code was updated
 
 ### Digital Signature (Environment2, -O3)
 <details>
-<summary>Digital Signature-Env2-O3 Table</summary>
+<summary>Digital Signature-Env2-O3 Table (Unit: clock cycles)</summary>
     
 | Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
 | -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
@@ -326,6 +358,40 @@ When updated source code was used, indicate the date the source code was updated
 | Code					| pqsigRM-613 				| 4,702,612,115 	| 4,732,706 		| 2,064,731 			| 4,703,836,987 	| 6,667,564 		| 2,458,625			|
 | Code					| pqsigRM-612 				| 71,111,088,778 	| 923,513 			| 417,658 				| 71,168,430,985 	| 1,166,665 		| 502,448			|
 </details>
+
+### Digital Signature (Environment3, -O3)
+<details>
+<summary>Digital Signature-Env3-O3 Table (Unit: nsec)</summary>
+    
+| Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
+| -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
+| Zero-knowledge		| AIMer-I-param1    	| 44,032    			| 899,968 		| 647,040 				| 48,655  			| 1,047,603 		| 651,395   		|
+| Zero-knowledge		| AIMer-I-param2    	| 52,992   			| 1,698,048   		| 1,593,472 			| 54,157 			| 1,909,775   		| 1,605,245  		|
+| Zero-knowledge		| AIMer-I-param3    	| 52,992   			| 5,171,584    		| 5,123,072 			| 54,638 			| 5,427,658 		| 5,137,475 		|
+| Zero-knowledge		| AIMer-I-param4    	| 52,992    		| 25,836,800    	| 25,750,528   			| 54,533  			| 26,125,240 		| 25,846,420  		|
+| Zero-knowledge		| AIMer-III-param1    	| 94,976			| 1,921,536  		| 1,597,952  			| 90,442 			| 2,120,712 		| 1,611,597  		|
+| Zero-knowledge		| AIMer-III-param2    	| 94,976   			| 4,444,160     	| 4,254,080     		| 91,876 			| 4,682,583    		| 4,271,025			|
+| Zero-knowledge		| AIMer-III-param3    	| 90,496 			| 12,902,016 		| 12,858,624   			| 88,392			| 13,133,614  		| 12,907,110  		|
+| Zero-knowledge		| AIMer-III-param4    	| 77,056 	  		| 63,625,472      	| 63,475,584 			| 85,435   			| 63,923,018 		| 63,566,275  		|
+| Zero-knowledge		| AIMer-V-param1    	| 150,016     		| 3,278,976 		| 2,849,408  			| 156,132 			| 3,461,350 		| 2,870,072   		|
+| Zero-knowledge		| AIMer-V-param2    	| 151,040  			| 7,632,128 		| 7,357,952 			| 165,619   		| 7,812,086 		| 7,382,221  		|
+| Zero-knowledge		| AIMer-V-param3    	| 80,128 	  		| 22,604,416 		| 22,692,992   			| 87,229			| 22,887,040   		| 22,764,360  		|
+| Zero-knowledge		| AIMer-V-param4    	| 150,016 			| 110,281,984  		| 110,957,440 			| 168,602   		| 110,695,219  		| 111,235,878   	|
+| Multivariate Quadratic| MQSign-72/46 				| 25,404,416 		| 140,032 			| 431,104 				| 25,694,354 		| 140,605 			| 436,836 			|
+| Multivariate Quadratic| MQSign-112/72 			| 135,705,472 		| 380,160			| 1,565,952 			| 136,245,245 		| 385,275 			| 1,575,908 		|
+| Multivariate Quadratic| MQSign-148/96 			| 411,995,904  		| 795,136 			| 3,660,416 			| 412,772,841  		| 802,437  			| 3,674,153 		|
+| Lattice				| GCKSign-II 				| 102,912 			| 254,976  			| 50,944 				| 108,541			| 320,015  			| 51,244 			|
+| Lattice				| GCKSign-III 				| 108,032  			| 238,080  			| 54,016 				| 118,446 			| 315,105 			| 54,879			|
+| Lattice				| GCKSign-V 				| 142,080  			| 264,576 			| 75,008 				| 144,274  			| 352,781 	 		| 75,077 			|
+| Lattice				| HAETAE-II 				| 357,120  			| 208,384 			| 40,960 				| 485,315 			| 367,772 			| 43,341 			|
+| Lattice				| HAETAE-III  				| 428,544 			| 450,432     		| 72,960				| 718,948 			| 656,292			| 75,410 			|
+| Lattice				| HAETAE-V 					| 403,968  			| 432,000  			| 91,136  				| 486,986 			| 618,040			| 94,843			|
+| Lattice				| Peregrine-512 			| 3,891,456 		| 45,056  			| 5,120					| 4,175,012 		| 45,507 			| 5,179 			|
+| Lattice				| Peregrine-1024 			| 13,422,464  		| 93,952 			| 9,984 				| 14,907,274 		| 95,708 			| 10,150 			|
+| Code					| pqsigRM-613 				| 793,679,488  		| 2,152,960  		| 379,392				| 793,098,163 		| 2,555,494 		| 405,683 			|
+| Code					| pqsigRM-612 				| 10,549,565,568 	| 329,600 			| 72,064  				| 10,564,255,590 	| 271,821 	 		| 76,672 			|
+</details>
+
 
 ## Memory consumption
 We checked for memory consumption using the [Valgrind](https://valgrind.org/) tool.
