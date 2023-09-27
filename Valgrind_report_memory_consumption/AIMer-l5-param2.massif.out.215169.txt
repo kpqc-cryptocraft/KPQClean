@@ -1,0 +1,1144 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=3592488
+mem_heap_B=56536
+mem_heap_extra_B=176
+mem_stacks_B=27328
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=10293496
+mem_heap_B=752554
+mem_heap_extra_B=390
+mem_stacks_B=28648
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=15116577
+mem_heap_B=769362
+mem_heap_extra_B=526
+mem_stacks_B=28376
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=20621422
+mem_heap_B=791236
+mem_heap_extra_B=732
+mem_stacks_B=28648
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=28145790
+mem_heap_B=821194
+mem_heap_extra_B=990
+mem_stacks_B=27928
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=33739051
+mem_heap_B=842178
+mem_heap_extra_B=1150
+mem_stacks_B=27552
+heap_tree=detailed
+n5: 842178 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 104000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 104000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 104000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 104000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 104000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 104000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 15234 in 25 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=40829142
+mem_heap_B=868600
+mem_heap_extra_B=1416
+mem_stacks_B=28648
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=46399436
+mem_heap_B=890090
+mem_heap_extra_B=1606
+mem_stacks_B=28648
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=50576012
+mem_heap_B=907154
+mem_heap_extra_B=1750
+mem_stacks_B=27912
+heap_tree=detailed
+n5: 907154 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 164000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 164000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 164000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 164000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 164000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 164000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 20210 in 25 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=57509432
+mem_heap_B=1880464
+mem_heap_extra_B=1952
+mem_stacks_B=27616
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=65150434
+mem_heap_B=1881424
+mem_heap_extra_B=2072
+mem_stacks_B=27616
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=72791436
+mem_heap_B=1882384
+mem_heap_extra_B=2192
+mem_stacks_B=27616
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=81713421
+mem_heap_B=1883536
+mem_heap_extra_B=2336
+mem_stacks_B=27616
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=86833077
+mem_heap_B=1884112
+mem_heap_extra_B=2408
+mem_stacks_B=27616
+heap_tree=detailed
+n10: 1884112 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E36C: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E37B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E345: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E392: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E3A1: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 24912 in 29 places, all below massif's threshold (1.00%)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+#-----------
+snapshot=15
+#-----------
+time=92595025
+mem_heap_B=1884880
+mem_heap_extra_B=2504
+mem_stacks_B=27616
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=101557630
+mem_heap_B=1886032
+mem_heap_extra_B=2648
+mem_stacks_B=27616
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=106030741
+mem_heap_B=1886608
+mem_heap_extra_B=2720
+mem_stacks_B=27616
+heap_tree=detailed
+n10: 1886608 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E36C: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E37B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E345: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E392: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E3A1: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 27408 in 29 places, all below massif's threshold (1.00%)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+#-----------
+snapshot=18
+#-----------
+time=111780750
+mem_heap_B=1887376
+mem_heap_extra_B=2816
+mem_stacks_B=27824
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=119466713
+mem_heap_B=1888336
+mem_heap_extra_B=2936
+mem_stacks_B=27664
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=123313820
+mem_heap_B=1888848
+mem_heap_extra_B=2960
+mem_stacks_B=27784
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=129724553
+mem_heap_B=1890128
+mem_heap_extra_B=3040
+mem_stacks_B=27736
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=136302125
+mem_heap_B=1990064
+mem_heap_extra_B=3360
+mem_stacks_B=27576
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=141426355
+mem_heap_B=1998000
+mem_heap_extra_B=3392
+mem_stacks_B=27576
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=150056724
+mem_heap_B=2009904
+mem_heap_extra_B=3440
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=158215962
+mem_heap_B=2021808
+mem_heap_extra_B=3488
+mem_stacks_B=27792
+heap_tree=detailed
+n12: 2021808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E36C: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E37B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E345: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E392: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E3A1: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E9F9: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 39680 0x10EBE3: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 39680 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 39680 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 39680 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 39680 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 35632 in 32 places, all below massif's threshold (1.00%)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+#-----------
+snapshot=26
+#-----------
+time=162059096
+mem_heap_B=2025776
+mem_heap_extra_B=3504
+mem_stacks_B=27576
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=167183141
+mem_heap_B=2033712
+mem_heap_extra_B=3536
+mem_stacks_B=27576
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=171026375
+mem_heap_B=2037680
+mem_heap_extra_B=3552
+mem_stacks_B=27576
+heap_tree=detailed
+n12: 2037680 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E36C: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E37B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E345: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E392: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E3A1: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E9F9: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 55552 0x10EBE3: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 55552 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 55552 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 55552 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 55552 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 35632 in 32 places, all below massif's threshold (1.00%)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+#-----------
+snapshot=29
+#-----------
+time=176480988
+mem_heap_B=2045616
+mem_heap_extra_B=3584
+mem_stacks_B=27536
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=180971020
+mem_heap_B=2051568
+mem_heap_extra_B=3608
+mem_stacks_B=27576
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=185460836
+mem_heap_B=2057520
+mem_heap_extra_B=3632
+mem_stacks_B=27576
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=192501509
+mem_heap_B=2067440
+mem_heap_extra_B=3672
+mem_stacks_B=27536
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=196995051
+mem_heap_B=2069424
+mem_heap_extra_B=3680
+mem_stacks_B=27752
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=201533922
+mem_heap_B=2086088
+mem_heap_extra_B=3992
+mem_stacks_B=27408
+heap_tree=peak
+n12: 2086088 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10E14B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E36C: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10E37B: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10C616: make_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10E20A: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10E120: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E345: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E392: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E3A1: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10E9F9: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10EBE3: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 52296 in 34 places, all below massif's threshold (1.00%)
+ n1: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10E0E0: _aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x10F3DD: aimer_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1098B9: crypto_sign (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x1095EC: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+#-----------
+snapshot=35
+#-----------
+time=206025881
+mem_heap_B=750226
+mem_heap_extra_B=2086
+mem_stacks_B=28408
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=212764443
+mem_heap_B=775630
+mem_heap_extra_B=2298
+mem_stacks_B=28240
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=217260352
+mem_heap_B=797504
+mem_heap_extra_B=2504
+mem_stacks_B=28408
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=221753879
+mem_heap_B=814312
+mem_heap_extra_B=2640
+mem_stacks_B=28264
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=226250645
+mem_heap_B=836186
+mem_heap_extra_B=2846
+mem_stacks_B=28408
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=230743547
+mem_heap_B=852994
+mem_heap_extra_B=2982
+mem_stacks_B=28152
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=237481558
+mem_heap_B=883080
+mem_heap_extra_B=3248
+mem_stacks_B=28264
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=241974805
+mem_heap_B=900272
+mem_heap_extra_B=3400
+mem_stacks_B=28248
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=248712566
+mem_heap_B=1926976
+mem_heap_extra_B=3672
+mem_stacks_B=27104
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=253206643
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=259946040
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=266682516
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27688
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=271175668
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=275667512
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=280159143
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27440
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=283752818
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=287348841
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=290941353
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=294534868
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=298130891
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=detailed
+n10: 1902352 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10F723: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10F95E: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10F96E: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10CC28: reconstruct_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10F7A8: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10F6F8: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F931: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F97B: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F98B: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 43152 in 58 places, all below massif's threshold (1.00%)
+ n2: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10FA2F: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=55
+#-----------
+time=301723403
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=305316918
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=308909412
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27008
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=312502945
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=316098968
+mem_heap_B=1902352
+mem_heap_extra_B=3640
+mem_stacks_B=27392
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=319691589
+mem_heap_B=1993968
+mem_heap_extra_B=3672
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=323284297
+mem_heap_B=1999920
+mem_heap_extra_B=3696
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=326876830
+mem_heap_B=2003888
+mem_heap_extra_B=3712
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=330469359
+mem_heap_B=2009840
+mem_heap_extra_B=3736
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=334061866
+mem_heap_B=2013808
+mem_heap_extra_B=3752
+mem_stacks_B=27264
+heap_tree=detailed
+n12: 2013808 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10F723: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10F95E: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10F96E: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10CC28: reconstruct_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10F7A8: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10F6F8: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F931: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F97B: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F98B: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10FE62: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 43504 in 59 places, all below massif's threshold (1.00%)
+ n2: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10FA2F: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 23808 0x1100DE: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 23808 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 23808 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 23808 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 23808 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+#-----------
+snapshot=65
+#-----------
+time=337654391
+mem_heap_B=2019760
+mem_heap_extra_B=3776
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=341246884
+mem_heap_B=2023728
+mem_heap_extra_B=3792
+mem_stacks_B=27304
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=344839414
+mem_heap_B=2029680
+mem_heap_extra_B=3816
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=348431930
+mem_heap_B=2033648
+mem_heap_extra_B=3832
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=352024656
+mem_heap_B=2039600
+mem_heap_extra_B=3856
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=355617150
+mem_heap_B=2043568
+mem_heap_extra_B=3872
+mem_stacks_B=27128
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=359209694
+mem_heap_B=2049520
+mem_heap_extra_B=3896
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=362802185
+mem_heap_B=2053488
+mem_heap_extra_B=3912
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=366394717
+mem_heap_B=2059440
+mem_heap_extra_B=3936
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=369987246
+mem_heap_B=2063408
+mem_heap_extra_B=3952
+mem_stacks_B=27352
+heap_tree=detailed
+n12: 2063408 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 523776 0x10F723: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 523776 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 523776 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 523776 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 523776 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10F95E: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 349184 0x10F96E: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 349184 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 349184 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 349184 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 349184 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 176000 0x10CC28: reconstruct_seed_tree (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 176000 0x10F7A8: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 176000 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 176000 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 176000 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 176000 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 174592 0x10F6F8: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 174592 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 174592 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 174592 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 174592 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F931: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F97B: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10F98B: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 87296 0x10FE62: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 87296 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 87296 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 87296 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 87296 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n1: 73408 0x1100DE: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 73408 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 73408 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 73408 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n0: 73408 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+ n0: 43504 in 59 places, all below massif's threshold (1.00%)
+ n2: 24576 0x10B130: generate_matrix_LU (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n1: 24576 0x10FA2F: _aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+   n1: 24576 0x1106BB: aimer_verify (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+    n1: 24576 0x1099E9: crypto_sign_open (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+     n1: 24576 0x109675: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+      n0: 24576 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-AIMer_revised0623/AIMer-l5-param2/PQC_bench)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=75
+#-----------
+time=373579742
+mem_heap_B=2069360
+mem_heap_extra_B=3976
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=377172233
+mem_heap_B=2073328
+mem_heap_extra_B=3992
+mem_stacks_B=27352
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=380764721
+mem_heap_B=2077424
+mem_heap_extra_B=4024
+mem_stacks_B=27416
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=384357227
+mem_heap_B=2077424
+mem_heap_extra_B=4024
+mem_stacks_B=27600
+heap_tree=empty
+#-----------
+snapshot=79
+#-----------
+time=387954033
+mem_heap_B=2077424
+mem_heap_extra_B=4024
+mem_stacks_B=27544
+heap_tree=empty
+#-----------
+snapshot=80
+#-----------
+time=391550446
+mem_heap_B=2077424
+mem_heap_extra_B=4024
+mem_stacks_B=27544
+heap_tree=empty

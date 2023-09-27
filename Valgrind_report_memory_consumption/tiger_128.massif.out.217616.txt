@@ -1,0 +1,695 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=2529
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=512
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=28532
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=512
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=3
+#-----------
+time=44592
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=6744
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=61539
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1376
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=77328
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1384
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=97190
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1688
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=115482
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1864
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=8
+#-----------
+time=140946
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1864
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=167345
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=4136
+heap_tree=detailed
+n1: 1024 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+#-----------
+snapshot=10
+#-----------
+time=186648
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=5944
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=199556
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6128
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=213908
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6280
+heap_tree=detailed
+n3: 3400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093A9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093BB: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093CD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n2: 960 0x10D0F3: aes256_ecb_keyexp (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+  n1: 960 0x10B955: AES256_CTR_DRBG_Update (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 960 0x10BB91: randombytes (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n1: 960 0x1098EB: Keygen (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+     n1: 960 0x1095F0: KEM_Keygen (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+      n1: 960 0x1093F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+       n0: 960 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=230276
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6104
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=251257
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6104
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=261356
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6288
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=280431
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6112
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=293286
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=5944
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=309969
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=5664
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=320555
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6248
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=341536
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6248
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=357351
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6104
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=375612
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=6104
+heap_tree=detailed
+n3: 3400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093A9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093BB: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093CD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n2: 960 0x10D0F3: aes256_ecb_keyexp (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+  n1: 960 0x10B955: AES256_CTR_DRBG_Update (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n2: 960 0x10BB91: randombytes (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n1: 960 0x109900: Keygen (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+     n1: 960 0x1095F0: KEM_Keygen (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+      n1: 960 0x1093F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+       n0: 960 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=397606
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=5688
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=409428
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=5688
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=430137
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=5688
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1017993
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=5224
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1036378
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=3288
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1049471
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=3616
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1070452
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=3616
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1091433
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=3616
+heap_tree=detailed
+n3: 3400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093A9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093BB: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093CD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n2: 960 0x10D0F3: aes256_ecb_keyexp (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+  n1: 960 0x10B955: AES256_CTR_DRBG_Update (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n2: 960 0x10BB91: randombytes (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n1: 960 0x1095FD: KEM_Keygen (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+     n1: 960 0x1093F9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+      n0: 960 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=1102771
+mem_heap_B=6536
+mem_heap_extra_B=64
+mem_stacks_B=4560
+heap_tree=detailed
+n3: 6536 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5120 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 5120 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 5120 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 5120 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 5120 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 4096 0x48D5D28: outstring_func (vfprintf-internal.c:239)
+       n1: 4096 0x48D5D28: __vfprintf_internal (vfprintf-internal.c:1516)
+        n1: 4096 0x4994EC2: __fprintf_chk (fprintf_chk.c:33)
+         n1: 4096 0x10942D: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 4096 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093A9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093BB: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n1: 472 0x1093CD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=32
+#-----------
+time=1120821
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=4432
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1138978
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=4272
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=1159959
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=4272
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1183612
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=4552
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1195239
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=4104
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1212332
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9160
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1234405
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9160
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1249177
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9160
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1268095
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=8744
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2019061
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=3720
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2035619
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=4424
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2046547
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=4424
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2065626
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=4136
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2658343
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=7704
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2679624
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10968
+heap_tree=peak
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093CD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=2695406
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10728
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2717479
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10728
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2732251
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10728
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2737426
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10728
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2742601
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10728
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=2747785
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10728
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2751169
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=10312
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=3502135
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5288
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=3508290
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5240
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3513911
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=3519375
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=3524839
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48D51CC: outstring_func (vfprintf-internal.c:239)
+       n1: 1024 0x48D51CC: __vfprintf_internal (vfprintf-internal.c:1263)
+        n1: 1024 0x4994DFA: __printf_chk (printf_chk.c:33)
+         n1: 1024 0x10930F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+          n0: 1024 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093CD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+    n0: 472 0x1091AC: main (in /home/hd/kpqclean-Round_valgrind/pke-TiGER/TIGER128/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=59
+#-----------
+time=3530303
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=3535767
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=3541231
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=3546695
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5992
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=3552310
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=5704
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=3554922
+mem_heap_B=5592
+mem_heap_extra_B=32
+mem_stacks_B=4128
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=3557452
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=632
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=3559984
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=560
+heap_tree=empty

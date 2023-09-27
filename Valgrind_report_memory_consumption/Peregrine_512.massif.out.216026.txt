@@ -1,0 +1,622 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=240740
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2648
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=2
+#-----------
+time=1560680
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1752
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2384046
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2096
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2935810
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1984
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=3867793
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1936
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=4420021
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1832
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=5255881
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1680
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=6242713
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1680
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=7564515
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1768
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=8277227
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1768
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=8989939
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1768
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=9702651
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1768
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=10689972
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2248
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=14
+#-----------
+time=11844859
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2240
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=12615177
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1968
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=13844938
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2016
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=14462292
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2136
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=15239351
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2136
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=19
+#-----------
+time=15870460
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2128
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=17122557
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=17910223
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=18902377
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=19908709
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2016
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=20746564
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2136
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=21940807
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=22818109
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=23975110
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2296
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=25147530
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2136
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=26366458
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=27390095
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=28064029
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=29070909
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2136
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=29789426
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=30855263
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=31907559
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2056
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=32611436
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2296
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=33617225
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2296
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=38
+#-----------
+time=34290263
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2240
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=35302065
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=36310303
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2240
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=37015601
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=42
+#-----------
+time=37688667
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2016
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=38708234
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=39388928
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1992
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=40436763
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=46
+#-----------
+time=41785631
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2248
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=43155813
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=43847387
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2288
+heap_tree=detailed
+n7: 112260 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 1921 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+#-----------
+snapshot=49
+#-----------
+time=44526544
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2408
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=45081954
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2248
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=45633777
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=2240
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=46200882
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1720
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=46755019
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=47373778
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=47956221
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=48556444
+mem_heap_B=112260
+mem_heap_extra_B=156
+mem_stacks_B=1712
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=49052649
+mem_heap_B=116356
+mem_heap_extra_B=164
+mem_stacks_B=3008
+heap_tree=peak
+n8: 116356 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 57344 0x109C19: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 57344 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 43008 0x109BF2: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 43008 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 5120 0x49C5C23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 5120 0x49D4D5F: _IO_doallocbuf (genops.c:347)
+   n1: 5120 0x49D3FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 5120 0x49D2754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 5120 0x49D2754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 4096 0x49BCD28: outstring_func (vfprintf-internal.c:239)
+       n1: 4096 0x49BCD28: __vfprintf_internal (vfprintf-internal.c:1516)
+        n1: 4096 0x4A7BEC2: __fprintf_chk (fprintf_chk.c:33)
+         n1: 4096 0x109DC8: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+          n0: 4096 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+      n0: 1024 in 1 place, below massif's threshold (1.00%)
+ n1: 3990 0x109BD1: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3990 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 3300 0x109B88: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 3300 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n1: 1416 0x49C66CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x49C66CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1281 0x109B9F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+  n0: 1281 0x1092AC: main (in /home/hd/kpqclean-Round_valgrind/dsa-Peregrine/PQC_bench)
+ n0: 897 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=49678464
+mem_heap_B=111788
+mem_heap_extra_B=140
+mem_stacks_B=1312
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=50299634
+mem_heap_B=111788
+mem_heap_extra_B=140
+mem_stacks_B=1312
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=50900487
+mem_heap_B=111316
+mem_heap_extra_B=124
+mem_stacks_B=1056
+heap_tree=empty

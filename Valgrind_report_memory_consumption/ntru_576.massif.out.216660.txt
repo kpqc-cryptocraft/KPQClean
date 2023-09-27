@@ -1,0 +1,755 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=28532
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=512
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=2
+#-----------
+time=61493
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1376
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=90926
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1648
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=121475
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1864
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=142281
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1960
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=176522
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=11024
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=215963
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=11176
+heap_tree=detailed
+n3: 3400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x10935D: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x10936F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n2: 960 0x113783: aes256_ecb_keyexp (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+  n1: 960 0x10B6B5: AES256_CTR_DRBG_Update (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 960 0x10B8F1: randombytes (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n1: 960 0x109D44: crypto_kem_keypair (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+     n1: 960 0x10943C: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 960 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=245823
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=11168
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=266804
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=11168
+heap_tree=detailed
+n3: 3400 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x10935D: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x10936F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n2: 960 0x113783: aes256_ecb_keyexp (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+  n1: 960 0x10B6B5: AES256_CTR_DRBG_Update (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 960 0x10B8F1: randombytes (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n1: 960 0x109D44: crypto_kem_keypair (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+     n1: 960 0x10943C: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 960 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=297224
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=344292
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=detailed
+n3: 2440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x10935D: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x10936F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=389993
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=426070
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10208
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=449682
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10208
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=491658
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10208
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=528343
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=detailed
+n3: 2440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x10935D: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x10936F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=556256
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=581638
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=617175
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10264
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=650192
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10168
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=671140
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10208
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=710492
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10208
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=756461
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10120
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=793495
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10152
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=831526
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=10488
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=857722
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=10632
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=894487
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=10488
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=915474
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=10488
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=949563
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=10816
+heap_tree=detailed
+n3: 2928 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 960 0x113783: aes256_ecb_keyexp (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+  n1: 960 0x10B6B5: AES256_CTR_DRBG_Update (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n2: 960 0x10B8F1: randombytes (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n1: 960 0x109EBF: crypto_kem_enc (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+     n1: 960 0x1094C8: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 960 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 944 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 944 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x10936F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=978460
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=10648
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1015916
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1053281
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=1090617
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=detailed
+n3: 1968 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 944 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 944 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x10936F: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=1127956
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9800
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1169976
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=10056
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1207314
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1232220
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1257110
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=1282008
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9912
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=1319343
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=9872
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=1357337
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=15944
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=1400617
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16120
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=43
+#-----------
+time=1425503
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16120
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=1450384
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16120
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=1487715
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16120
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=1525054
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16120
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=1549947
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16120
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=1598629
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=1623535
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=1644347
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=1665171
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=1685981
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=53
+#-----------
+time=1706788
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16040
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=1727607
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=15976
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=1780740
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16232
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=1783893
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16424
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=1792384
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16632
+heap_tree=peak
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109390: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+        n0: 1024 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109381: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+    n0: 472 0x10920C: main (in /home/hd/kpqclean-Round_valgrind/pke-NTRUplus/ntruplus576/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=58
+#-----------
+time=1813197
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=1834012
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=1854835
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=1875662
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=1896473
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=1917287
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=16088
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=1938104
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=15976
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=1958910
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=536
+heap_tree=empty

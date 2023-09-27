@@ -1,0 +1,690 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=351538
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=48504
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=866660
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47912
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=1217031
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=detailed
+n3: 2440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109433: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+        n0: 1024 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=1595351
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2079882
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47912
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2725505
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=3463304
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=48600
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=4047047
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=4556820
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47912
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=5177291
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=5903249
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=48600
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=6211806
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=6690052
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=7437689
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=7915935
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=8355005
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=48600
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=8759211
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=detailed
+n3: 2440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109433: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+        n0: 1024 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=9141851
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=9530650
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=10080669
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=10367651
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=10853119
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=48544
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=11306482
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=11982279
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=12532315
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=13208129
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=13853814
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=detailed
+n3: 2440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109433: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+        n0: 1024 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=14236411
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52648
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=14619035
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47528
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=15270883
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=15653492
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=16114169
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=16879371
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=17339992
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=18105188
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=18565865
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=18948462
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=19331087
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=19791708
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=20174305
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=20556924
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=21017601
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=21400198
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=21782803
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=22243454
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=22626051
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=23008662
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=47560
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=23469257
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=24043152
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=52688
+heap_tree=detailed
+n3: 2440 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n1: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 1416 in 3 places, all below massif's threshold (1.00%)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109433: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+        n0: 1024 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=24090532
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=111032
+heap_tree=detailed
+n1: 1968 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1968 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=51
+#-----------
+time=24093247
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=117320
+heap_tree=detailed
+n1: 1968 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1968 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=24382157
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=118392
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=24669141
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=117432
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=24956137
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=111128
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=25044124
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134664
+heap_tree=peak
+n1: 1968 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1968 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=56
+#-----------
+time=25331423
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134888
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=25618536
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134888
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=25905598
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134696
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=26193018
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134888
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=26480101
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134808
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=26771191
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134696
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=27060710
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134696
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=27347918
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134888
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=27635001
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134808
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=27925462
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134696
+heap_tree=detailed
+n1: 1968 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 1968 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=66
+#-----------
+time=28212484
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134896
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=28499800
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=134888
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=28786796
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=130016
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=29073785
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=111160
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=29363783
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=111200
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=29650790
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=111128
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=29953324
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=115728
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=30240776
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=56600
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=30529696
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=56552
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=30816692
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=56696
+heap_tree=detailed
+n2: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109433: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+        n0: 1024 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-HAETAE_revised/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 472 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=76
+#-----------
+time=31106436
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=55696
+heap_tree=empty

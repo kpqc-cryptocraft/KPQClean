@@ -1,0 +1,669 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=44594
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=6744
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=115471
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1864
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=3
+#-----------
+time=148616
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1864
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=198940
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=10352
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=242032
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=10128
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=292008
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=10272
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=362615
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10536
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=418040
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=10072
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=456667
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=12792
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=500723
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=12792
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=546676
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=12504
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=583843
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=10184
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=640191
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9400
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=737659
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=817065
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=901619
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=detailed
+n4: 2638 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093DD: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 472 0x1093EF: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 472 0x109401: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109410: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+        n0: 1024 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+ n1: 198 0x10D849: genSx_vec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+  n1: 198 0x10C7EB: indcpa_keypair (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 198 0x10D3CC: crypto_kem_keypair (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n1: 198 0x1094B9: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+     n0: 198 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+ n0: 0 in 1 place, below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=999053
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1078459
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1163013
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1260447
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1339853
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1424407
+mem_heap_B=2638
+mem_heap_extra_B=90
+mem_stacks_B=9344
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1480143
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=3544
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1543115
+mem_heap_B=3400
+mem_heap_extra_B=64
+mem_stacks_B=3704
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1591213
+mem_heap_B=2928
+mem_heap_extra_B=48
+mem_stacks_B=4008
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1663214
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=3320
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1726284
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=16488
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1781354
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=16488
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1833912
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=16200
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1872633
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=12648
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=1913968
+mem_heap_B=1968
+mem_heap_extra_B=40
+mem_stacks_B=12248
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1986735
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=2041689
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2123670
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2187643
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2242597
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=detailed
+n4: 2119 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109410: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+        n0: 1024 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 944 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n3: 944 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x1093EF: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 472 0x109401: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 151 0x10C6F0: genRx_vec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+  n1: 151 0x10CA00: indcpa_enc (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 151 0x10D484: crypto_kem_encap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n1: 151 0x109545: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+     n0: 151 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+ n0: 0 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=37
+#-----------
+time=2324578
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2388551
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2443505
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2525486
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11520
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2596922
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11488
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2651863
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11488
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2733831
+mem_heap_B=2119
+mem_heap_extra_B=73
+mem_stacks_B=11488
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2766381
+mem_heap_B=1694
+mem_heap_extra_B=58
+mem_stacks_B=8336
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2872547
+mem_heap_B=1694
+mem_heap_extra_B=58
+mem_stacks_B=8448
+heap_tree=detailed
+n4: 1694 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109410: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+        n0: 1024 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109401: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 198 0x10D006: load_from_string_sk (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+  n1: 198 0x10CBDF: indcpa_dec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 198 0x10D573: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n1: 198 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+     n0: 198 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+ n0: 0 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=2951948
+mem_heap_B=1694
+mem_heap_extra_B=58
+mem_stacks_B=8448
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=3036497
+mem_heap_B=1694
+mem_heap_extra_B=58
+mem_stacks_B=8448
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=3099084
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=17664
+heap_tree=peak
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109410: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+        n0: 1024 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109401: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=3141977
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=17640
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=3175019
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=17640
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=3209958
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=17352
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=3243467
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=14096
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=3278610
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=13864
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=3374893
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=3429847
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3511828
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=detailed
+n4: 1647 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109410: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+        n0: 1024 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109401: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 151 0x10C6F0: genRx_vec (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+  n2: 151 0x10CA00: indcpa_enc (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n1: 151 0x10D5EC: crypto_kem_decap (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n1: 151 0x1095C4: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+     n0: 151 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 0 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=57
+#-----------
+time=3575801
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=3630755
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=3712736
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=3776709
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=3831663
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=3913644
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12672
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=3985080
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12640
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=4040021
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12640
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=4121989
+mem_heap_B=1647
+mem_heap_extra_B=57
+mem_stacks_B=12640
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=4157276
+mem_heap_B=1496
+mem_heap_extra_B=24
+mem_stacks_B=4472
+heap_tree=detailed
+n3: 1496 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEC23: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDD5F: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECFDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB754: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F9B: puts (ioputs.c:40)
+       n1: 1024 0x109410: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+        n0: 1024 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 472 0x48DF6CD: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF6CD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109401: PQC_bench (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+    n0: 472 0x10928C: main (in /home/hd/kpqclean-Round_valgrind/pke-SMAUG_revised/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 0 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=4189845
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=496
+heap_tree=empty

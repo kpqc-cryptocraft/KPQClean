@@ -1,0 +1,741 @@
+desc: --stacks=yes
+cmd: ./PQC_bench
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=21857166
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249808
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=35163159
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249768
+heap_tree=detailed
+n2: 16780712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 16777216 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+ n0: 3496 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=54537330
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249608
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=82499210
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249912
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=104752616
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249808
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=118661013
+mem_heap_B=16779752
+mem_heap_extra_B=11224
+mem_stacks_B=4249192
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=139036212
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249952
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=152927343
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249488
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=180709185
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249936
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=202873987
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249488
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=215838964
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249488
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=239175784
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249808
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=262512780
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249768
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=291035844
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249808
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=314372856
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249768
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=327337934
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249608
+heap_tree=detailed
+n2: 16780712 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n4: 16777216 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+ n0: 3496 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=348145246
+mem_heap_B=16780712
+mem_heap_extra_B=11232
+mem_stacks_B=4249936
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=374194706
+mem_heap_B=20974272
+mem_heap_extra_B=15328
+mem_stacks_B=4246768
+heap_tree=detailed
+n2: 20974272 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n6: 20971664 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10B478: col_permute (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x10D931: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+     n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n0: 144 in 2 places, all below massif's threshold (1.00%)
+ n0: 2608 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=423473557
+mem_heap_B=20974272
+mem_heap_extra_B=15328
+mem_stacks_B=4246600
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=472752616
+mem_heap_B=20974272
+mem_heap_extra_B=15328
+mem_stacks_B=4246600
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=522031675
+mem_heap_B=20974272
+mem_heap_extra_B=15328
+mem_stacks_B=4246600
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=571310734
+mem_heap_B=20974272
+mem_heap_extra_B=15328
+mem_stacks_B=4246600
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=590333449
+mem_heap_B=20974272
+mem_heap_extra_B=15328
+mem_stacks_B=4246600
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=1831960074
+mem_heap_B=16796328
+mem_heap_extra_B=11288
+mem_stacks_B=4246720
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=2224242594
+mem_heap_B=16796328
+mem_heap_extra_B=11288
+mem_stacks_B=4246680
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=2249211885
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248192
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=2265857727
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248160
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=2286665353
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248024
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=2303311405
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4247584
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=2328280095
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248160
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=2344925951
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248192
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=2368392459
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248168
+heap_tree=detailed
+n2: 16781952 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 16778384 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n0: 1168 in 4 places, all below massif's threshold (1.00%)
+ n0: 3568 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=2383536108
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4247864
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2398679432
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248048
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2421394716
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4247736
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2436538025
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248168
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2451681632
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4247744
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2481968202
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248008
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2512255021
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248024
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2534970020
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248064
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2550113420
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4247904
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2572828510
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248024
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2595543525
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248064
+heap_tree=detailed
+n2: 16781952 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 16778384 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n0: 1168 in 4 places, all below massif's threshold (1.00%)
+ n0: 3568 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=44
+#-----------
+time=2618258720
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248024
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2633402043
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=2648545669
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248048
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2678832381
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248064
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2701547576
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248024
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2731834188
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248032
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=2744799186
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248168
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=2757764222
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248192
+heap_tree=detailed
+n2: 16781952 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 16778384 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n0: 1168 in 4 places, all below massif's threshold (1.00%)
+ n0: 3568 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=2770729239
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248192
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=2783694223
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248048
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=2796659277
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=2809624280
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=2822589284
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=2835554369
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248048
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=2848519415
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=2861484442
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=60
+#-----------
+time=2874449446
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=2887414539
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248048
+heap_tree=detailed
+n2: 16781952 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n5: 16778384 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n0: 1168 in 4 places, all below massif's threshold (1.00%)
+ n0: 3568 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=62
+#-----------
+time=2900379601
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=2913344628
+mem_heap_B=16781952
+mem_heap_extra_B=11304
+mem_stacks_B=4248208
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=3821639911
+mem_heap_B=16797376
+mem_heap_extra_B=11328
+mem_stacks_B=4247248
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=4214300149
+mem_heap_B=16797376
+mem_heap_extra_B=11328
+mem_stacks_B=4247208
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=4214761873
+mem_heap_B=25167600
+mem_heap_extra_B=11344
+mem_stacks_B=4247296
+heap_tree=peak
+n2: 25167600 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n7: 25164944 0x10DDEE: new_matrix (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4195328 0x10D78F: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4195328 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4195328 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D760: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4194304 0x10D779: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4194304 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4194304 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n2: 4193280 0x10B478: col_permute (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x10DACB: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+     n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+  n1: 4193280 0x10D7A1: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n1: 4193280 0x10DA92: crypto_sign_keypair (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+   n1: 4193280 0x1094D3: PQC_bench (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+    n0: 4193280 0x10924C: main (in /home/hd/kpqclean-Round_valgrind/dsa-pqsigRM/EnhpqsigRM 613/PQC_bench)
+  n0: 1168 in 3 places, all below massif's threshold (1.00%)
+ n0: 2656 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=67
+#-----------
+time=4763524972
+mem_heap_B=25167600
+mem_heap_extra_B=11344
+mem_stacks_B=4247128
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=9565969657
+mem_heap_B=20974296
+mem_heap_extra_B=11320
+mem_stacks_B=4247120
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=10114864073
+mem_heap_B=25167600
+mem_heap_extra_B=11344
+mem_stacks_B=4263512
+heap_tree=empty
+#-----------
+snapshot=70
+#-----------
+time=14917308732
+mem_heap_B=20974296
+mem_heap_extra_B=11320
+mem_stacks_B=4263504
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=14930273944
+mem_heap_B=36563
+mem_heap_extra_B=229
+mem_stacks_B=4288360
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=14943239160
+mem_heap_B=36766
+mem_heap_extra_B=306
+mem_stacks_B=4288616
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=14956204309
+mem_heap_B=37929
+mem_heap_extra_B=391
+mem_stacks_B=4288376
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=14969171232
+mem_heap_B=37201
+mem_heap_extra_B=471
+mem_stacks_B=4287488
+heap_tree=empty
