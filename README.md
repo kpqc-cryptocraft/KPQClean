@@ -574,6 +574,54 @@ None
 * cryptolab_haetae5_verify:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
 </details>
 
+### MQSign
+<details>
+<summary>Learn more</summary>
+
+#### L1
+None
+#### L2
+None
+#### L3
+* mqss_sign: 	It was detected, but didn't see any indication of a secret key forming a branch.
+
+</details>
+
+### NCCSign
+<details>
+<summary>Learn more</summary>
+
+#### L1
+None
+#### L2
+None
+#### L3
+* poly_decompose:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* decompose:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* poly_challenge:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* poly_chknorm:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* poly_make_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* make_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* poly_use_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* use_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* poly_uniform:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+* rej_uniform:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
+</details>
+
+### Enhanced pqsigRM
+<details>
+<summary>Learn more</summary>
+
+#### L1
+None
+#### L2
+None
+#### L3
+* vector_mtx_product:	Although the number of loops depends on the matrix size, it appears to be independent of leakage of confidential information.
+* vec_mat_prod:	Although the number of loops depends on the matrix size, it appears to be independent of leakage of confidential information.
+* mindist_decoding:	Although the number of loops depends on the matrix size, it appears to be independent of leakage of confidential information.
+</details>
+
 ### NTRUplus
 <details>
 <summary>Learn more</summary>
@@ -612,6 +660,21 @@ None
 * biix_decaps	Through the for loop, the secret key is stored at the same index position in the skseed_st array up to size SEEDEXPANDER_SEED_BYTES(40). The skseed_st array is then used in biix_secret_key_from_string.
 </details>
 
+### SMAUG
+<details>
+<summary>Learn more</summary>
+
+#### L1
+None
+#### L2
+None
+#### L3
+* malloc:	Array size value not initialized.
+* cmov:	Array value not initialized.
+* poly_mult_add:	Array value not initialized.
+* indcpa_dec:	Array value not initialized.
+</details>
+
 ### TiGER
 <details>
 <summary>Learn more</summary>
@@ -622,40 +685,6 @@ None
 None
 #### L3
 None
-</details>
-
-### MQSign
-<details>
-<summary>Learn more</summary>
-
-#### L1
-None
-#### L2
-None
-#### L3
-* mqss_sign: 	It was detected, but didn't see any indication of a secret key forming a branch.
-
-</details>
-
-### NCCSign
-<details>
-<summary>Learn more</summary>
-
-#### L1
-None
-#### L2
-None
-#### L3
-* poly_decompose:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* decompose:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* poly_challenge:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* poly_chknorm:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* poly_make_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* make_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* poly_use_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* use_hint:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* poly_uniform:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
-* rej_uniform:	It was detected in the logs due to the lack of initialization; there is no association with constant time.
 </details>
 
 </details>
