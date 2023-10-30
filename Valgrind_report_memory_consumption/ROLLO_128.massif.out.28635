@@ -1,0 +1,1040 @@
+desc: --stacks=yes
+cmd: ./biix_128
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=34177
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=448
+heap_tree=detailed
+n0: 0 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+#-----------
+snapshot=2
+#-----------
+time=98546
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=1920
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=177602
+mem_heap_B=2440
+mem_heap_extra_B=56
+mem_stacks_B=4832
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=233992
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=detailed
+n14: 9292 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1416 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10952D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 472 0x10954D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 608 0x110A36: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x111CD0: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 608 0x110A66: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x111CD0: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 608 0x110A8C: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x111CD0: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 608 0x110AB7: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x111CD0: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 608 0x110AEC: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x111CD0: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 608 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x111BA5: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x10F598: biix_128_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 592 0x111C7E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x10F5BF: biix_128_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 592 0x111C7E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111BF7: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C98: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n0: 244 in 18 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=306838
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=350161
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=409354
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=444375
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=504350
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=587034
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=644140
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=687290
+mem_heap_B=9292
+mem_heap_extra_B=300
+mem_stacks_B=7976
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=746973
+mem_heap_B=10476
+mem_heap_extra_B=260
+mem_stacks_B=8760
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=812906
+mem_heap_B=10476
+mem_heap_extra_B=260
+mem_stacks_B=8536
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=851532
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=9160
+heap_tree=peak
+n15: 17900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3904 0x11184B: rbc_67_qre_mul (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 3904 0x11207D: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 3904 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 1952 0x1117E0: rbc_67_qre_mul (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 1952 0x11207D: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 1952 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n1: 1416 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10952D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 472 0x10954D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n2: 992 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x111E70: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 976 0x111ED6: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111EFB: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F44: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F6A: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F98: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111FCF: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111FFF: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n0: 212 in 43 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=16
+#-----------
+time=906099
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=9160
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=985233
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=8536
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=1037203
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=8712
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=1105287
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=8536
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=1155442
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=8936
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=1234834
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=8312
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=1273166
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=9160
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=1344177
+mem_heap_B=17900
+mem_heap_extra_B=284
+mem_stacks_B=9160
+heap_tree=detailed
+n15: 17900 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3904 0x11184B: rbc_67_qre_mul (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 3904 0x11220C: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 3904 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n2: 1952 0x1117E0: rbc_67_qre_mul (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 1952 0x11220C: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 1952 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 6 places, all below massif's threshold (1.00%)
+ n1: 1416 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10952D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 472 0x10954D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n1: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n2: 992 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x111E70: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 976 0x111ED6: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111EFB: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F44: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F6A: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111F98: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111FCF: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x111FFF: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n0: 212 in 43 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=1404147
+mem_heap_B=16548
+mem_heap_extra_B=260
+mem_stacks_B=6568
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=1451537
+mem_heap_B=16548
+mem_heap_extra_B=260
+mem_stacks_B=6568
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=1513894
+mem_heap_B=16548
+mem_heap_extra_B=260
+mem_stacks_B=6568
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=1561213
+mem_heap_B=16548
+mem_heap_extra_B=260
+mem_stacks_B=6168
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=1608642
+mem_heap_B=16548
+mem_heap_extra_B=260
+mem_stacks_B=6616
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=1655879
+mem_heap_B=16548
+mem_heap_extra_B=260
+mem_stacks_B=6792
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=1721724
+mem_heap_B=5212
+mem_heap_extra_B=140
+mem_stacks_B=4840
+heap_tree=detailed
+n7: 5212 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113D73: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 976 0x113DAA: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x113DD3: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 472 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 180 in 72 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=1768983
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=1840973
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=detailed
+n12: 10172 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A36: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A66: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A8C: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110AB7: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110AEC: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113D73: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 976 0x113DAA: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x113DD3: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 472 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 180 in 67 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=1909469
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=2000860
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=2092210
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=2138287
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=2206771
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=2275257
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2320930
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2389435
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=2435086
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4352
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=2503575
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=2594895
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=2688271
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=2758432
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=detailed
+n12: 10172 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A36: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A66: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A8C: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110AB7: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110AEC: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113D73: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 976 0x113DAA: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x113DD3: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 472 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 180 in 67 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=46
+#-----------
+time=2804114
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=2872628
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=2941682
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=2988355
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=detailed
+n12: 10172 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A36: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A66: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110A8C: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110AB7: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x110AEC: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113E1B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 992 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 992 0x113D73: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 992 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 3 places, all below massif's threshold (1.00%)
+ n1: 976 0x113DAA: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 976 0x113DD3: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 472 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 180 in 67 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=3022552
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=3056736
+mem_heap_B=10172
+mem_heap_extra_B=212
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=3090970
+mem_heap_B=12988
+mem_heap_extra_B=188
+mem_stacks_B=4920
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=3125161
+mem_heap_B=12988
+mem_heap_extra_B=188
+mem_stacks_B=5544
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=3159364
+mem_heap_B=12988
+mem_heap_extra_B=188
+mem_stacks_B=5320
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=3193650
+mem_heap_B=7552
+mem_heap_extra_B=288
+mem_stacks_B=4616
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=3227860
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=3262040
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4352
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=3296263
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=3331270
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=detailed
+n17: 10592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 976 0x113E35: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n2: 608 0x110A36: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110A66: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110A8C: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110AB7: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110AEC: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x113F06: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n2: 592 0x10F598: biix_128_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 592 0x1140C1: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 592 0x10F5BF: biix_128_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 592 0x1140C1: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x113F4B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x1140E2: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x114111: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x114139: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 472 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 328 in 79 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=60
+#-----------
+time=3365499
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=3399703
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=3433880
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=3468066
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=3502260
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=65
+#-----------
+time=3537253
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=66
+#-----------
+time=3571438
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=67
+#-----------
+time=3605635
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=68
+#-----------
+time=3639841
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=empty
+#-----------
+snapshot=69
+#-----------
+time=3674043
+mem_heap_B=10592
+mem_heap_extra_B=360
+mem_stacks_B=4360
+heap_tree=detailed
+n17: 10592 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+    n1: 1024 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+     n2: 1024 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+      n1: 1024 0x48E0F1B: puts (ioputs.c:40)
+       n0: 1024 0x109583: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+      n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 976 0x113E35: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 976 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n2: 608 0x110A36: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110A66: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110A8C: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110AB7: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x110AEC: rbc_67_poly_inv (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x114175: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n2: 608 0x11161E: rbc_67_qre_init_modulus (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 608 0x113F06: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 608 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 4 places, all below massif's threshold (1.00%)
+ n2: 592 0x10F598: biix_128_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 592 0x1140C1: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n2: 592 0x10F5BF: biix_128_secret_key_from_string (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n1: 592 0x1140C1: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 592 0x111C1E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x113F4B: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x1140E2: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x114111: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 592 0x114139: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+  n0: 592 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+ n1: 472 0x48DF64D: __fopen_internal (iofopen.c:65)
+  n2: 472 0x48DF64D: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n0: 472 0x10956D: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+   n0: 0 in 2 places, all below massif's threshold (1.00%)
+ n0: 328 in 79 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=70
+#-----------
+time=3708368
+mem_heap_B=11168
+mem_heap_extra_B=304
+mem_stacks_B=5096
+heap_tree=empty
+#-----------
+snapshot=71
+#-----------
+time=3742643
+mem_heap_B=11168
+mem_heap_extra_B=304
+mem_stacks_B=5144
+heap_tree=empty
+#-----------
+snapshot=72
+#-----------
+time=3776821
+mem_heap_B=11168
+mem_heap_extra_B=304
+mem_stacks_B=5536
+heap_tree=empty
+#-----------
+snapshot=73
+#-----------
+time=3811029
+mem_heap_B=11168
+mem_heap_extra_B=304
+mem_stacks_B=5320
+heap_tree=empty
+#-----------
+snapshot=74
+#-----------
+time=3952710
+mem_heap_B=8656
+mem_heap_extra_B=296
+mem_stacks_B=4104
+heap_tree=empty
+#-----------
+snapshot=75
+#-----------
+time=4060336
+mem_heap_B=10000
+mem_heap_extra_B=328
+mem_stacks_B=4296
+heap_tree=empty
+#-----------
+snapshot=76
+#-----------
+time=4100816
+mem_heap_B=9104
+mem_heap_extra_B=312
+mem_stacks_B=4104
+heap_tree=empty
+#-----------
+snapshot=77
+#-----------
+time=4135000
+mem_heap_B=2660
+mem_heap_extra_B=68
+mem_stacks_B=3032
+heap_tree=empty
+#-----------
+snapshot=78
+#-----------
+time=4169179
+mem_heap_B=2660
+mem_heap_extra_B=68
+mem_stacks_B=4656
+heap_tree=empty

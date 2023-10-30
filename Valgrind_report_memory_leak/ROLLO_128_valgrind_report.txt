@@ -1,55 +1,35 @@
-==155575== Memcheck, a memory error detector
-==155575== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==155575== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==155575== Command: ./biix_128
-==155575== Parent PID: 68730
-==155575== 
-==155575== 
-==155575== HEAP SUMMARY:
-==155575==     in use at exit: 5,220 bytes in 14 blocks
-==155575==   total heap usage: 170 allocs, 156 frees, 103,256 bytes allocated
-==155575== 
-==155575== 36 (16 direct, 20 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x113754: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x109AA5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== 608 (16 direct, 592 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x111B77: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x1098C5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== 608 (16 direct, 592 indirect) bytes in 1 blocks are definitely lost in loss record 6 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x111BF3: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x1098C5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== 992 (16 direct, 976 indirect) bytes in 1 blocks are definitely lost in loss record 11 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x112702: biix_128_encaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x1099B5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== 992 (16 direct, 976 indirect) bytes in 1 blocks are definitely lost in loss record 12 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x112A12: biix_128_encaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x1099B5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== 992 (16 direct, 976 indirect) bytes in 1 blocks are definitely lost in loss record 13 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x112D79: biix_128_encaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x1099B5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== 992 (16 direct, 976 indirect) bytes in 1 blocks are definitely lost in loss record 14 of 14
-==155575==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==155575==    by 0x1135F5: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575==    by 0x109AA5: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO/bin/biix_128)
-==155575== 
-==155575== LEAK SUMMARY:
-==155575==    definitely lost: 112 bytes in 7 blocks
-==155575==    indirectly lost: 5,108 bytes in 7 blocks
-==155575==      possibly lost: 0 bytes in 0 blocks
-==155575==    still reachable: 0 bytes in 0 blocks
-==155575==         suppressed: 0 bytes in 0 blocks
-==155575== 
-==155575== For lists of detected and suppressed errors, rerun with: -s
-==155575== ERROR SUMMARY: 7 errors from 7 contexts (suppressed: 0 from 0)
+==28532== Memcheck, a memory error detector
+==28532== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28532== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==28532== Command: ./biix_128
+==28532== Parent PID: 24094
+==28532== 
+==28532== 
+==28532== HEAP SUMMARY:
+==28532==     in use at exit: 1,636 bytes in 6 blocks
+==28532==   total heap usage: 189 allocs, 183 frees, 128,984 bytes allocated
+==28532== 
+==28532== 36 (16 direct, 20 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 6
+==28532==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28532==    by 0x113F86: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+==28532==    by 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+==28532== 
+==28532== 608 (16 direct, 592 indirect) bytes in 1 blocks are definitely lost in loss record 4 of 6
+==28532==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28532==    by 0x111C0E: biix_128_keygen (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+==28532==    by 0x10964B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+==28532== 
+==28532== 992 (16 direct, 976 indirect) bytes in 1 blocks are definitely lost in loss record 6 of 6
+==28532==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==28532==    by 0x113E25: biix_128_decaps (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+==28532==    by 0x10982B: main (in /home/hd/kpqclean-Round_valgrind/pke-ROLLO_revised1020/bin/biix_128)
+==28532== 
+==28532== LEAK SUMMARY:
+==28532==    definitely lost: 48 bytes in 3 blocks
+==28532==    indirectly lost: 1,588 bytes in 3 blocks
+==28532==      possibly lost: 0 bytes in 0 blocks
+==28532==    still reachable: 0 bytes in 0 blocks
+==28532==         suppressed: 0 bytes in 0 blocks
+==28532== 
+==28532== For lists of detected and suppressed errors, rerun with: -s
+==28532== ERROR SUMMARY: 23546 errors from 101 contexts (suppressed: 0 from 0)
