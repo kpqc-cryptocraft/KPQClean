@@ -52,16 +52,24 @@ When updated source code was used, indicate the date the source code was updated
 
 ### Testing Environment3
 * OS: macOS Ventura 13.5.2
-* CPU: Apple M1 Pro
+* CPU: Apple M1 Pro (3.228 GHz)
 * RAM: 16GB
 * Compiler: Apple clang 14.0.3
+* Optimization Level: -O3
+
+### Testing Environment4
+* OS: Raspbian GNU/Linux 12 (bookworm) 32-bit
+* SoC: Broadcom BCM2837 (armv7l, 1.4GHz)
+* RAM: 1GB
+* Compiler: gcc 12.2.0
 * Optimization Level: -O3
 
 ### Benchmark method
 * We used 'rdtsc' instruction to calculate time consumption.
 * Each algorithms 10,000 iterated, and **average**, **median** value of the operation cycle is used.
 * Enhanced pqsigRM was 100 iterated.
-* On the ARM processor, each algorithms are 100 iterated, and the unit is nano second.
+* On the Testing Environment3, each algorithms are 100 iterated, and the unit is nano second.
+* On the Testing Environment4, each algorithms are 10 iterated, and the unit is nano second.
 
 ### PKE/KEM (Environment1, -O2)
 <details>
@@ -85,9 +93,9 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1  				| 14,362,627	 		| ~~164,892,550~~		| 2,484,981				| 14,376,006			| ~~239,300,607~~		| 2,501,514				|
 | Code			| IPCC-3		 		| 14,170,647	 		| 898,710		 		| 2,619,570				| 14,178,752			| 941,012				| 2,633,907				|
 | Code			| IPCC-4				| 14,209,594	 		| 1,075,059	 			| 2,904,524				| 14,245,778			| 1,135,740				| 2,935,161				|
-| Code			| Layered ROLLO I-128	| 277,340        		| 90,740        		| 717,328        		| 351,626          		| 114,449        		| 772,443        		|
-| Code			| Layered ROLLO I-192	| 289,590        		| 118,572        		| 743,008        		| 331,838        		| 133,605        		| 784,690        		|
-| Code			| Layered ROLLO I-256	| 434,745               | 161,885        		| 1,511,441        		| 471,471        		| 173,705        		| 1,635,876        		|
+| Code			| Layered ROLLO I-128	| 379,871       		| 109,649 	     		| 784,697 	    		| 390,159          		| 110,771        		| 797,682 		   		|
+| Code			| Layered ROLLO I-192	| 428,910       		| 149,988 	     		| 766,992         		| 445,280 	    		| 151,041       		| 773,379        		|
+| Code			| Layered ROLLO I-256	| 661,722               | 248,037 	    		| 1,446,665       		| 669,091 				| 250,160 		 		| 1,460,123       		|
 </details>
 
 ### PKE/KEM (Environment1, -O3)
@@ -112,9 +120,9 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1  				| 13,940,097	 		| ~~160,111,204~~		| ~~16,360,164~~		| 13,969,607			| ~~232,561,407~~		| 2,408,173				|
 | Code			| IPCC-3		 		| 13,996,024	 		| 926,492		 		| 2,512,836				| 14,036,005			| 967,543				| 2,532,438				|
 | Code			| IPCC-4				| 13,989,832	 		| 1,106,031	 			| 2,714,531				| 14,007,544			| 1,165,274				| 2,732,139				|
-| Code			| Layered ROLLO I-128	| 285,940				| 83,346				| 788,104				| 296,880				| 84,198				| 805,790				|
-| Code			| Layered ROLLO I-192	| 320,958				| 136,503				| 1,014,203				| 345,689				| 149,843				| 1,110,378				|
-| Code			| Layered ROLLO I-256	| 687,721				| 201,913				| 1,945,871				| 700,284				| 207,030				| 1,948,662				|
+| Code			| Layered ROLLO I-128	| 269,381 				| 81,142 				| 568,168 				| 280,894 				| 82,170 				| 571,343 				|
+| Code			| Layered ROLLO I-192	| 318,362 				| 111,592 				| 641,654 				| 330,740 				| 112,510 				| 644,127 				|
+| Code			| Layered ROLLO I-256	| 542,010 				| 195,431 				| 1,263,907 			| 556,151 				| 196,644 				| 1,269,793 			|
 </details>
 
 ### PKE/KEM (Environment2, -O2)
@@ -139,9 +147,9 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1            	| 13,792,887          	| ~~159,126,951~~       | 1,196,157            	| 13,896,694         | ~~231,010,613~~      | 1,259,215             |
 | Code			| IPCC-3           		| 13,754,219          	| 870,059              	| 1,235,991            	| 13,864,988         | 922,755            	| 1,307,538             |
 | Code			| IPCC-4            	| 13,754,687          	| 1,050,451             | 1,318,173             | 13,851,205         | 1,151,306            | 1,380,740             |
-| Code			| Layered ROLLO I-128   | 202,758               | 62,030                | 558,840               | 215,760            | 64,559               | 576,960               |
-| Code			| Layered ROLLO I-192   | 228,886               | 91,873                | 671,123               | 249,008            | 111,432              | 729,217               |
-| Code			| Layered ROLLO I-256   | 366,457               | 147,787               | 1,250,353             | 380,951            | 169,633              | 1,319,272             |
+| Code			| Layered ROLLO I-128   | 436,486 	            | 142,110               | 933,571               | 478,855            | 151,564 		        | 984,667 	            |
+| Code			| Layered ROLLO I-192   | 515,084 	            | 190,365 	            | 960,546               | 542,838            | 202,468 	            | 972,614 	            |
+| Code			| Layered ROLLO I-256   | 780,800               | 290,565 	            | 1,548,044 		    | 837,400        	 | 315,783              | 1,663,367             |
 </details>
 
 ### PKE/KEM (Environment2, -O3)
@@ -166,9 +174,9 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1  				| 12,643,392	 		| ~~145,233,220~~		| 1,159,273				| 12,712,124			| ~~210,977,105~~		| 1,185,580				|
 | Code			| IPCC-3		 		| 12,795,377	 		| 874,663		 		| 1,206,585				| 12,874,291			| 922,533				| 1,267,783				|
 | Code			| IPCC-4				| 13,078,917	 		| 1,037,485	 			| 1,310,503				| 13,250,237			| 1,107,017				| 1,368,035				|
-| Code			| Layered ROLLO I-128	| 203,181				| 66,529				| 558,503				| 231,523				| 77,774				| 602,966				|
-| Code			| Layered ROLLO I-192	| 227,813				| 102,758				| 671,605				| 255,243				| 125,567				| 761,739				|
-| Code			| Layered ROLLO I-256	| 375,056				| 136,052 				| 1,245,346				| 455,911				| 146,919				| 1,337,504				|
+| Code			| Layered ROLLO I-128	| 267,360 				| 88,882 				| 577,276 				| 299,840 				| 95,552 				| 665,704 				|
+| Code			| Layered ROLLO I-192	| 321,910 				| 120,718 				| 616,007 				| 378,729 				| 130,088 				| 646,335 				|
+| Code			| Layered ROLLO I-256	| 536,373 				| 197,644 				| 1,204,694 			| 605,193				| 210,251 				| 1,300,744 			|
 </details>
 
 ### PKE/KEM (Environment3, -O3)
@@ -193,6 +201,26 @@ When updated source code was used, indicate the date the source code was updated
 | Code			| IPCC-1  				| 4,171,904 	 		| 7,326,464 			| 230,144 				| 4,445,222 			| 11,629,652 			| 243,666 				|
 | Code			| IPCC-3		 		| 4,205,952 	 		| 191,207,040 	 		| 246,400 				| 4,293,573				| 277,514,522 			| 277,967 				|
 | Code			| IPCC-4				| 4,153,984 	 		| 233,392,384 			| 234,624 				| 4,281,823 			| 317,245,691 			| 255,708 				|
+</details>
+
+### PKE/KEM (Environment4, -O3)
+<details>
+<summary>PKE/KEM-Env4-O3 Table (Unit: nsec)</summary>
+    
+| Type			| Algorithm     		| Keygen(Med.)	 		| Encapsulation(Med.) 	| Decapsulation(Med.)	|  Keygen(Avr.)			| Encapsulation(Avr.) 	| Decapsulation(Avr.)	|
+| -------------:| -------------: 		| -------------: 		| -------------:		| -------------:		| -------------: 		| -------------:		| -------------:		|
+| Lattice		| SMAUG-128				| 577,280  		 		| 597,888 				| 675,328  		 		| 593,766 				| 600,192 				| 675,789 				|
+| Lattice		| SMAUG-192				| 993,152 		 		| 919,808  				| 1,072,128 		 	| 1,004,902 			| 925,722 				| 1,081,370 			|
+| Lattice		| SMAUG-256				| 1,513,984  		 	| 1,566,464 	 		| 1,759,488 	 		| 1,536,512 			| 1,570,304 			| 1,792,051 			|
+| Lattice		| TiGER-128				| 1,082,752  		 	| 1,207,808   			| 1,416,448   		 	| 1,098,650 			| 1,223,501 			| 1,454,182 			|
+| Lattice		| TiGER-192				| ~~663,296~~ 		 		| ~~917,760~~		 		| ~~1,122,176~~ 				| ~~672,051~~ 				| ~~927,437~~ 			| ~~926,834~~ 			|
+| Lattice		| TiGER-256				| 845,952 		 		| 1,295,616		 		| 1,678,336	 		 	| 854,886   			| 1,300,634 			| 1,689,344 			|
+| Code			| PALOMA-128			| 612,124,288  	 		| 3,070,592   			| 775,680  		 		| 613,487,718  			| 3,077,555  			| 851,226 				|
+| Code			| PALOMA-192			| 718,675,840  	 		| 3,081,216  			| 807,936  		 		| 950,287,744  			| 3,089,613 			| 822,221  				|
+| Code			| PALOMA-256			| 612,304,128  	 		| 3,188,992 			| 588,288 			 	| 614,168,090  			| 4,019,738  			| 643,200 				|
+| Code			| IPCC-1  				| 74,656,000  	 		| 451,377,408  			| 13,834,752  			| 74,756,173  			| 738,162,432  			| 16,646,272  			|
+| Code			| IPCC-3		 		| 74,141,312  	 		| 3,920,640  	 		| 12,512,896  			| 74,213,683 			| 33,329,254  			| 13,876,275  			|
+| Code			| IPCC-4				| 74,782,080  	 		| 4,969,216  			| 12,011,648  			| 74,940,877  			| 21,339,136  			| 13,409,920  			|
 </details>
 
 ### Digital Signature (Environment1, -O2)
@@ -273,8 +301,8 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| Peregrine-1024 			| 38,366,232 		| 535,920 			| 53,621 				| 41,014,591 		| 538,260 			| 53,946			|
 | Lattice				| SOLMAE-512 				| 23,053,028 		| 349,566 			| 40,513 				| 28,233,370 		| 355,950 			| 40,812			|
 | Lattice				| SOLMAE-1024 				| 53,966,332 		| 698,581 			| 135,256 				| 68,603,714 		| 702,006 			| 136,193			|
-| Code					| pqsigRM-613 				| 6,139,551,981 	| 4,610,319 		| 2,278,806 			| 6,144,274,759 	| 6,276,554 		| 2,376,095			|
-| Code					| pqsigRM-612 				| 54,994,439,928 	| 714,647 			| 225,577 				| 55,073,661,751 	| 967,439 			| 234,553			|
+| Code					| Enhanced pqsigRM-613 		| 6,139,551,981 	| 4,610,319 		| 2,278,806 			| 6,144,274,759 	| 6,276,554 		| 2,376,095			|
+| Code					| Enhanced pqsigRM-612 		| 54,994,439,928 	| 714,647 			| 225,577 				| 55,073,661,751 	| 967,439 			| 234,553			|
 </details>
 
 ### Digital Signature (Environment2, -O2)
@@ -314,8 +342,8 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| Peregrine-1024 			| 38,493,479 		| 640,132 			| 71,246 				| 41,112,188		| 652,620 			| 74,891			|
 | Lattice				| SOLMAE-512 				| 22,494,902 		| 351,311 			| 64,526 				| 27,556,843 		| 366,508 			| 68,880			|
 | Lattice				| SOLMAE-1024 				| 52,388,360 		| 706,028 			| 152,984 				| 65,688,581 		| 729,400 			| 158,540			|
-| Code					| pqsigRM-613 				| 4,961,556,899 	| 7,505,040 		| 2,125,125 			| 4,973,260,518 	| 10,823,438 		| 2,645,728			|
-| Code					| pqsigRM-612 				| 74,021,054,015 	| 2,113,913 		| 1,126,131 			| 73,941,690,821 	| 2,765,068 		| 1,295,161			|
+| Code					| Enhanced pqsigRM-613 		| 4,961,556,899 	| 7,505,040 		| 2,125,125 			| 4,973,260,518 	| 10,823,438 		| 2,645,728			|
+| Code					| Enhanced pqsigRM-612 		| 74,021,054,015 	| 2,113,913 		| 1,126,131 			| 73,941,690,821 	| 2,765,068 		| 1,295,161			|
 </details>
 
 ### Digital Signature (Environment2, -O3)
@@ -355,8 +383,8 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| Peregrine-1024 			| 37,875,534 		| 551,168 			| 55,654 				| 40,364,494 		| 569,794 			| 58,474			|
 | Lattice				| SOLMAE-512 				| 22,627,042 		| 332,848 			| 64,838 				| 27,866,035 		| 348,841 			| 67,662			|
 | Lattice				| SOLMAE-1024 				| 53,245,753 		| 668,103 			| 149,168 				| 67,369,725 		| 686,523		 	| 154,073			|
-| Code					| pqsigRM-613 				| 4,702,612,115 	| 4,732,706 		| 2,064,731 			| 4,703,836,987 	| 6,667,564 		| 2,458,625			|
-| Code					| pqsigRM-612 				| 71,111,088,778 	| 923,513 			| 417,658 				| 71,168,430,985 	| 1,166,665 		| 502,448			|
+| Code					| Enhanced pqsigRM-613 		| 4,702,612,115 	| 4,732,706 		| 2,064,731 			| 4,703,836,987 	| 6,667,564 		| 2,458,625			|
+| Code					| Enhanced pqsigRM-612 		| 71,111,088,778 	| 923,513 			| 417,658 				| 71,168,430,985 	| 1,166,665 		| 502,448			|
 </details>
 
 ### Digital Signature (Environment3, -O3)
@@ -388,10 +416,39 @@ When updated source code was used, indicate the date the source code was updated
 | Lattice				| HAETAE-V 					| 403,968  			| 432,000  			| 91,136  				| 486,986 			| 618,040			| 94,843			|
 | Lattice				| Peregrine-512 			| 3,891,456 		| 45,056  			| 5,120					| 4,175,012 		| 45,507 			| 5,179 			|
 | Lattice				| Peregrine-1024 			| 13,422,464  		| 93,952 			| 9,984 				| 14,907,274 		| 95,708 			| 10,150 			|
-| Code					| pqsigRM-613 				| 793,679,488  		| 2,152,960  		| 379,392				| 793,098,163 		| 2,555,494 		| 405,683 			|
-| Code					| pqsigRM-612 				| 10,549,565,568 	| 329,600 			| 72,064  				| 10,564,255,590 	| 271,821 	 		| 76,672 			|
+| Code					| Enhanced pqsigRM-613 		| 793,679,488  		| 2,152,960  		| 379,392				| 793,098,163 		| 2,555,494 		| 405,683 			|
+| Code					| Enhanced pqsigRM-612 		| 10,549,565,568 	| 329,600 			| 72,064  				| 10,564,255,590 	| 271,821 	 		| 76,672 			|
 </details>
 
+### Digital Signature (Environment4, -O3)
+<details>
+<summary>Digital Signature-Env4-O3 Table (Unit: nsec)</summary>
+    
+| Type					| Algorithm     			| Keygen(Med.)		| Signature(Med.) 	| Verification(Med.)	| Keygen(Avr.)		| Signature(Avr.)	| Verification(Avr.)| 
+| -------------:		| -------------: 			| -------------: 	| -------------:	| -------------:		| -------------:	| -------------:	| -------------:	|
+| Zero-knowledge		| AIMer-I-param1    	| 1,358,080    		| 67,787,904 		| 58,651,648 			| 1,399,091  		| 69,619,482 		| 58,922,189   		|
+| Zero-knowledge		| AIMer-I-param2    	| 581,120  			| 66,993,152   		| 149,871,872  			| 606,259 			| 67,316,250   		| 145,416,013  		|
+| Zero-knowledge		| AIMer-I-param3    	| 580,736   		| 316,050,816     	| 209,649,536			| 610,048 			| 345,565,875 		| 262,197,939 		|
+| Zero-knowledge		| AIMer-I-param4    	| 587,904 	 		| 1,163,266,688    	| 1,706,329,600 		| 608,538 			| 1,441,277,440 	| 1,631,551,386 	|
+| Zero-knowledge		| AIMer-III-param1    	| 1,310,848 		| 71,054,080 		| 64,191,744 			| 1,334,861 		| 71,649,562  		| 64,446,259 		|
+| Zero-knowledge		| AIMer-III-param2    	| 1,292,672 		| 174,505,600     	| 393,859,584     		| 1,335,168 		| 191,038,259  		| 338,752,896 		|
+| Zero-knowledge		| AIMer-III-param3    	| 1,293,696 		| 519,604,736 		| 513,189,632    		| 1,318,144 		| 701,901,005 		| 698,305,229  		|
+| Zero-knowledge		| AIMer-III-param4    	| 1,315,200  		| 3,450,891,392    	| 2,548,476,928 		| 1,352,781   		| 3,470,096,998 	| 2,548,539,571 	|
+| Zero-knowledge		| AIMer-V-param1    	| 3,120,512   		| 133,866,112  		| 123,565,568 			| 3,136,128 		| 137,323,827  		| 128,562,278  		|
+| Zero-knowledge		| AIMer-V-param2    	| 7,403,904			| 322,445,696 		| 315,369,728 			| 8,194,048 		| 483,219,456 		| 316,895,130  		|
+| Zero-knowledge		| AIMer-V-param3    	| 3,066,240   		| 1,052,067,712 	| 956,340,096    		| 3,117,184 		| 1,335,187,994 	| 1,327,519,309 	|
+| Zero-knowledge		| AIMer-V-param4    	| 3,068,288 		| 5,893,699,712 	| 6,630,984,448 		| 3,108,198 		| 5,809,457,280		| 6,613,736,576 	|
+| Multivariate Quadratic| MQSign-72/46 				| 201,938,688  		| 1,364,224 		| 3,089,152 			| 202,309,734 		| 1,387,392 		| 3,108,685 		|
+| Multivariate Quadratic| MQSign-112/72 			| 985,279,488 		| 3,718,912 		| 10,791,296 			| 987,524,557 		| 3,754,573 		| 10,818,022  		|
+| Multivariate Quadratic| MQSign-148/96 			| 4,625,720,064   	| 17,148,032 		| 55,782,656 			| 4,062,789,222 	| 17,195,520 		| 55,945,190 		|
+| Lattice				| HAETAE-II 				| 3,960,448   		| 9,362,432  		| 904,576  				| 6,145,664 		| 17,819,392 		| 973,363 			|
+| Lattice				| HAETAE-III  				| ~~10,779,648~~ 		| ~~78,606,976~~  		| ~~3,268,096~~				| ~~10,816,486~~ 		| ~~62,431,360~~ 		| ~~3,280,742~~ 		|
+| Lattice				| HAETAE-V 					| 4,497,920			| 29,362,432 		| 1,539,072 			| 5,275,443 		| 30,645,555 		| 1,619,354 		|
+| Lattice				| Peregrine-512 			| 32,932,864  		| 1,204,992 		| 120,576 				| 33,412,736 		| 1,261,184 		| 126,310 			|
+| Lattice				| Peregrine-1024 			| 102,701,440  		| 2,625,920 		| 260,352 				| 118,987,059 		| 2,656,102 		| 270,925 			|
+| Code					| Enhanced pqsigRM-613 		| 60,258,585,088  	| 107,284,480  		| 18,758,144 			| 60,246,444,203  	| 110,248,619 		| 17,735,595 		|
+| Code					| Enhanced pqsigRM-612 		| N/A 				| N/A 				| N/A 					| N/A 				| N/A 		 		| N/A 				|
+</details>
 
 ## Memory consumption
 We checked for memory consumption using the [Valgrind](https://valgrind.org/) tool.
@@ -416,9 +473,9 @@ The experiment used Valgrind's [massif](https://valgrind.org/docs/manual/ms-manu
 | PALOMA-128		| 16641656 | 	16641600 |	56 |
 | PALOMA-192		| 16641656 | 	16641600 |	56 |
 | PALOMA-256		| 16641656 | 	16641600 |	56 |		
-| Layered ROLLO-128 |	8012 | 	7720 |	292 |
-| Layered ROLLO-192 | 9780 | 	9536 |	244 |
-| Layered ROLLO-256 | 13452 | 13192 |	260 |		
+| Layered ROLLO-128 | 9444 | 	9160 |	284 |
+| Layered ROLLO-192 | 10644 | 	10368 |	276 |
+| Layered ROLLO-256 | 17404 | 17128 |	276 |		
 | SMAUG-128		| 10632 | 	10608 |	24 |
 | SMAUG-192		| 17688 | 	17664 |	24 |
 | SMAUG-256		| 36272 | 	36248 |	24 |	
@@ -509,8 +566,6 @@ The following algorithms could not be tested:
 * FIBS: Computation does not end when using Valgrind.
 * REDOG: Written in Python, so Valgrind cannot be applied.
 * Peregrine, SOLMAE: Difficult to specify flag because it does not use general secret key array.
-
-Other unexplained algorithms are being analyzed through logs.
 
 ### AIMer
 <details>
@@ -648,16 +703,17 @@ None
 * NewDecryption:	This function is used for decrypting ciphertext. There is a branching statement that deals with the index of the secret key, but there is no risk of exposing the key value.
 </details>
 
-### ROLLO
+### Layered ROLLO-I
 <details>
 <summary>Learn more</summary>
 
+Analyzing is still ongoing with updated version.
 #### L1
 None
 #### L2
-* biix_secret_key_from_string:	In rbc_vspace_set_random_full_rank -> rbc_vec_set_random_full_rank, it seems that the size of the rank generated due to the secret key influences the number of times the while loop is executed.
+* ~~biix_secret_key_from_string:	In rbc_vspace_set_random_full_rank -> rbc_vec_set_random_full_rank, it seems that the size of the rank generated due to the secret key influences the number of times the while loop is executed.~~
 #### L3
-* biix_decaps	Through the for loop, the secret key is stored at the same index position in the skseed_st array up to size SEEDEXPANDER_SEED_BYTES(40). The skseed_st array is then used in biix_secret_key_from_string.
+* ~~biix_decaps:	Through the for loop, the secret key is stored at the same index position in the skseed_st array up to size SEEDEXPANDER_SEED_BYTES(40). The skseed_st array is then used in biix_secret_key_from_string.~~
 </details>
 
 ### SMAUG
@@ -685,6 +741,14 @@ None
 None
 #### L3
 None
+</details>
+
+### PALOMA
+<details>
+<summary>Learn more</summary>
+
+The amount of logs is very large, but in all cases are confirmed that references to uninitialized variables.
+However, additional analysis is still ongoing. 
 </details>
 
 </details>
