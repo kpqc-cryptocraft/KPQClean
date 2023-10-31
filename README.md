@@ -18,9 +18,9 @@ When updated source code was used, indicate the date the source code was updated
 1. NTRUplus: Sep. 16th. (<https://groups.google.com/g/kpqc-bulletin/c/mQ3FGgxtu4c>)
 2. PALOMA: Round 1 Submission.
 3. SMAUG: May. 23rd. (<https://groups.google.com/g/kpqc-bulletin/c/8S0qef2mPSU>)
-4. TiGER: Sep. 17th. (<https://groups.google.com/g/kpqc-bulletin/c/f_p6WCN7kdw>)
+4. TiGER: Sept. 17th. (<https://groups.google.com/g/kpqc-bulletin/c/f_p6WCN7kdw>)
 5. REDOG: Round 1 Submission.
-6. Layered-ROLLO: Round 1 Submission.
+6. Layered-ROLLO: Oct. 20th. (<https://groups.google.com/g/kpqc-bulletin/c/8nOd28f2K7k/m/YSs4YDF6AAAJ>)
 7. IPCC: Round 1 Submission.
 
 ### Digital Signature
