@@ -456,69 +456,70 @@ We checked for memory consumption using the [Valgrind](https://valgrind.org/) to
 The experiment used Valgrind's [massif](https://valgrind.org/docs/manual/ms-manual.html) tool.
 
 * Command used for testing: valgrind --tool=massif --stacks=yes ./PQC_bench
-* Our records were based on the largest stack usage in the Valgrind logs.
+* Our records were based on comparing the largest heap usage and the largest stack usage in the Valgrind logs, choosing the larger of the two values as the foundation.
+  
 <details>
 <summary>Show memory consumption tables (Unit: bytes) </summary>
 
 ### PKE/KEM
-| Algorithm     | Stack+Heap     | Stack    | Heap   | 
-| ------------- | -------------: | -------------:| -------------:|
-| IPCC-f1			| 733200 | 	733160 |	40 |
-| IPCC-f3			| 789200 | 	789160 |	40 |
-| IPCC-f4			| 803240 | 	803200 |	40 |
-| NTRUplus-576	| 16656 | 	16632 |	24 |
-| NTRUplus-768	| 21776 | 	21752 |	24 |
-| NTRUplus-864	| 24336 | 	24312 |	24 |
-| NTRUplus-1152	| 31984 | 	31960 |	24 |		
-| PALOMA-128		| 16641656 | 	16641600 |	56 |
-| PALOMA-192		| 16641656 | 	16641600 |	56 |
-| PALOMA-256		| 16641656 | 	16641600 |	56 |		
-| Layered ROLLO-128 | 9444 | 	9160 |	284 |
-| Layered ROLLO-192 | 10644 | 	10368 |	276 |
-| Layered ROLLO-256 | 17404 | 17128 |	276 |		
-| SMAUG-128		| 10632 | 	10608 |	24 |
-| SMAUG-192		| 17688 | 	17664 |	24 |
-| SMAUG-256		| 36272 | 	36248 |	24 |	
-| TiGER-128		| 10992 | 	10968 |	24 |
-| TiGER-192		| 19280 | 	19256 |	24 |
-| TiGER-256		| 19936 | 	19912 |	24 |
+| Algorithm         | Stack+Heap+Extra_Heap | Stack         | Heap          | Extra_Heap    |  
+| --------------    | ---------------------:| -------------:| -------------:| -------------:|
+| IPCC-f1		    | 735168                | 	      733160|	       1968 |            40 |
+| IPCC-f3		    | 791168                | 	      789160|	       1968 |            40 |
+| IPCC-f4		    | 805208                | 	     803200 |	       1968 |            40 |
+| NTRUplus-576	    | 18152                 | 	      16632 |	       1496 |            24 |
+| NTRUplus-768	    | 23272                 | 	      21752 |	       1496 |            24 |
+| NTRUplus-864	    | 25832  	            |         24312 |	       1496 |            24 |
+| NTRUplus-1152	    | 33480                 | 	      31960 |	       1496 |            24 |		
+| PALOMA-128		| 16644096              | 	   16641600 |	       2440 |            56 |
+| PALOMA-192		| 16644096              | 	   16641600 |	       2440 |            56 |
+| PALOMA-256		| 16644096              | 	   16641600 |	       2440 |            56 |		
+| Layered ROLLO-128 | 27344                 | 	       9160 |	      17900 |           284 |
+| Layered ROLLO-192 | 31160                 | 	      10368 |	      20516 |           276 |
+| Layered ROLLO-256 | 45696                 |         17128 |	      28292 |           276 |		
+| SMAUG-128		    | 12128                 | 	      10608 |	       1496 |            24 |
+| SMAUG-192		    | 19184                 | 	      17664 |          1496 |	         24 |
+| SMAUG-256		    | 37768                 | 	      36248 |	       1496 |            24 |	
+| TiGER-128		    | 12488                 | 	      10968 |	       1496 |            24 |
+| TiGER-192		    | 20776                 | 	      19256 |	       1496 |            24 |
+| TiGER-256		    | 21432                 | 	      19912 |          1496 |	         24 |
 
 ### Digital Signature
-| Algorithm     | Stack+Heap     | Stack    | Heap   | 
-| ------------- | -------------: | -------------:| -------------:|
-|AIMer-l1-param1|	9418	|9176	|242|
-|AIMer-l1-param2|	9912	|9320	|592|
-|AIMer-l1-param3|	9470	|9160	|310|
-|AIMer-l1-param4|	10004	|9328	|676|
-|AIMer-l3-param1|	17584	|16664	|920|
-|AIMer-l3-param2|	17072	|16488	|584|
-|AIMer-l3-param3|	17072	|16488	|584|
-|AIMer-l3-param4|	16856	|16488	|368|
-|AIMer-l5-param1|	31016	|28632	|2384|
-|AIMer-l5-param2|	29038	|28648	|390|
-|AIMer-l5-param3|	29554	|28632	|922|
-|AIMer-l5-param4|	29508	|28808	|700|	
-|GCKSign-II	|44840	|44800	|40|
-|GCKSign-III|45464	|45424	|40|
-|GCKSign-V	|69272	|69232	|40|		
-|HAETAE-II	|88600	|88560	|40|
-|HAETAE-III	|134936	|134896	|40|
-|HAETAE-V	|170424	|170384	|40|
-|MQSign-72_46	|1245952	|1245896	|56|
-|MQSign-112_72	|4674624	|4674568	|56|
-|MQSign-148_96	|10906344	|10906320	|24|
-|NCCSign-II (conserparam)	|222384	|222344	|40|
-|NCCSign-III (conserparam)	|294848	|294808	|40|
-|NCCSign-V (conserparam)	|373024	|372984	|40|
-|NCCSign-II (original)	|187200	|187160	|40|
-|NCCSign-III (original)	|262416	|262376	|40|
-|NCCSign-V (original)	|349392	|349352	|40|
-|Peregrine-512	|3172	|3008	|164|
-|Peregrine-1024	|3162	|3008	|154|
-|Enhanced pqsigRM-612	|1619112	|1618816	|296|
-|Enhanced pqsigRM-613	|4288922	|4288616	|306|
-|SOLMAE-512		|	126896	|126840	|56|
-|SOLMAE-1024	|	252800	|252744	|56|
+| Algorithm                 |  Stack+Heap+Extra_Heap | Stack         | Heap          | Extra_Heap    |  
+| -----------------------   | ---------------------: | -------------:| -------------:|--------------:|
+|AIMer-l1-param1            | 201968	             |7936	         | 191048        | 2984          |
+|AIMer-l1-param2            | 451888		         |7920	         | 441606        | 2362          |
+|AIMer-l1-param3            | 1426072		         |7840           | 1416710       | 1522          |
+|AIMer-l1-param4            | 6896664		         |7840           | 6887572       | 1522          |
+|AIMer-l3-param1            | 438496		         |15248        	 | 417768        | 5480          |
+|AIMer-l3-param2            | 1066392		         |15248	         | 1047512       | 3632          |
+|AIMer-l3-param3            | 3135808		         |15568	         | 3117478       | 2762          |
+|AIMer-l3-param4            | 15036584		         |15168	         | 15018816      | 2600          |
+|AIMer-l5-param1            | 877208		         |27408	         | 844272        | 5528          |
+|AIMer-l5-param2            | 2117488		         |27408	         | 2086088       | 3992          |
+|AIMer-l5-param3            | 6315904		         |27328	         | 6285870       | 2706          |
+|AIMer-l5-param4            | 30403744		         |27328	         | 30373596      | 2820          |	
+|GCKSign-II	                | 47544	                 |44568        	 |2928           |             48|
+|GCKSign-III                | 48056	                 |45080	         |2928           |             48|
+|GCKSign-V	                | 72136	                 |69160	         |2928           |             48|		
+|HAETAE-II	                | 90568	                 |88560	         |1968           |             40|
+|HAETAE-III	                | 136904                 |134896	     | 1968          |             40|
+|HAETAE-V	                | 172392	             |170384	     | 1968          |             40|
+|MQSign-72_46               | 1248392	             |1245896	     | 2440          |             56|
+|MQSign-112_72	            | 4677064	             |4674568	     | 2440          |             56|
+|MQSign-148_96	            | 10908232	             |10905736	     | 2440          |             56|
+|NCCSign-II (conserparam)	| 224352                 |222344	     | 1968          |             40|
+|NCCSign-III (conserparam)	| 296816	             |294808	     | 1968          |             40|
+|NCCSign-V (conserparam)	| 374992	             |372984	     | 1968          |             40|
+|NCCSign-II (original)	    | 189168	             |187160	     | 1968          |             40|
+|NCCSign-III (original)	    | 264384	             |262376	     | 1968          |             40|
+|NCCSign-V (original)	    | 351360	             |349352	     | 1968          |             40|
+|Peregrine-512	            | 119528	             |3008	         | 116356        |            164|
+|Peregrine-1024	            | 230632	             |3008	         | 227470        |            154|
+|Enhanced pqsigRM-612	    | 6624984	             |1617888	     | 5006784       |            312|
+|Enhanced pqsigRM-613	    | 29426240               |4247296	     | 25167600      |          11344|
+|SOLMAE-512		            | 129336	             |126840	     | 2440          |             56|
+|SOLMAE-1024	            | 255240	             |252744	     | 2440          |             56|
 
 
 * REDOG: Valgrind only targets programs written in C language. REDOG could not be tested because it is only provided in python.
